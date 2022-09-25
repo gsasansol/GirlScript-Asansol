@@ -49,7 +49,7 @@ You can alternatively copy the URL by using the green "Clone or download" button
 Once we have the URL, we’re ready to clone the repository. To do this, we’ll combine the `git clone` command with the repository URL from the command line in a terminal window:
 
 ```
-git clone https://github.com/anomic30/Storz.git
+git clone https://github.com/gsasansol/GirlScript-Asansol.git
 ```
 
 ### 5. Create a New Branch
