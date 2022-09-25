@@ -116,4 +116,5 @@ To qualify for the official limited edition Hacktoberfest shirt, you must regist
  Almost every repo looking for help has a CONTRIBUTING.md file in it, read it first!
 
 <h4>Don't: feel intimidated</h4>
- Register for an event and learn with a group, or connect with others in the [Discord chat](https://discord.gg/vYSspBkgNc).
+
+ Register for an event and learn with a group, or connect with others in the [Discord](https://discord.gg/vYSspBkgNc) chat.
