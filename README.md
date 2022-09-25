@@ -1,10 +1,11 @@
-# HacktoberFest-2020
+![image here](https://github.com/sujata13/HacktoberFest-2020/blob/master/hacktober.png)
+
+# Hacktoberfest 2022
 Repository designed for beginner to contribute to open-source 
 
+## ❓ What is Hacktoberfest 2022?
 
-## ❓ What is Hacktoberfest 2020?
-
-Hacktoberfest 2020 is a month long virtual festival event to celebrate open source contributions presented by Digital Ocean, Intel and DEV. It is the easiest way to get into open source!
+Hacktoberfest 2022 is a month long virtual festival event to celebrate open source contributions presented by Digital Ocean, Intel and DEV. It is the easiest way to get into open source!
 https://hacktoberfest.digitalocean.com/
 During the entire month of October 2020, all you have to do is contribute to any open source projects and open at least 4 pull requests. Yes, any project and any kind of contributions. You don’t need to be an expert in programming or coding. It can be a be a bug fix, improvement, or even a documentation change! And win an awesome T-shirt and awesome stickers.
 
@@ -34,9 +35,6 @@ In past years, shirts have arrived in November or December, depending on how far
 The Digital Ocean team should eventually contact you asking for your shirt size and shipping address. (Keep in mind they are shipping 40,000 shirts so this process will take a while.) And yes, they will ship internationally.
 
 Don’t miss this opportunity. Start contributing to open source and get a limited edition T-shirt for Free! And also, Stickers!
-
-
-![image here](https://github.com/sujata13/HacktoberFest-2020/blob/master/hacktober.png)
 
 # Event details
 Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
