@@ -25,7 +25,7 @@ as you can and star this repo to help as many people in open-source as you can.
 
 ### 3. Fork it:
 
-You can get your own fork/copy of this project [Storz](https://github.com/anomic30/Storz) by using the <kbd><b>Fork</b></kbd></a> button or clicking [this](https://github.com/anomic30/Storz).
+You can get your own fork/copy of this project by using the <kbd><b>Fork</b></kbd></a> button at our [repository home page](https://github.com/gsasansol/GirlScript-Asansol).
 
 
 ### 4. Ready, Steady, Go...!
