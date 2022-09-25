@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/react-%5E17.0.2-blue">
 </p>
 
-<h6 align="center"><img src="assets/aeccc.png" height="250" /></p></h6>
+<h6 align="center"><img src="https://raw.githubusercontent.com/gsasansol/branding/main/assets/asn-logo.png" height="250" /></p></h6>
 <h1 align="center"><code>&nbsp;GirlScript Asansol Community Website&nbsp;</code></h1>
 This is the student-run community site and event management webapp for GS's Asansol Students' Chapter using React, Express and MongoDB.
 
