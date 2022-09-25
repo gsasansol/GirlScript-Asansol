@@ -15,7 +15,8 @@ This is the student-run community site and event management webapp for GS's Asan
 
 ## 💻 Getting started
 
-- Fork this repository and then clone it in your local machine using `git clone <https://github.com/gsasansol/GirlScript-Asansol.git>`.
+- Star this repo and then fork it.
+- Clone it in your local machine using `git clone <https://github.com/gsasansol/GirlScript-Asansol.git>`.
 - After cloning make sure to create a new branch by using `git checkout -b ＜new-branch＞`.
 - Commit the changes made into the branch created using `git commit -m "commit message"`. 
 - Then make sure to push it by using `git push <branch>`. 
