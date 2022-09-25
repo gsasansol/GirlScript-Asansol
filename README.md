@@ -69,7 +69,7 @@ This project is made possible by our valuable contributors .Thanks to all the **
 # Hacktoberfest 2022
 Repository designed for beginner to contribute to open-source
 
-![image here](https://github.com/sujata13/HacktoberFest-2020/blob/master/hacktober.png)
+![image here](https://hacktoberfest.com/_next/static/media/opengraph.da6e44c0.png)
 
 ## ❓ What is Hacktoberfest 2022?
 
