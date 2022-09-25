@@ -9,17 +9,23 @@
 
 <h6 align="center"><img src="https://raw.githubusercontent.com/gsasansol/branding/main/assets/asn-logo.png" height="250" /></p></h6>
 <h1 align="center"><code>&nbsp;GirlScript Asansol Community Website&nbsp;</code></h1>
-This is the student-run community site and event management webapp for GS's Asansol Students' Chapter using React, Express and MongoDB.
+This is the student-run community site and event management webapp for GS's Asansol Students' Chapter using HTML, CSS and JavaScript. For any queries join our <a href="https://discord.com/invite/aVRPbMYfFH"> Discord  server.
 
 <br>
 
 ## 💻 Getting started
 
-The frontend was bootstrapped with Create React App. In the project root directory, run `npm install` to install all project dependencies. Next, run `npm start` to start the developmental server which will trigger open your default browser to `localhost:3000`. Run `npm install`.
+- Fork this repository and then clone it in your local machine using `git clone <https://github.com/gsasansol/GirlScript-Asansol.git>`.
+- After cloning make sure to create a new branch by using `git checkout -b ＜new-branch＞`.
+- Commit the changes made into the branch created using `git commit -m "commit message"`. 
+- Then make sure to push it by using `git push <branch>`. 
+
+Wow, you did it, happy codding!
 
 ## ⚒️ Tools and Frameworks
 
-<h6 align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-CC6699?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/VSCode-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white"></h6>
+<h6 align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-CC6699?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/VSCode-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white"></h6>
+
 
 <br>
 
