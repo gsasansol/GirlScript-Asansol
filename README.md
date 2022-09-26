@@ -4,7 +4,6 @@
     <img src="https://img.shields.io/github/issues-pr/gsasansol/GirlScript-Asansol">
     <img src="https://img.shields.io/github/license/gsasansol/GirlScript-Asansol">
     <img src="https://img.shields.io/github/last-commit/gsasansol/GirlScript-Asansol">
-    <img src="https://img.shields.io/badge/react-%5E17.0.2-blue">
 </p>
 
 <h6 align="center"><img src="https://raw.githubusercontent.com/gsasansol/branding/main/assets/asn-logo.png" height="250" /></p></h6>
