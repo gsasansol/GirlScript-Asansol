@@ -95,7 +95,7 @@ It doesn’t need to be code. It can be even documentation. Or spelling fix.
 You can contribute to any open source project hosted on Github.com and contribute anything between October 1 to October 31 midnight in 2020. You will find plenty of issues labeled with hacktoberfest or good-first-issue etc on Github. These will be the simple ones most probably and easy to fix.
 
 ## How to contribute
-Submit your pull request here for Hacktoberfest-2020 in any language you prefer, if language folder not present, create one as a part of it, after script add your name and GitHub profile into Contributors.md file.
+Submit your pull request here for Hacktoberfest-2022 in any language you prefer, if language folder not present, create one as a part of it, after script add your name and GitHub profile into Contributors.md file.
 
 👕 Win Your T-Shirt
 
