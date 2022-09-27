@@ -1,5 +1,5 @@
 ### Related Issue
-- issue no goes here
+- Issue number goes here:
 
 ### Proposed Changes <!-- Add the changes that you have made -->
 - Change 1
