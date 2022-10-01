@@ -1,11 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body{
     background-color: aqua;
 }
 
-/*  NavBar Styles goes here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.menu{
+    font-family: 'Lato', sans-serif; /*Font: Lato is added for menu items*/
+}
 
+a, a:hover{
+    text-decoration: none;
+}
 
+nav{
+    display: flex;
+    background: beige; /*beige color is used for navbar*/
+    padding: 5px 20px;
+    align-items: center;
+}
+
+nav a{
+    color: black; /*black color is used for navbar menu items*/
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+}
 
 
 
