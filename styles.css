@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-body{
-    background-color: aqua;
-}
-
-/*  NavBar Styles goes here */
 *{
     margin: 0;
 }
+body{
+    transition: background 0.2s linear;
+}
+body.dark {
+    background-color: #292c35;
+}
+
+  
+/*  NavBar Styles goes here */
+
 
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
 .navbar{
@@ -35,14 +39,17 @@ body{
 
 .options{
     margin-left: auto; /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*styling the items in the navbar(except logo and community name) here*/
 .options a{
     text-decoration: none;
     color: black;
-    margin-right: 10px;
+    margin:0 10px;
+    font-size: 1.1rem;
     
 }
 
@@ -50,8 +57,17 @@ body{
     border-bottom: 2px solid black; /*added a simple hover event so that a line appears when someone hovers over the items*/
 
 }
-
-
+.toggleButton{
+  border: none;
+  background-color: transparent;
+}
+.toggleButton .fas{
+    font-size: 1.4rem;
+}
+ 
+.toggleButton .fa-sun {
+  color: rgb(168, 105, 22);
+}
 
 
 
