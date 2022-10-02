@@ -1,12 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+}
 body{
-    background-color: aqua;
+    transition: background 0.2s linear;
+}
+body.dark {
+    background-color: #292c35;
 }
 
+  
 /*  NavBar Styles goes here */
 
 
+/*general styling of the navbar like the background color, alignment of the items, gap between the items*/
+.navbar{
+    padding: 10px;
+    background-color: beige;
+    display: flex; /*to put the elements one beside the other*/
+    align-items: center;
+    font-family: Lato;
+    gap: 5px;
+}
+
+/*for the styling the name of community beside the logo*/
+.navbar .name{
+    line-height: 1.0;
+    font-weight: 900;
+}
+
+/*to set the size of the logo and make it circular*/
+.navbar img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 
 
+.options{
+    margin-left: auto; /*to put all the items of navbar(except logo and community name) to the right side of the page*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*styling the items in the navbar(except logo and community name) here*/
+.options a{
+    text-decoration: none;
+    color: black;
+    margin:0 10px;
+    font-size: 1.1rem;
+    
+}
+
+.options a:hover{
+    border-bottom: 2px solid black; /*added a simple hover event so that a line appears when someone hovers over the items*/
+
+}
+.toggleButton{
+  border: none;
+  background-color: transparent;
+}
+.toggleButton .fas{
+    font-size: 1.4rem;
+}
+ 
+.toggleButton .fa-sun {
+  color: rgb(168, 105, 22);
+}
 
 
 
@@ -53,3 +114,4 @@ body{
 
 
 /*  Footer section Styles goes here */
+
