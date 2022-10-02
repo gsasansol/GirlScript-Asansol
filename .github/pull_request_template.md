@@ -1,9 +1,9 @@
 ### Related Issue
-- Issue number goes here:
+- Issue number goes here: 7
 
 ### Proposed Changes <!-- Add the changes that you have made -->
-- Change 1
-- Change 2
+- Made header responsive
+- Improved header
 
 ### Checklist <!-- Add [x] to the boxes-[] to check on it -->
 - [ ] Documentation of the code <!-- Add relevant comments for better readability -->
