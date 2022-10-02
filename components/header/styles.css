@@ -19,10 +19,6 @@ header {
   justify-content: center;
 }
 
-.header-content img {
-  padding: 20px;
-}
-
 .header-content {
   margin-bottom: 160px;
   color: #fff;
@@ -30,14 +26,14 @@ header {
 }
 
 .header-content h2 {
-  font-size: 4vmin;
+  font-size: 7vmin;
   font-family: "Lato", sans-serif;
 }
 
 .line {
   width: 150px;
   height: 3px;
-  background: orange;
+  background: #ffa500;
   margin: 20px auto;
   border-radius: 5px;
 }
@@ -47,7 +43,7 @@ header {
   border: none;
   z-index: 1;
   width: 130px;
-  height: 40px;
+  height: 50px;
   color: #000;
   border-radius: 5px;
   padding: 10px 25px;
@@ -91,4 +87,27 @@ header {
 
 .cta-button:active {
   top: 2px;
+}
+
+/* header divider wave  */
+
+.custom-shape-divider-bottom-1664737405 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1664737405 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 177px;
+}
+
+.custom-shape-divider-bottom-1664737405 .shape-fill {
+  fill: #ffffff;
 }
