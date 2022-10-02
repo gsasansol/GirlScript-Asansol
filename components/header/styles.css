@@ -1,0 +1,94 @@
+/* Global CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for Header */
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("./assets/asn-junction.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content img {
+  padding: 20px;
+}
+
+.header-content {
+  margin-bottom: 160px;
+  color: #fff;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+  font-family: "Lato", sans-serif;
+}
+
+.line {
+  width: 150px;
+  height: 3px;
+  background: orange;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.cta-button {
+  background: rgb(243, 242, 199);
+  border: none;
+  z-index: 1;
+  width: 130px;
+  height: 40px;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.cta-button:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #feb139;
+  background-image: linear-gradient(315deg, #feb139 0%, #feb139 74%);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  color: #fff;
+}
+
+.cta-button:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+.cta-button:active {
+  top: 2px;
+}
