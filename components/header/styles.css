@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* CSS for Header */
+/* css for header starts here */
 
 header {
   width: 100vw;
@@ -42,14 +42,14 @@ header {
   background: rgb(243, 242, 199);
   border: none;
   z-index: 1;
-  width: 130px;
+  width: 140px;
   height: 50px;
   color: #000;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -91,7 +91,7 @@ header {
 
 /* header divider wave  */
 
-.custom-shape-divider-bottom-1664737405 {
+.header-wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -101,13 +101,15 @@ header {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1664737405 svg {
+.header-wave svg {
   position: relative;
   display: block;
   width: calc(136% + 1.3px);
   height: 177px;
 }
 
-.custom-shape-divider-bottom-1664737405 .shape-fill {
+.header-wave .shape-fill {
   fill: #ffffff;
 }
+
+/* css for header ends here */
