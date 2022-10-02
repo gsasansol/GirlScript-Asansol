@@ -17,7 +17,9 @@ body{
     align-items: center;
     font-family: Lato;
     gap: 5px;
+    overflow: hidden;
 }
+
 
 /*for the styling the name of community beside the logo*/
 .navbar .name{
@@ -35,16 +37,23 @@ body{
 
 .options{
     margin-left: auto; /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-    
+    float: right;
 }
 
 /*styling the items in the navbar(except logo and community name) here*/
 .options a{
-    text-decoration: none;
+    float: left;
     color: black;
-    margin-right: 10px;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
     
 }
+
+
 
 .options a:hover{
     border-bottom: 2px solid black; /*added a simple hover event so that a line appears when someone hovers over the items*/
@@ -53,7 +62,22 @@ body{
 
 
 
-
+@media screen and (max-width: 750px) {
+    .options a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar{
+        float: none;
+        display: block;
+        text-align: left;
+      }
+   
+    .options {
+      float: none;
+    }
+  }
 
 /*  Header Section Styles goes here */
 
