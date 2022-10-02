@@ -1,10 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body{
     background-color: aqua;
 }
 
 /*  NavBar Styles goes here */
+*{
+    margin: 0;
+}
+
+/*general styling of the navbar like the background color, alignment of the items, gap between the items*/
+.navbar{
+    padding: 10px;
+    background-color: beige;
+    display: flex; /*to put the elements one beside the other*/
+    align-items: center;
+    font-family: Lato;
+    gap: 5px;
+}
+
+/*for the styling the name of community beside the logo*/
+.navbar .name{
+    line-height: 1.0;
+    font-weight: 900;
+}
+
+/*to set the size of the logo and make it circular*/
+.navbar img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 
 
+.options{
+    margin-left: auto; /*to put all the items of navbar(except logo and community name) to the right side of the page*/
+    
+}
+
+/*styling the items in the navbar(except logo and community name) here*/
+.options a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    
+}
+
+.options a:hover{
+    border-bottom: 2px solid black; /*added a simple hover event so that a line appears when someone hovers over the items*/
+
+}
 
 
 
@@ -53,3 +98,4 @@ body{
 
 
 /*  Footer section Styles goes here */
+
