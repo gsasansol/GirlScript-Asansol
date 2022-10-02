@@ -16,7 +16,7 @@ body{
     display: flex; /*to put the elements one beside the other*/
     align-items: center;
     font-family: Lato;
-    gap: 5px;
+    gap: 10px; /*added a gap between the logo and the brandname*/
 }
 
 /*for the styling the name of community beside the logo*/
@@ -51,10 +51,38 @@ body{
 
 }
 
+.toggle{
+    display: none; /*toggle bar will be hidden until respective screen size meets*/
+}
 
+/*media queries for responsiveness of navbar*/
+@media screen and (max-width: 750px){
+    .navbar{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
 
+    .options{
+        margin-top: 15px;
+        display: none;
+    }
 
+    .options.active, .toggle{
+        display: block;
+    }
 
+    .toggle{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .options a{
+        display: block;
+        padding: 5px;
+    }
+}
 /*  Header Section Styles goes here */
 
 

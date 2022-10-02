@@ -15,8 +15,13 @@
         <img src="https://avatars.githubusercontent.com/u/104223990?v=4" alt="logo"> 
         <!--name of the community added beside the logo-->
         <div class="name">
-            <p>GirlScript</p>
-            <p>Asansol</p>
+            <p>GirlScript Asansol</p> <!--GirlScript Asansol in one line instead of 2 seperate lines-->
+        </div>
+        <!--toggle bar for small screens-->
+        <div class="toggle">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></i></a>
         </div>
         <!--the other items of navbar is added below-->
         <div class="options">
@@ -29,6 +34,23 @@
             <a href="#">Contact Us</a>
         </div>
     </div>
+
+    <!--added jQuery Event Methods for toggle bar to open and close-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".options").hasClass("active")){
+                    $(".options").removeClass("active");
+                    $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>`);
+                }
+                else{
+                    $(".options").addClass("active");
+                    $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>`);
+                }
+            });
+        });
+    </script>
   
     <!---Header section goes here-->
     
