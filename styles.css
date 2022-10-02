@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body{
     background-color: aqua;
+}
+*{
+    margin: 0;
+}
+.navbar{
+    padding: 10px;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    font-family: Lato;
+    gap: 5px;
+}
+
+.navbar .name{
+    line-height: 1.0;
+    font-weight: 900;
+}
+.navbar img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.options{
+    margin-left: auto;
+    
+}
+
+.options a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    
+}
+
+.options a:hover{
+    border-bottom: 2px solid black;
+
 }
