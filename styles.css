@@ -82,6 +82,13 @@ body{
         display: block;
         padding: 5px;
     }
+
+    .name p{
+        display: inline-block;
+        position: absolute;
+        left: 81px;
+        top: 30px;
+    }
 }
 /*  Header Section Styles goes here */
 
