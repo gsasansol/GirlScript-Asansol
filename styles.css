@@ -20,7 +20,7 @@ body.dark {
     display: flex; /*to put the elements one beside the other*/
     align-items: center;
     font-family: Lato;
-    gap: 5px;
+    gap: 10px; /*added a gap between the logo and the brandname*/
 }
 
 /*for the styling the name of community beside the logo*/
@@ -57,6 +57,46 @@ body.dark {
     border-bottom: 2px solid black; /*added a simple hover event so that a line appears when someone hovers over the items*/
 
 }
+
+.toggle{
+    display: none; /*toggle bar will be hidden until respective screen size meets*/
+}
+
+/*media queries for responsiveness of navbar*/
+@media screen and (max-width: 750px){
+    .navbar{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .options{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .options.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .options a{
+        display: block;
+        padding: 5px;
+    }
+
+    .name p{
+        display: inline-block;
+        position: absolute;
+        left: 81px;
+        top: 30px;
+    }
+}
 .toggleButton{
   border: none;
   background-color: transparent;
@@ -68,7 +108,6 @@ body.dark {
 .toggleButton .fa-sun {
   color: rgb(168, 105, 22);
 }
-
 
 
 /*  Header Section Styles goes here */
