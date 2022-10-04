@@ -9,6 +9,20 @@ body.dark {
     background-color: #292c35;
 }
 
+/* Scrollbar Effects Goes Here */
+
+::-webkit-scrollbar{
+  width:1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(230, 168, 54);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: orange;
+}
   
 /*  NavBar Styles goes here */
 
