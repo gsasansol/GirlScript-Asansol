@@ -109,6 +109,16 @@ body.dark {
   color: rgb(168, 105, 22);
 }
 
+/* dark mode button positioning for mobile */
+@media screen and (max-width: 750px){
+  .toggleButton{
+    position: absolute;
+    top: 25px;
+    left: 40%;
+    min-width: 50%;
+  }
+}
+
 
 /*  Header Section Styles goes here */
 
@@ -218,6 +228,32 @@ header {
     fill: #ffffff;
     position: absolute;
   }
+
+  /* made all the values for header-wave class and its sub-classes to initial for mobile */
+  @media screen and (max-width: 750px){
+    .header-wave {
+      position: initial;
+      bottom: initial;
+      left: initial;
+      width: initial;
+      overflow: initial;
+      line-height: initial;
+      transform: initial;
+    }
+    
+    .header-wave svg {
+      position: initial;
+      display: initial;
+      width: initial;
+      height: initial;
+    }
+    
+    .header-wave .shape-fill {
+      fill: initial;
+      position: initial;
+    }
+  }
+
   
   /* css for header ends here */
   
