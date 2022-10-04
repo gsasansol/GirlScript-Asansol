@@ -1,0 +1,45 @@
+.container-fluid{
+   padding-top: 2%;
+  
+    width:100% ;
+   
+}
+.carousel-item{
+    margin-left: 300px;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0ch;
+    top: 0;
+    right:0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4    ;
+
+ 
+ }
+h5{
+     font-family: 'Gemunu Libre', sans-serif;
+     
+} p{
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{  font-family: 'Gemunu Libre', sans-serif;
+   color: #000000;
+    font-weight: bold;
+    text-align: center;
+   font-size: large;
+   padding-bottom: 1.5%;
+}
+
+.carousel-inner{
+    padding: 0  0 4% 5%;
+    text-align: center;
+  
+}
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -70px;}
+.carousel-indicators li{ border-radius: 50%;}
