@@ -1,0 +1,102 @@
+*{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.head{
+    font-weight:800;
+}
+.head1
+{
+    font-size: 50px;
+    text-align:center;
+    font-family: "Goudy Bookletter 1911", sans-serif;;
+    margin-top:-40px;
+    color: rgb(39, 14, 2);
+}
+.bg{
+    height: 50%;
+    width: 50%;
+    margin-bottom: 30px;
+}
+.container .message{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+}
+    
+.container
+    {
+    margin-top: 40px;
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.contact-me div{
+   height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me div h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.contact-me div div{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me{
+    display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(27, 25, 25);
+     
+  }
+  .contact-me a{
+    
+    height: 20px;
+    width: 20px;
+    display: flex;
+    
+    text-decoration: none;
+     justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .contact-me i{
+    color: rgb(247, 232, 232);
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10%;
+    padding-top: 4px;
+   
+  }
+  i:hover{
+    color: rgb(245, 125, 65);
+  }
+  
+  .section{
+    color: beige;
+  }
+  .link{
+    text-decoration: none;
+    color:rgb(185, 80, 28);
+  }
