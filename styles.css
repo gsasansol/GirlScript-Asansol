@@ -274,7 +274,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  --color: yellow;
+  --color: rgb(255, 117, 26);;
   --pos-1: -8vmin;
   --pos-2: -2.66vmin;
   --pos-3: 2.66vmin;
