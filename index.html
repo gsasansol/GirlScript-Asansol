@@ -77,13 +77,16 @@
 </script>
 
 <body>
+
+    
+    <div class="loader"></div>
+   
+    
     <!-- Dismissable notification bar  -->
     <div class="notif-bar-btn" id="close">
         <div style="display: flex;width:73%;align-items: flex-end;">
-        <div style="margin-right: 1rem;">Join our FREE FOREVER plan today and send unlimited compaigns:</div>
-        <input type="text" placeholder="Enter your Email" style="border-radius: 0.5rem;margin-right: 0.5rem;">
-        <Button style="background-color: rgb(54,66,86);color:white;margin-right: 1rem;border-radius: 0.5rem;">Claim Now!</Button>
-        <div style="margin-right: 1rem;">No credit card required!</div>
+        <div style="margin-right: 1rem;">Join us on Discord!</div>
+        <a href="https://discord.gg/vYSspBkgNc"><Button style="background-color: rgb(54,66,86);color:white;margin-right: 1rem;border-radius: 0.5rem;">Join Discord</Button></a>
     </div>
         <div style="display: flex;width: 10%;justify-content: flex-end; margin-right: 1rem;">
             <i class="fa fa-remove" style="cursor: pointer;font-size: 1.3rem;" onclick="handleClose()"></i>
@@ -109,12 +112,12 @@
         </div>
         <!--the other items of navbar is added below-->
         <div class="options">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
             <a href="#">About Us</a>
             <a href="#">Resources</a>
-            <a href="#">Past Events</a>
+            <a href="#pastevents">Past Events</a>
             <a href="#">Our Team</a>
-            <a href="#">FAQ</a>
+            <a href="#faq">FAQ</a>
             <a href="#">Contact Us</a>
         </div>
         <!--dark mode button is now outside the option class-->
@@ -142,7 +145,7 @@
 
     <!---Header section goes here-->
 
-    <div class="header">
+    <div class="header" id="home">
         <div class="header-content">
             <h2>Welcome to GirlScript Asansol <br>
                 Education First</h2>
@@ -170,7 +173,7 @@
     <!--Past events secton goes here--->
 
 
-    <div class="past-events">
+    <div class="past-events" id="pastevents">
         <h1 class="events-title">Our Past Events</h1>
         <div class="overlay-image">
            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -342,10 +345,16 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader').fadeToggle();
 
-
+    },2500);
+</script>
 
     <script src="index.js"></script>
+
 </body>
 
 </html>
