@@ -4,6 +4,7 @@
 }
 body{
     transition: background 0.2s linear;
+    overflow: overlay;
 }
 body.dark {
     background-color: #292c35;
@@ -12,12 +13,11 @@ body.dark {
 /* Scrollbar Effects Goes Here */
 
 ::-webkit-scrollbar{
-  width:1em;
+  width:3px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(230, 168, 54);
-  border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover{
