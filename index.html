@@ -10,6 +10,8 @@
 </head>
 <body>
     
+    <div class="loader"></div>
+   
      <!--Navbar section goes here-->
     <div class="navbar">
         <!--logo-->
@@ -106,5 +108,15 @@
 
 
 <script src="index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader').fadeToggle();
+
+    },1500);
+</script>
+
+
 </body>
 </html>
