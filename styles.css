@@ -29,6 +29,16 @@ body.dark {
 
 /*  NavBar Styles goes here */
 
+/* general styling for dismissable alert  */
+.notif-bar-btn {
+  background-color: #fe6155;
+  color: white;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
 .navbar {
   padding: 10px;
@@ -368,11 +378,13 @@ body.dark {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  transition: 0.3s ease;
+  transition: all 0.5s ease-in-out;
   font-size: large;
+  max-height: 100px;
 }
 
 .faq.active {
+  max-height: 350px;
   font-size: large;
   background-color: rgb(238, 149, 90);
   background-image: linear-gradient(
@@ -381,6 +393,12 @@ body.dark {
     rgb(238, 149, 90) 74%
   );
   transition: all 0.3s ease;
+  background-color: rgb(238, 149, 90);
+  background-image: linear-gradient(
+    315deg,
+    rgb(238, 149, 90) 0%,
+    rgb(238, 149, 90) 74%
+  );
   color: #000;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
@@ -390,7 +408,7 @@ body.dark {
 }
 
 .faq-text {
-  display: none;
+  display: block;
   margin: 30px 0 0;
   font-family: "Lato", sans-serif;
 }
@@ -402,9 +420,6 @@ body.dark {
 }
 .faq-text a:hover {
   color: #000;
-}
-.faq.active .faq-text {
-  display: block;
 }
 
 .faq-toggle {
@@ -444,6 +459,232 @@ body.dark {
 /* Contact Us section Styles goes here */
 
 /*  Footer section Styles goes here */
+
+/* pre loader  css styles goes here */
+body {
+  margin: 0;
+  background: #333;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  --color: rgb(238, 149, 90);
+  --pos-1: -8vmin;
+  --pos-2: -2.66vmin;
+  --pos-3: 2.66vmin;
+  --pos-4: 8vmin;
+  --pos-a: 5.33vmin;
+  --pos-b: 16vmin;
+  --pos-c: 10.66vmin;
+  box-sizing: border-box;
+  font-size: 10vmin;
+  color: #fafad2;
+  text-shadow: 0.5vmin 0.5vmin 0 #000;
+}
+.loader:before {
+  content: "loading";
+  font-family: fantasy;
+  display: block;
+  width: 40vmin;
+  height: 20vmin;
+  position: absolute;
+  text-align: center;
+}
+.loader:after {
+  display: block;
+  content: " ";
+  background: #f000;
+  width: 5vmin;
+  height: 5vmin;
+  box-shadow: var(--pos-1) var(--pos-c) var(--color),
+    var(--pos-2) var(--pos-c) var(--color),
+    var(--pos-3) var(--pos-c) var(--color),
+    var(--pos-4) var(--pos-c) var(--color),
+    var(--pos-1) var(--pos-b) var(--color);
+  animation: 6s infinite loader;
+  position: absolute;
+}
+
+@keyframes loader {
+  0% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-b) var(--color);
+  }
+  4.16% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color);
+  }
+  8.33% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  12.5% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  16.66% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  20.83% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  25% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  29.16% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  33.33% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  37.5% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+  41.66% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color);
+  }
+  45.83% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-a) var(--color);
+  }
+  50% {
+    box-shadow: var(--pos-1) var(--pos-b) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  54.16% {
+    box-shadow: var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  58.33% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  62.5% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  66.66% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  70.83% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-b) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  75% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  79.16% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  83.33% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  87.5% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  91.66% {
+    box-shadow: var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  95.83% {
+    box-shadow: var(--pos-1) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+  100% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-b) var(--color);
+  }
+}
 
 /*Cursor section Styles goes here */
 
