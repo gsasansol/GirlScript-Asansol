@@ -29,6 +29,16 @@ body.dark {
 
 /*  NavBar Styles goes here */
 
+/* general styling for dismissable alert  */
+.notif-bar-btn{
+  background-color: #FE6155;
+  color: white;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
 .navbar {
