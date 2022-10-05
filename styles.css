@@ -123,6 +123,11 @@ body.dark {
     left: 81px;
     top: 30px;
   }
+
+  .options a{
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 .toggleButton {
