@@ -29,6 +29,11 @@
 </script>
 
 <body>
+
+    
+    <div class="loader"></div>
+   
+    
     <!-- Dismissable notification bar  -->
     <div class="notif-bar-btn" id="close">
         <div style="display: flex;width:73%;align-items: flex-end;">
@@ -284,10 +289,16 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader').fadeToggle();
 
-
+    },1500);
+</script>
 
     <script src="index.js"></script>
+
 </body>
 
 </html>
