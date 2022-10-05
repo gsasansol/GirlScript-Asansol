@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap');
 
 * {
   margin: 0;
@@ -488,7 +489,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  font-family: 'Silkscreen', cursive;
+  font-family: 'Gemunu Libre', sans-serif;
   --color: rgb(238, 149, 90);
   --pos-1: -8vmin;
   --pos-2: -2.66vmin;
@@ -509,7 +510,7 @@ body {
 }
 .loader:before {
   content: "Welcome!";
-  font-family: fantasy;
+  font-family: 'Gemunu Libre', sans-serif;
   display: block;
   width: 40vmin;
   height: 20vmin;
@@ -517,6 +518,7 @@ body {
   text-align: center;
 }
 .loader:after {
+  font-family: 'Gemunu Libre', sans-serif;
   display: block;
   content: " ";
   background: #f000;
