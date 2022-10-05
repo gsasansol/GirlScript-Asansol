@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   margin: 0;
@@ -29,7 +29,6 @@ body.dark {
 
 /*  NavBar Styles goes here */
 
-
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
 .navbar {
   padding: 10px;
@@ -44,10 +43,10 @@ body.dark {
 
 /*for the styling the name of community beside the logo*/
 .navbar .name {
-  line-height: 1.0;
+  line-height: 1;
   font-weight: 900;
 }
-.navbar .name p{
+.navbar .name p {
   margin-bottom: 5px;
 }
 /*to set the size of the logo and make it circular*/
@@ -56,7 +55,6 @@ body.dark {
   width: 50px;
   border-radius: 50%;
 }
-
 
 .options {
   margin-left: auto;
@@ -72,7 +70,6 @@ body.dark {
   color: black;
   margin: 0 10px;
   font-size: 1.1rem;
-
 }
 
 .options a:hover {
@@ -80,7 +77,6 @@ body.dark {
   text-decoration: none;
   color: rgb(255, 81, 0);
   /*added a simple hover event so that a line appears when someone hovers over the items*/
-
 }
 
 .toggle {
@@ -124,7 +120,7 @@ body.dark {
     top: 30px;
   }
 
-  .options a{
+  .options a {
     display: inline-block;
     width: 100%;
   }
@@ -152,7 +148,6 @@ body.dark {
     min-width: 50%;
   }
 }
-
 
 /*  Header Section Styles goes here */
 
@@ -183,7 +178,7 @@ body.dark {
 .line {
   width: 150px;
   height: 3px;
-  background: rgb(255, 117, 26);;
+  background: rgb(255, 117, 26);
   margin: 20px auto;
   border-radius: 5px;
 }
@@ -219,7 +214,11 @@ body.dark {
   z-index: -1;
   border-radius: 5px;
   background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(315deg, rgb(238, 149, 90) 0%, rgb(238, 149, 90)  74%);
+  background-image: linear-gradient(
+    315deg,
+    rgb(238, 149, 90) 0%,
+    rgb(238, 149, 90) 74%
+  );
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -288,27 +287,16 @@ body.dark {
   }
 }
 
-
 /* css for header ends here */
-
-
-
-
-
 
 /*  About Us section Styles goes here */
 
-
-
-
-
-
 /*  Past Events section Styles goes here */
-.past-events{
+.past-events {
   margin: 100px 0;
 }
 
-.events-title{
+.events-title {
   margin-top: 100px;
   text-align: center;
   margin-bottom: 20px;
@@ -317,26 +305,29 @@ body.dark {
   margin-left: 300px;
 }
 
+.card {
+  box-shadow: 10px 10px 5px orange;
+}
+
 .overlay-image {
-  background-image: url(./Assets/pastEventbg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(./Assets/pastEventbg.png);
   background-position: center;
   background-size: cover;
   padding: 50px 20px 10px;
 }
 
 .past-events h5 {
-  font-family: 'Gemunu Libre', sans-serif;
-
+  font-family: "Gemunu Libre", sans-serif;
 }
 
 .past-events p {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .carousel-inner {
   padding: 0 0 4% 5%;
   text-align: center;
-
 }
 
 .carousel-indicators {
@@ -349,17 +340,10 @@ body.dark {
   border-radius: 50%;
 }
 
-
-
+/* @media (max-width: 768px) {
+} */
 
 /*  Our Team section Styles goes here */
-
-
-
-
-
-
-
 
 /*  FAQ section Styles goes here */
 
@@ -390,8 +374,12 @@ body.dark {
 
 .faq.active {
   font-size: large;
-  background-color: rgb(238, 149, 90) ;
-  background-image: linear-gradient(315deg, rgb(238, 149, 90)  0%, rgb(238, 149, 90)  74%);
+  background-color: rgb(238, 149, 90);
+  background-image: linear-gradient(
+    315deg,
+    rgb(238, 149, 90) 0%,
+    rgb(238, 149, 90) 74%
+  );
   transition: all 0.3s ease;
   color: #000;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -405,7 +393,6 @@ body.dark {
   display: none;
   margin: 30px 0 0;
   font-family: "Lato", sans-serif;
-
 }
 
 .faq-text a {
@@ -413,7 +400,7 @@ body.dark {
   color: #fff;
   font-family: "Lato", sans-serif;
 }
-.faq-text a:hover{
+.faq-text a:hover {
   color: #000;
 }
 .faq.active .faq-text {
@@ -454,21 +441,9 @@ body.dark {
   display: none;
 }
 
-
-
-
 /* Contact Us section Styles goes here */
 
-
-
-
-
-
 /*  Footer section Styles goes here */
-
-
-
-
 
 /*Cursor section Styles goes here */
 
@@ -480,7 +455,7 @@ body.dark {
   position: absolute;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
-  animation: cursorAnim .5s infinite alternate;
+  animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
 }
 
@@ -491,44 +466,44 @@ body.dark {
   position: absolute;
   border: 8px solid gray;
   border-radius: 50%;
-  opacity: .5;
+  opacity: 0.5;
   top: -8px;
   left: -8px;
-  animation: cursorAnim2 .5s infinite alternate;
+  animation: cursorAnim2 0.5s infinite alternate;
 }
 
 @keyframes cursorAnim {
   from {
-      transform: scale(1);
+    transform: scale(1);
   }
   to {
-      transform: scale(.7);
+    transform: scale(0.7);
   }
 }
 
 @keyframes cursorAnim2 {
   from {
-      transform: scale(1);
+    transform: scale(1);
   }
   to {
-      transform: scale(.4);
+    transform: scale(0.4);
   }
 }
 
 @keyframes cursorAnim3 {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(3);
+    transform: scale(3);
   }
   100% {
-      transform: scale(1);
-      opacity: 0;
+    transform: scale(1);
+    opacity: 0;
   }
 }
 .expand {
-  animation: cursorAnim3 .5s forwards;
+  animation: cursorAnim3 0.5s forwards;
   border: 1px solid red;
 }
 
@@ -536,6 +511,3 @@ body.dark {
 #myCanvas {
   background-color: #1f1f1f;
 }
-
-
-
