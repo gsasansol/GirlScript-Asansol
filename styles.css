@@ -59,7 +59,6 @@ body.dark {
   /*to put the elements one beside the other*/
   align-items: center;
   font-family: Lato;
-  gap: 10px;
   
   /* overflow: hidden; */
   /*added a gap between the logo and the brandname*/
@@ -69,19 +68,18 @@ body.dark {
 
 
 /*for the styling the name of community beside the logo*/
-.navbar .name {
+.gs-navbar .name {
   font-size: 1.4rem;
   line-height: 1.0;
   font-weight: 900;
   color:rgb(107, 27, 27) ;
 }
-.navbar .name p {
+.gs-navbar .name p {
   margin-bottom: 5px;
 }
 /*to set the size of the logo and make it circular*/
-.navbar img {
+.gs-navbar img {
   height: 50px;
-  width: 50px;
   border-radius: 50%;
 }
 
@@ -124,7 +122,7 @@ body.dark {
 
 /*media queries for responsiveness of navbar*/
 @media screen and (max-width: 750px) {
-  .navbar {
+  .gs-navbar {
     display: block;
     position: relative;
     padding: 15px 20px;
