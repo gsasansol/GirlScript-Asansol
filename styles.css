@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap");
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,45 +39,129 @@ body.dark {
 
 /* general styling for dismissable alert  */
 .notif-bar-btn {
-  background-color: #fe6155;
+  background-color: #00111c;
+  /*mentioned color added*/
   color: white;
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  transition: height 500ms;
+  /*smooth collapse transistion added*/
+}
+
+.button-61 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: 0.0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform, opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,
+    rgba(0, 0, 0, 0.12) 0 0 0 0;
+  color: rgba(0, 0, 0, 0.37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: #737df1;
+  /*mentioned color added*/
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px,
+    rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;
+  background: #a46bf5;
+}
+
+@media screen and (max-width: 408px) {
+  .button-61 {
+    margin-bottom: 6px;
+  }
 }
 
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
-.navbar {
+.gs-navbar {
+  top: 0;
+  position: sticky;
+  z-index: 69;
+  box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 50%);
   padding: 10px;
-  background-color: beige;
+  background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
+  /* background-color: rgb(252,115,60); */
   display: flex;
   /*to put the elements one beside the other*/
   align-items: center;
   font-family: Lato;
-  gap: 10px;
+
+  /* overflow: hidden; */
   /*added a gap between the logo and the brandname*/
 }
 
 /*for the styling the name of community beside the logo*/
-.navbar .name {
+.gs-navbar .name {
+  font-size: 1.2rem;
   line-height: 1;
   font-weight: 900;
+  color: rgb(107, 27, 27);
+  margin-left: 10px;
+  margin-top: 5px;
 }
-.navbar .name p {
+
+.gs-navbar .name p {
   margin-bottom: 5px;
 }
+
 /*to set the size of the logo and make it circular*/
-.navbar img {
+.gs-navbar img {
   height: 50px;
-  width: 50px;
   border-radius: 50%;
 }
 
 .options {
   margin-left: auto;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -81,15 +169,21 @@ body.dark {
 /*styling the items in the navbar(except logo and community name) here*/
 .options a {
   text-decoration: none;
-  color: black;
+  color: rgb(107, 27, 27);
   margin: 0 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .options a:hover {
-  border-bottom: 2px solid rgb(255, 81, 0);
+  border-bottom: 3.5px solid rgb(255, 0, 0);
+  border-radius: 4.5px;
   text-decoration: none;
-  color: rgb(255, 81, 0);
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.2s linear;
+
   /*added a simple hover event so that a line appears when someone hovers over the items*/
 }
 
@@ -100,7 +194,7 @@ body.dark {
 
 /*media queries for responsiveness of navbar*/
 @media screen and (max-width: 750px) {
-  .navbar {
+  .gs-navbar {
     display: block;
     position: relative;
     padding: 15px 20px;
@@ -150,7 +244,7 @@ body.dark {
 }
 
 .toggleButton .fa-sun {
-  color: rgb(168, 105, 22);
+  color: rgb(241, 191, 124);
 }
 
 /* dark mode button positioning for mobile */
@@ -176,6 +270,7 @@ body.dark {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-attachment: fixed;
 }
 
 .header-content {
@@ -315,13 +410,6 @@ body.dark {
   text-align: center;
   margin-bottom: 20px;
 }
-.carousel-item {
-  margin-left: 300px;
-}
-
-.card {
-  box-shadow: 10px 10px 5px orange;
-}
 
 .overlay-image {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
@@ -339,11 +427,6 @@ body.dark {
   font-family: "Ubuntu", sans-serif;
 }
 
-.carousel-inner {
-  padding: 0 0 4% 5%;
-  text-align: center;
-}
-
 .carousel-indicators {
   left: 0;
   top: auto;
@@ -354,116 +437,126 @@ body.dark {
   border-radius: 50%;
 }
 
-/* @media (max-width: 768px) {
-} */
+.carousel-inner {
+  padding: 0 15% 3% 15%;
+  text-align: center;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+}
+#past-event-card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  border-radius: px;
+  height: 600px;
+}
+#past-event-card:hover {
+  background-image: linear-gradient(
+    115deg,
+    rgb(245, 201, 173) 0%,
+    rgb(241, 163, 111) 80%
+  );
+  transition: all 0.3s ease;
+}
+.card-links {
+  text-decoration: none;
+  color: #000;
+}
+.card-links:hover {
+  text-decoration: none;
+  color: #000;
+  transform: scale(0.9);
+}
+.card img {
+  height: 250px;
+}
+.card-title {
+  font-size: 1.5rem;
+}
+
+/* Achievements section styles goes here */
 
 /*  Our Team section Styles goes here */
 
 /*  FAQ section Styles goes here */
-
-.faq-heading {
-  margin: 50px 0 30px;
+.faq-section h1 {
   text-align: center;
+  margin-bottom: 50px;
+  font-family: "Lato", sans-serif;
 }
 
-.faq-container {
-  max-width: 700px;
-  margin: 0 auto;
-  /* border-radius: 30px; */
+.faq-card,
+.faq-card-header {
+  /* background-color: transparent !important; */
+  background: linear-gradient(
+    270deg,
+    rgb(252, 115, 60),
+    rgb(252, 176, 76)
+  ) !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 20px;
 }
 
-.faq {
-  background-color: rgb(243, 242, 199);
-  border: 1px solid #c1c4c7;
-  border-radius: 15px;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: auto;
+.faq-card {
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208.18);
 }
 
-.faq.active {
-  max-height: 350px;
-  font-size: large;
-  background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(
-    315deg,
-    rgb(238, 149, 90) 0%,
-    rgb(238, 149, 90) 74%
-  );
-  transition: all 0.3s ease;
-  background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(
-    315deg,
-    rgb(238, 149, 90) 0%,
-    rgb(238, 149, 90) 74%
-  );
-  color: #000;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faq-title {
-  margin: 0 35px 0 0;
-}
-
-.faq-text {
-  display: block;
-  margin: 30px 0 0;
-  /* border: 2px solid black; */
+.btn-link {
   width: 100%;
-  font-family: "Lato", sans-serif;
+  height: 60px;
+  color: #000 !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  text-decoration: none !important;
 }
 
-.faq-text a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Lato", sans-serif;
-}
-.faq-text a:hover {
-  color: #000;
+.faq-card-body {
+  background: beige;
 }
 
-.show_hide {
-  background-color: transparent;
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  padding: 0;
+.btn-link:after {
+  content: "\2212";
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
   position: absolute;
-  /* background-color: red; */
-  top: 30px;
-  right: 30px;
-  height: 30px;
-  width: 30px;
+  background: beige;
 }
 
-.faq-toggle:focus {
-  outline: 0;
+.btn-link.collapsed:after {
+  content: "\002B";
 }
 
-.faq-toggle .fa-times {
-  display: none;
+/* for arrow design */
+/* .btn-link:before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 30px;
+  top: 46px;
+} */
+
+#faq-illlustration {
+  width: 430px;
+  margin-top: 15px;
+  margin-left: 9rem;
 }
 
-.faq.active .faq-toggle .fa-times {
-  color: #222;
-  display: block;
-}
-
-.faq.active .faq-toggle .fa-chevron-down {
-  display: none;
+@media (max-width: 768px) {
+  #faq-illlustration {
+    width: 240px;
+    margin-top: 41px;
+    margin-left: -1rem;
+  }
 }
 
 /* Contact Us section Styles goes here */
@@ -540,17 +633,12 @@ ul {
 }
 
 /* pre loader  css styles goes here */
-body {
-  margin: 0;
-  background: #333;
-}
-
 .loader {
   width: 100vw;
   height: 100vh;
   display: grid;
   place-items: center;
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
   --color: rgb(238, 149, 90);
   --pos-1: -8vmin;
   --pos-2: -2.66vmin;
@@ -569,17 +657,19 @@ body {
   background-position: center;
   text-shadow: 0.5vmin 0.5vmin 0 #000;
 }
+
 .loader:before {
   content: "Welcome!";
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
   display: block;
   width: 40vmin;
   height: 20vmin;
   position: absolute;
   text-align: center;
 }
+
 .loader:after {
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
   display: block;
   content: " ";
   background: #f000;
@@ -602,6 +692,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-b) var(--color);
   }
+
   4.16% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -609,6 +700,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-b) var(--color);
   }
+
   8.33% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-a) var(--color),
@@ -616,6 +708,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   12.5% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-a) var(--color),
@@ -623,6 +716,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   16.66% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -630,6 +724,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   20.83% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -637,6 +732,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   25% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -644,6 +740,7 @@ body {
       var(--pos-4) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   29.16% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -651,6 +748,7 @@ body {
       var(--pos-3) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   33.33% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-b) var(--color),
@@ -658,6 +756,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   37.5% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-b) var(--color),
@@ -665,6 +764,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   41.66% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -672,6 +772,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-a) var(--color);
   }
+
   45.83% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -679,6 +780,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-a) var(--color);
   }
+
   50% {
     box-shadow: var(--pos-1) var(--pos-b) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -686,6 +788,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   54.16% {
     box-shadow: var(--pos-2) var(--pos-b) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -693,6 +796,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   58.33% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-a) var(--color),
@@ -700,6 +804,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   62.5% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-a) var(--color),
@@ -707,6 +812,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   66.66% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -714,6 +820,7 @@ body {
       var(--pos-3) var(--pos-b) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   70.83% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -721,6 +828,7 @@ body {
       var(--pos-4) var(--pos-b) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   75% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -728,6 +836,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   79.16% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -735,6 +844,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   83.33% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-b) var(--color),
@@ -742,6 +852,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   87.5% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-b) var(--color),
@@ -749,6 +860,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   91.66% {
     box-shadow: var(--pos-2) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -756,6 +868,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   95.83% {
     box-shadow: var(--pos-1) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -763,6 +876,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   100% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -803,6 +917,7 @@ body {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(0.7);
   }
@@ -812,6 +927,7 @@ body {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(0.4);
   }
@@ -821,20 +937,18 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(3);
   }
+
   100% {
     transform: scale(1);
     opacity: 0;
   }
 }
+
 .expand {
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid red;
-}
-
-/*Canvas*/
-#myCanvas {
-  background-color: #1f1f1f;
 }
