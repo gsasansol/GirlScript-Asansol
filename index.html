@@ -19,18 +19,12 @@
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GirlScript Asansol</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </head>
 <script>
-    const handleClose = () =>{
+    const handleClose = () => {
         var d = document.getElementById("close");
-        console.log("clicked",d)
-        d.style.height=0;
+        console.log("clicked", d)
+        d.style.height = 0;
     }
     const show1 = () => {
         var d = document.getElementById("show1");
@@ -38,36 +32,36 @@
         var cross = document.getElementById("cross1");
         var col = document.getElementById("faq1");
 
-        if(d.style.display === "block"){
-            d.style.display="none";
-            down.style.display="block";
-            cross.style.display="none";
-            col.style.backgroundColor="rgb(243,242,198)";
-        }else{
-            d.style.display="block";
-            down.style.display="none";
-            cross.style.display="block";
-            col.style.backgroundColor="rgb(238, 149, 90)";
+        if (d.style.display === "block") {
+            d.style.display = "none";
+            down.style.display = "block";
+            cross.style.display = "none";
+            col.style.backgroundColor = "rgb(243,242,198)";
+        } else {
+            d.style.display = "block";
+            down.style.display = "none";
+            cross.style.display = "block";
+            col.style.backgroundColor = "rgb(238, 149, 90)";
         }
-        
+
     }
     const show2 = () => {
         var d = document.getElementById("show2");
         var down = document.getElementById("down2");
         var cross = document.getElementById("cross2");
         var col = document.getElementById("faq2");
-        if(d.style.display === "block"){
-            d.style.display="none";
-            down.style.display="block";
-            cross.style.display="none";
-            col.style.backgroundColor="rgb(243,242,198)";
-        }else{
-            d.style.display="block";
-            down.style.display="none";
-            cross.style.display="block";
-            col.style.backgroundColor="rgb(238, 149, 90)";
+        if (d.style.display === "block") {
+            d.style.display = "none";
+            down.style.display = "block";
+            cross.style.display = "none";
+            col.style.backgroundColor = "rgb(243,242,198)";
+        } else {
+            d.style.display = "block";
+            down.style.display = "none";
+            cross.style.display = "block";
+            col.style.backgroundColor = "rgb(238, 149, 90)";
         }
-        
+
     }
     const show3 = () => {
         var d = document.getElementById("show3");
@@ -75,37 +69,39 @@
         var cross = document.getElementById("cross3");
         var col = document.getElementById("faq3");
 
-        if(d.style.display === "block"){
-            d.style.display="none";
-            down.style.display="block";
-            cross.style.display="none";
-            col.style.backgroundColor="rgb(243,242,198)";
-        }else{
-            d.style.display="block";
-            down.style.display="none";
-            cross.style.display="block";
-            col.style.backgroundColor="rgb(238, 149, 90)";
+        if (d.style.display === "block") {
+            d.style.display = "none";
+            down.style.display = "block";
+            cross.style.display = "none";
+            col.style.backgroundColor = "rgb(243,242,198)";
+        } else {
+            d.style.display = "block";
+            down.style.display = "none";
+            cross.style.display = "block";
+            col.style.backgroundColor = "rgb(238, 149, 90)";
         }
-        
+
     }
 </script>
 
 <body>
 
-    
+
     <div class="loader"></div>
-   
-    
+
+
     <!-- Dismissable notification bar  -->
     <div class="notif-bar-btn" id="close">
-        <div style="display: flex;width:73%;align-items: center; justify-content: center;"><!--To center only the text and the button-->
-        <div style="margin-right: 1rem;">Join us on Discord!</div>
-        <a href="https://discord.gg/vYSspBkgNc"><button class="button-61" role="button">Join Discord</button></a><!--Material UI button added-->
-    </div>
+        <div style="display: flex;width:73%;align-items: center; justify-content: center;">
+            <!--To center only the text and the button-->
+            <div style="margin-right: 1rem;">Join us on Discord!</div>
+            <a href="https://discord.gg/vYSspBkgNc"><button class="button-61" role="button">Join Discord</button></a>
+            <!--Material UI button added-->
+        </div>
         <div style="position:fixed; right: 30px">
             <i class="fa fa-remove" style="cursor: pointer;font-size: 1.3rem;" onclick="handleClose()"></i>
         </div>
-        
+
     </div>
     <!--Navbar section goes here-->
     <div class="navbar">
@@ -188,142 +184,165 @@
 
 
     <div class="past-events" id="pastevents">
-        <h1 class="events-title container-fluid">Our Past Events</h1>
+        <h1 class="events-title">Our Past Events</h1>
         <div class="overlay-image">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-slide">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
 
-                    </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck">
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="col-lg-6 container-fluid mt-3">
-                                <div class="card-deck">
-                                    <div class="card">
-                                        <img src="./Assets/event2.png" class="card-img-top" alt="event1">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color: rgb(233, 99, 247)">Digital Poster Making Competetion</h5>
-                                            <p class="card-text">Theme based upon Mother's Day.Templates are allowed but
-                                                not
-                                                Palgiarism.Certification of participation provided to all.Top 3 winners
-                                                selected as sub committe members of Girlscript Asansol. </p>
-                                            <p class="card-text"><small class="text-muted">Last Date of Submission:6th
-                                                    May
-                                                    2022</small></p>
-                                        </div>
+                            <div class="card">
+                                <a class="card-links"
+                                    href="https://www.linkedin.com/feed/update/urn:li:activity:6926402246406467584"
+                                    target="_blank">
+                                    <img src="./Assets/event1.png" class="card-img-top" alt="event1">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: rgb(233, 99, 247)">Digital Poster
+                                            Making Competetion</h5>
+                                        <p class="card-text">Theme based upon Mother's Day.Templates are allowed but
+                                            not
+                                            Palgiarism.Certification of participation provided to all.Top 3 winners
+                                            selected as sub committe members of Girlscript Asansol. </p>
+                                        <p class="card-text"><small class="text-muted">Last Date of Submission:6th
+                                                May
+                                                2022</small>
+                                        </p>
                                     </div>
-                                    <div class="card">
-                                        <img src="./Assets/event3.png" class="card-img-top" alt="event2">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(249, 79, 41)">Careerscript Episode #1</h5>
-                                            <p class="card-text">Live session with Soumyajit Bhattacharya,Engineering
-                                                Manager @Amazon.Students guided with career choices, Roadmap to Off
-                                                Campus
-                                                Placements,etc.Certification of participation provided to all</p>
-                                            <p class="card-text"><small class="text-muted">Date: 29th May 2022 <br>
-                                                    Platform: MS Team</small></p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="./Assets/event5.png" class="card-img-top" alt="event1">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(7, 165, 155)">Digital Poster Making Competetion</h5>
-                                            <p class="card-text">Theme based upon Mother's Day.Templates are allowed but
-                                                not
-                                                Palgiarism.Certification of participation provided to all.Top 3 winners
-                                                selected as sub committe members of Girlscript Asansol. </p>
-                                            <p class="card-text"><small class="text-muted">Last Date of Submission:6th
-                                                    May
-                                                    2022</small></p>
-                                        </div>
-                                    </div>
-
-                                </div>
+                                </a>
                             </div>
 
-                        </div>
-                        <div class="carousel-item ">
-                            <div class="col-lg-6 container-fluid mt-3">
-                                <div class="card-deck">
-                                    <div class="card">
-                                        <img src="./Assets/event1.png" class="card-img-top" alt="event3">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(249, 79, 41)">Portfolio Competetion</h5>
-                                            <p class="card-text">Flex your dev skills through your amazing portfolios!
-                                                Preferred tech stacks : HTML, CSS JS, ReactJs, Angular Js,
-                                                etc...(anything
-                                                of your choice).Verified Certification to all Participants. </p>
-                                            <p class="card-text"><small class="text-muted">Date : 9th-10th July</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="./Assets/event4.png" class="card-img-top" alt="event4">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(22, 216, 238) ;">Careerscript Episode #2</h5>
-                                            <p class="card-text">Live session with Soumyajit Bhattacharya,Engineering
-                                                Manager @Amazon.Students guided with career choices, Roadmap to Off
-                                                Campus
-                                                Placements,etc.Certification of participation provided to all</p>
-                                            <p class="card-text"><small class="text-muted">Date: 21st August 2022 <br>
-                                                    Platform: Google Meet</small></p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="./Assets/event6.png" class="card-img-top" alt="event1">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color: rgb(216, 148, 30)">Digital Poster Making Competetion</h5>
-                                            <p class="card-text">Theme based upon Mother's Day.Templates are allowed but
-                                                not
-                                                Palgiarism.Certification of participation provided to all.Top 3 winners
-                                                selected as sub committe members of Girlscript Asansol. </p>
-                                            <p class="card-text"><small class="text-muted">Last Date of Submission:6th
-                                                    May
-                                                    2022</small></p>
-                                        </div>
-                                    </div>
-
+                            <div class="card">
+                                <a class="card-links"
+                                    href="https://www.youtube.com/watch?v=dESy5UpKN2c"
+                                    target="_blank">
+                                <img src="./Assets/event2.png" class="card-img-top" alt="event2">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color:rgb(249, 79, 41)">Careerscript Episode
+                                        #1</h5>
+                                    <p class="card-text">Live session with Soumyajit Bhattacharya,Engineering
+                                        Manager @Amazon.Students guided with career choices, Roadmap to Off
+                                        Campus
+                                        Placements,etc.Certification of participation provided to all</p>
+                                    <p class="card-text"><small class="text-muted">Date: 29th May 2022 <br>
+                                            Platform: Google Meet</small></p>
                                 </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a class="card-links"
+                                    href="https://www.linkedin.com/feed/update/urn:li:activity:6949757600250888192"
+                                    target="_blank">
+                                <img src="./Assets/event3.png" class="card-img-top" alt="event3">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color:rgb(12, 171, 211)">Portfolio Competetion
+                                    </h5>
+                                    <p class="card-text">Flex your dev skills through your amazing portfolios!
+                                        Preferred tech stacks : HTML, CSS JS, ReactJs, Angular Js,
+                                        etc...(anything of your choice).Verified Certification to all Participants.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Date : 9th-10th July</small></p>
+                                </div>
+                        </a>
                             </div>
 
                         </div>
 
                     </div>
+                    <div class="carousel-item ">
+                        <div class="card-deck">
+                            
+                            <div class="card">
+                                <a class="card-links"
+                                    href="https://www.youtube.com/watch?v=-DPTkXIp9cE"
+                                    target="_blank">
+                                <img src="./Assets/event4.png" class="card-img-top" alt="event4">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color:rgb(249, 79, 41)">Careerscript
+                                        Episode #2
+                                    </h5>
+                                    <p class="card-text">Live session with : Karuna Karan Vijayaraghavan, oracle
+                                        certified @Gssoc career choices, Roadmap to Ai and Machine Learning
+                                        Certification of participation provided to all</p>
+                                    <p class="card-text"><small class="text-muted">21st Aug,2022</small>
+                                    </p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a class="card-links"
+                                    href="https://github.com/gsasansol/GirlScript-Asansol"
+                                    target="_blank">
+                                <img src="./Assets/event5.png" class="card-img-top" alt="event5">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color:rgb(22, 216, 238) ;">Hacktoberfest 2022
+                                    </h5>
+                                    <p class="card-text">We have made a beginner friendly repository for all the
+                                        open source enthusiast. To create issues, so that you find it easy to
+                                        contribute
+                                        and easily complete the criteria for winning the swags. </p>
+                                    <p class="card-text"><small class="text-muted">Date: 1st Oct to 31st Oct,2022
+                                            <br>
+                                            Platform: Google Meet </small></p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a class="card-links"
+                                    href="#"
+                                >
+                                <img src="./Assets/event6.png" class="card-img-top" alt="event6">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(216, 148, 30)">Comming soon</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Cupiditate deserunt doloremque earum adipisci illo, accusamus
+                                        magni incidunt iusto nisi officiis numquam veritatis perferendis dolore
+                                        dolorem, architecto nulla perspiciatis ea consectetur? </p>
+                                    <p class="card-text"><small class="text-muted">Date: 0.0.0</small></p>
+                                </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
-                    data-slide="prev">
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
-                    data-slide="next">
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </button>
+                </a>
 
             </div>
         </div>
-    </div> 
-    
-    <!---Achievements section goes here-->
-    
-    
+    </div>
 
-    
-    
-    
-    
-    
+    <!---Achievements section goes here-->
+
+
+
+
+
+
+
+
     <!---Our team section goes here-->
 
 
-    
-    
-    
+
+
+
 
 
     <!---FAQ section goes here-->
@@ -331,11 +350,11 @@
     <div class="faq-container">
         <div class="faq" id="faq1" onclick="show1()">
             <div>
-            <h3 class="faq-title">
-                What is GS Asansol?
-            </h3>
+                <h3 class="faq-title">
+                    What is GS Asansol?
+                </h3>
 
-            <!-- <button class=""> -->
+                <!-- <button class=""> -->
                 <div class="show_hide">
                     <i class="fas fa-chevron-down" id="down1"></i>
                     <i class="fas fa-times" id="cross1" style="display: none;"></i>
@@ -348,38 +367,38 @@
                 technology. GirlScript Asansol's mission is to create opportunity, learning, growth and diversity in
                 technology academia and industry.
             </p>
-            
+
         </div>
         <div class="faq" id="faq2" onclick="show2()">
             <div>
-            <h3 class="faq-title">
-                How to join the community?
-            </h3>
-            <!-- <button class=""> -->
+                <h3 class="faq-title">
+                    How to join the community?
+                </h3>
+                <!-- <button class=""> -->
                 <div class="show_hide">
                     <i class="fas fa-chevron-down" id="down2"></i>
                     <i class="fas fa-times" id="cross2" style="display: none;"></i>
                 </div>
                 <!-- </button> -->
-        </div>
+            </div>
             <p class="faq-text" style="display: none;" id="show2">
                 Join our discord server to become a member: <a href="https://discord.gg/vYSspBkgNc"><u> Discord </u></a>
             </p>
 
-            
+
         </div>
         <div class="faq" id="faq3" onclick="show3()">
             <div>
-            <h3 class="faq-title">
-                Benefits of joining the community?
-            </h3>
-            <!-- <button class=""> -->
+                <h3 class="faq-title">
+                    Benefits of joining the community?
+                </h3>
+                <!-- <button class=""> -->
                 <div class="show_hide">
                     <i class="fas fa-chevron-down" id="down3"></i>
                     <i class="fas fa-times" id="cross3" style="display: none;"></i>
                 </div>
                 <!-- </button> -->
-        </div>
+            </div>
             <p class="faq-text" style="display: none;" id="show3">
                 ► GUIDE & SUPPORT<br>
                 ► HELP EVERYONE TO LEARN & GROW<br>
@@ -387,7 +406,7 @@
                 ► HACKATHONS & INTERNSHIP OPPORTUNITY
             </p>
 
-            
+
         </div>
     </div>
 
@@ -415,13 +434,13 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    setTimeout(function(){
-        $('.loader').fadeToggle();
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader').fadeToggle();
 
-    },2500);
-</script>
+        }, 2500);
+    </script>
 
     <script src="index.js"></script>
 

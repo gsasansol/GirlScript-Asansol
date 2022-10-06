@@ -33,14 +33,16 @@ body.dark {
 /*  NavBar Styles goes here */
 
 /* general styling for dismissable alert  */
-.notif-bar-btn{
-  background-color: #00111c; /*mentioned color added*/
+.notif-bar-btn {
+  background-color: #00111c;
+  /*mentioned color added*/
   color: white;
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: height 500ms; /*smooth collapse transistion added*/
+  transition: height 500ms;
+  /*smooth collapse transistion added*/
 }
 
 .button-61 {
@@ -48,12 +50,12 @@ body.dark {
   appearance: none;
   border-radius: 4px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px, rgba(0, 0, 0, .14) 0 2px 2px 0, rgba(0, 0, 0, .12) 0 1px 5px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: .875rem;
   font-weight: 500;
   height: 32px;
@@ -73,7 +75,7 @@ body.dark {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  will-change: transform,opacity;
+  will-change: transform, opacity;
 }
 
 .button-61:hover {
@@ -89,7 +91,8 @@ body.dark {
 }
 
 .button-61:not(:disabled) {
-  background-color: #737df1; /*mentioned color added*/
+  background-color: #737df1;
+  /*mentioned color added*/
 }
 
 .button-61:focus {
@@ -101,8 +104,8 @@ body.dark {
   background: #A46BF5;
 }
 
-@media screen and (max-width: 408px){
-  .button-61{
+@media screen and (max-width: 408px) {
+  .button-61 {
     margin-bottom: 6px;
   }
 }
@@ -124,9 +127,11 @@ body.dark {
   line-height: 1;
   font-weight: 900;
 }
+
 .navbar .name p {
   margin-bottom: 5px;
 }
+
 /*to set the size of the logo and make it circular*/
 .navbar img {
   height: 50px;
@@ -292,11 +297,9 @@ body.dark {
   z-index: -1;
   border-radius: 5px;
   background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(
-    315deg,
-    rgb(238, 149, 90) 0%,
-    rgb(238, 149, 90) 74%
-  );
+  background-image: linear-gradient(315deg,
+      rgb(238, 149, 90) 0%,
+      rgb(238, 149, 90) 74%);
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -379,13 +382,6 @@ body.dark {
   text-align: center;
   margin-bottom: 20px;
 }
-.carousel-item {
-  margin-left: 300px;
-}
-
-.card {
-  box-shadow: 10px 10px 5px orange;
-}
 
 .overlay-image {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
@@ -403,10 +399,6 @@ body.dark {
   font-family: "Ubuntu", sans-serif;
 }
 
-.carousel-inner {
-  padding: 0 0 4% 5%;
-  text-align: center;
-}
 
 .carousel-indicators {
   left: 0;
@@ -418,10 +410,46 @@ body.dark {
   border-radius: 50%;
 }
 
+.carousel-inner {
+  padding: 0 15% 3% 15%;
+  text-align: center;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+}
+.card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  border-radius: px;
+  height: 600px;
+}
+.card:hover{
+  background-image: linear-gradient(115deg,
+      rgb(245, 201, 173) 0%,
+      rgb(241, 163, 111) 80%);
+      transition: all 0.3s ease;
+}
+.card-links{
+  text-decoration: none;
+  color: #000;
+}
+.card-links:hover{
+  text-decoration: none;
+  color: #000;
+  transform: scale(0.9);
+}
+.card img{
+  height: 250px;
+}
+.card-title{
+  font-size: 1.5rem;
+}
+
 /* @media (max-width: 768px) {
 } */
 
- <!---Achievements section styles goes here-->
+/* Achievements section styles goes here */
 
 
 
@@ -471,18 +499,14 @@ body.dark {
   max-height: 350px;
   font-size: large;
   background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(
-    315deg,
-    rgb(238, 149, 90) 0%,
-    rgb(238, 149, 90) 74%
-  );
+  background-image: linear-gradient(315deg,
+      rgb(238, 149, 90) 0%,
+      rgb(238, 149, 90) 74%);
   transition: all 0.3s ease;
   background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(
-    315deg,
-    rgb(238, 149, 90) 0%,
-    rgb(238, 149, 90) 74%
-  );
+  background-image: linear-gradient(315deg,
+      rgb(238, 149, 90) 0%,
+      rgb(238, 149, 90) 74%);
   color: #000;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
@@ -504,6 +528,7 @@ body.dark {
   color: #fff;
   font-family: "Lato", sans-serif;
 }
+
 .faq-text a:hover {
   color: #000;
 }
@@ -558,11 +583,6 @@ body.dark {
 
 
 /* pre loader  css styles goes here */
-body {
-  margin: 0;
-  background: #333;
-}
-
 .loader {
   width: 100vw;
   height: 100vh;
@@ -587,6 +607,7 @@ body {
   background-position: center;
   text-shadow: 0.5vmin 0.5vmin 0 #000;
 }
+
 .loader:before {
   content: "Welcome!";
   font-family: 'Gemunu Libre', sans-serif;
@@ -596,6 +617,7 @@ body {
   position: absolute;
   text-align: center;
 }
+
 .loader:after {
   font-family: 'Gemunu Libre', sans-serif;
   display: block;
@@ -620,6 +642,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-b) var(--color);
   }
+
   4.16% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -627,6 +650,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-b) var(--color);
   }
+
   8.33% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-a) var(--color),
@@ -634,6 +658,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   12.5% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-a) var(--color),
@@ -641,6 +666,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   16.66% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -648,6 +674,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   20.83% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -655,6 +682,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   25% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -662,6 +690,7 @@ body {
       var(--pos-4) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   29.16% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -669,6 +698,7 @@ body {
       var(--pos-3) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   33.33% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-b) var(--color),
@@ -676,6 +706,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   37.5% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-b) var(--color),
@@ -683,6 +714,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
+
   41.66% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -690,6 +722,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-a) var(--color);
   }
+
   45.83% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -697,6 +730,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-a) var(--color);
   }
+
   50% {
     box-shadow: var(--pos-1) var(--pos-b) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -704,6 +738,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   54.16% {
     box-shadow: var(--pos-2) var(--pos-b) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -711,6 +746,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   58.33% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-a) var(--color),
@@ -718,6 +754,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   62.5% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-a) var(--color),
@@ -725,6 +762,7 @@ body {
       var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   66.66% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -732,6 +770,7 @@ body {
       var(--pos-3) var(--pos-b) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   70.83% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -739,6 +778,7 @@ body {
       var(--pos-4) var(--pos-b) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   75% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -746,6 +786,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   79.16% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-c) var(--color),
@@ -753,6 +794,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   83.33% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-3) var(--pos-b) var(--color),
@@ -760,6 +802,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   87.5% {
     box-shadow: var(--pos-2) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-b) var(--color),
@@ -767,6 +810,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   91.66% {
     box-shadow: var(--pos-2) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -774,6 +818,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   95.83% {
     box-shadow: var(--pos-1) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -781,6 +826,7 @@ body {
       var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
+
   100% {
     box-shadow: var(--pos-1) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color),
@@ -822,6 +868,7 @@ body {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(0.7);
   }
@@ -831,6 +878,7 @@ body {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(0.4);
   }
@@ -840,14 +888,17 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(3);
   }
+
   100% {
     transform: scale(1);
     opacity: 0;
   }
 }
+
 .expand {
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid red;
@@ -856,41 +907,4 @@ body {
 /*Canvas*/
 #myCanvas {
   background-color: #1f1f1f;
-}
-
-.container-fluid{
-  padding-top: 2%;
- 
-   width:100% ;
-  
-}
-h5{
-  font-family: 'Gemunu Libre', sans-serif;
-  
-} p{
- font-family: 'Ubuntu', sans-serif;
-}
-h1{  font-family: 'Gemunu Libre', sans-serif;
-color: #000000;
- font-weight: bold;
- text-align: center;
-font-size: large;
-padding-bottom: 1%;
-}
-
-.carousel-inner{
-  padding: 0  15% 3% 15%;
-  text-align: center;
- 
-
-}
-.carousel-indicators{
-  left: 0;
-  top: auto;
-  bottom: -70px;}
-.carousel-indicators li{ border-radius: 50%;}
-.card{
-  box-shadow: 0 0 30px rgba(0, 0,0, 0.7);
-  overflow: hidden;
-  border-radius: 15px;
 }
