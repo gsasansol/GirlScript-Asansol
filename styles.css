@@ -59,8 +59,6 @@ body.dark {
   align-items: center;
   font-family: Lato;
   gap: 10px;
-  position: sticky;
-  top: 0;
   
   /* overflow: hidden; */
   /*added a gap between the logo and the brandname*/
