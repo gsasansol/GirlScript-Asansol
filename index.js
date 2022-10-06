@@ -1,5 +1,16 @@
 function darkMode(){
     document.body.classList.toggle("dark");
+    // Added if/else condiditon to change the color of past event heading, faq heading and header wave 
+    if((document.getElementById("p-heading").style.color==="white") && (document.getElementById("f-heading").style.color==="white") || (document.getElementById("h-wave").style.fill==="#292c35")){
+        document.getElementById("p-heading").style.color="black";
+        document.getElementById("f-heading").style.color="black";
+        document.getElementById("h-wave").style.fill="#ffffff";
+    }
+    else{
+        document.getElementById("p-heading").style.color="white";
+        document.getElementById("f-heading").style.color="white";
+        document.getElementById("h-wave").style.fill="#292c35";
+    }
 }
 const toggles = document.querySelectorAll('.faq-toggle');
 
@@ -23,3 +34,4 @@ document.addEventListener('click', () => {
         cursor.classList.remove("expand");
     }, 500)
 })
+
