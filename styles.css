@@ -138,10 +138,12 @@ body.dark {
 
 /*for the styling the name of community beside the logo*/
 .gs-navbar .name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.0;
   font-weight: 900;
   color:rgb(107, 27, 27) ;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 
@@ -244,7 +246,7 @@ body.dark {
 }
 
 .toggleButton .fa-sun {
-  color: rgb(168, 105, 22);
+  color: rgb(241, 191, 124);
 }
 
 /* dark mode button positioning for mobile */
