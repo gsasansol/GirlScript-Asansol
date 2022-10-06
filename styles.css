@@ -33,13 +33,78 @@ body.dark {
 /*  NavBar Styles goes here */
 
 /* general styling for dismissable alert  */
-.notif-bar-btn {
-  background-color: #fe6155;
+.notif-bar-btn{
+  background-color: #00111c; /*mentioned color added*/
   color: white;
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  transition: height 500ms; /*smooth collapse transistion added*/
+}
+
+.button-61 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: #737df1; /*mentioned color added*/
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #A46BF5;
+}
+
+@media screen and (max-width: 408px){
+  .button-61{
+    margin-bottom: 6px;
+  }
 }
 
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
