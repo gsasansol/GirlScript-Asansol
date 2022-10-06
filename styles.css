@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -55,17 +54,18 @@ body.dark {
   appearance: none;
   border-radius: 4px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px, rgba(0, 0, 0, .14) 0 2px 2px 0, rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 5px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
   font-family: Roboto, sans-serif;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 500;
   height: 32px;
   justify-content: center;
-  letter-spacing: .0892857em;
+  letter-spacing: 0.0892857em;
   line-height: normal;
   min-width: 64px;
   outline: none;
@@ -75,7 +75,7 @@ body.dark {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -84,13 +84,15 @@ body.dark {
 }
 
 .button-61:hover {
-  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
 }
 
 .button-61:disabled {
-  background-color: rgba(0, 0, 0, .12);
-  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
-  color: rgba(0, 0, 0, .37);
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,
+    rgba(0, 0, 0, 0.12) 0 0 0 0;
+  color: rgba(0, 0, 0, 0.37);
   cursor: default;
   pointer-events: none;
 }
@@ -101,12 +103,14 @@ body.dark {
 }
 
 .button-61:focus {
-  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
 }
 
 .button-61:active {
-  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
-  background: #A46BF5;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px,
+    rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;
+  background: #a46bf5;
 }
 
 @media screen and (max-width: 408px) {
@@ -122,30 +126,26 @@ body.dark {
   z-index: 69;
   box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 50%);
   padding: 10px;
-  background: linear-gradient(270deg, rgb(252,115,60) ,rgb(252,176,76) );
+  background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
   /* background-color: rgb(252,115,60); */
   display: flex;
   /*to put the elements one beside the other*/
   align-items: center;
   font-family: Lato;
-  
+
   /* overflow: hidden; */
   /*added a gap between the logo and the brandname*/
 }
 
-
-
-
 /*for the styling the name of community beside the logo*/
 .gs-navbar .name {
   font-size: 1.2rem;
-  line-height: 1.0;
+  line-height: 1;
   font-weight: 900;
-  color:rgb(107, 27, 27) ;
+  color: rgb(107, 27, 27);
   margin-left: 10px;
   margin-top: 5px;
 }
-
 
 .gs-navbar .name p {
   margin-bottom: 5px;
@@ -163,12 +163,10 @@ body.dark {
   /* display: flex; */
   justify-content: center;
   align-items: center;
-
 }
 
 /*styling the items in the navbar(except logo and community name) here*/
 .options a {
-
   text-decoration: none;
   color: rgb(107, 27, 27);
   margin: 0 10px;
@@ -184,8 +182,7 @@ body.dark {
   color: white;
   font-size: 1.2rem;
   transition: color 0.2s linear;
- 
-  
+
   /*added a simple hover event so that a line appears when someone hovers over the items*/
 }
 
@@ -325,9 +322,11 @@ body.dark {
   z-index: -1;
   border-radius: 5px;
   background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(315deg,
-      rgb(238, 149, 90) 0%,
-      rgb(238, 149, 90) 74%);
+  background-image: linear-gradient(
+    315deg,
+    rgb(238, 149, 90) 0%,
+    rgb(238, 149, 90) 74%
+  );
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -427,7 +426,6 @@ body.dark {
   font-family: "Ubuntu", sans-serif;
 }
 
-
 .carousel-indicators {
   left: 0;
   top: auto;
@@ -446,169 +444,123 @@ body.dark {
 .carousel-indicators li {
   border-radius: 50%;
 }
-.card {
+#past-event-card {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   overflow: hidden;
   border-radius: px;
   height: 600px;
 }
-.card:hover{
-  background-image: linear-gradient(115deg,
-      rgb(245, 201, 173) 0%,
-      rgb(241, 163, 111) 80%);
-      transition: all 0.3s ease;
+#past-event-card:hover {
+  background-image: linear-gradient(
+    115deg,
+    rgb(245, 201, 173) 0%,
+    rgb(241, 163, 111) 80%
+  );
+  transition: all 0.3s ease;
 }
-.card-links{
+.card-links {
   text-decoration: none;
   color: #000;
 }
-.card-links:hover{
+.card-links:hover {
   text-decoration: none;
   color: #000;
   transform: scale(0.9);
 }
-.card img{
+.card img {
   height: 250px;
 }
-.card-title{
+.card-title {
   font-size: 1.5rem;
 }
 
-/* @media (max-width: 768px) {
-} */
-
 /* Achievements section styles goes here */
-
-
-
-
-
 
 /*  Our Team section Styles goes here */
 
-
-
-
-
-
-
 /*  FAQ section Styles goes here */
-
-.faq-heading {
-  margin: 50px 0 30px;
+.faq-section h1 {
   text-align: center;
+  margin-bottom: 50px;
+  font-family: "Lato", sans-serif;
 }
 
-.faq-container {
-  max-width: 700px;
-  margin: 0 auto;
-  /* border-radius: 30px; */
+.faq-card,
+.faq-card-header {
+  /* background-color: transparent !important; */
+  background: linear-gradient(
+    270deg,
+    rgb(252, 115, 60),
+    rgb(252, 176, 76)
+  ) !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 20px;
 }
 
-.faq {
-  background-color: rgb(243, 242, 199);
-  border: 1px solid #c1c4c7;
-  border-radius: 15px;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: auto;
+.faq-card {
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208.18);
 }
 
-.faq.active {
-  max-height: 350px;
-  font-size: large;
-  background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(315deg,
-      rgb(238, 149, 90) 0%,
-      rgb(238, 149, 90) 74%);
-  transition: all 0.3s ease;
-  background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(315deg,
-      rgb(238, 149, 90) 0%,
-      rgb(238, 149, 90) 74%);
-  color: #000;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faq-title {
-  margin: 0 35px 0 0;
-}
-
-.faq-text {
-  display: block;
-  margin: 30px 0 0;
-  /* border: 2px solid black; */
+.btn-link {
   width: 100%;
-  font-family: "Lato", sans-serif;
+  height: 60px;
+  color: #000 !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  text-decoration: none !important;
 }
 
-.faq-text a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Lato", sans-serif;
+.faq-card-body {
+  background: beige;
 }
 
-.faq-text a:hover {
-  color: #000;
-}
-
-.show_hide {
-  background-color: transparent;
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  padding: 0;
+.btn-link:after {
+  content: "\2212";
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
   position: absolute;
-  /* background-color: red; */
-  top: 30px;
-  right: 30px;
-  height: 30px;
-  width: 30px;
+  background: beige;
 }
 
-.faq-toggle:focus {
-  outline: 0;
+.btn-link.collapsed:after {
+  content: "\002B";
 }
 
-.faq-toggle .fa-times {
-  display: none;
+/* for arrow design */
+/* .btn-link:before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 30px;
+  top: 46px;
+} */
+
+#faq-illlustration {
+  width: 430px;
+  margin-top: 15px;
+  margin-left: 9rem;
 }
 
-.faq.active .faq-toggle .fa-times {
-  color: #222;
-  display: block;
-}
-
-.faq.active .faq-toggle .fa-chevron-down {
-  display: none;
+@media (max-width: 768px) {
+  #faq-illlustration {
+    width: 240px;
+    margin-top: 41px;
+    margin-left: -1rem;
+  }
 }
 
 /* Contact Us section Styles goes here */
 
-
-
-
-
-
 /*  Footer section Styles goes here */
-
-
-
-
-
 
 /* pre loader  css styles goes here */
 .loader {
@@ -616,7 +568,7 @@ body.dark {
   height: 100vh;
   display: grid;
   place-items: center;
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
   --color: rgb(238, 149, 90);
   --pos-1: -8vmin;
   --pos-2: -2.66vmin;
@@ -638,7 +590,7 @@ body.dark {
 
 .loader:before {
   content: "Welcome!";
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
   display: block;
   width: 40vmin;
   height: 20vmin;
@@ -647,7 +599,7 @@ body.dark {
 }
 
 .loader:after {
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
   display: block;
   content: " ";
   background: #f000;
@@ -863,7 +815,6 @@ body.dark {
       var(--pos-1) var(--pos-b) var(--color);
   }
 }
-
 
 /*Cursor section Styles goes here */
 
