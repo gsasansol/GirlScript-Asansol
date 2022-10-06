@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GirlScript Asansol</title>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -94,6 +95,7 @@
 
     
     <div class="loader"></div>
+  
    
     
     <!-- Dismissable notification bar  -->
@@ -108,7 +110,7 @@
         
     </div>
     <!--Navbar section goes here-->
-    <div class="navbar">
+    <nav class="gs-navbar">
         <!--logo-->
         <img src="https://avatars.githubusercontent.com/u/104223990?v=4" alt="logo">
         <!--name of the community added beside the logo-->
@@ -138,7 +140,7 @@
         <button onclick="darkMode()" class="toggleButton">
             <i class='fas fa-sun'></i>
         </button>
-    </div>
+    </nav>
 
     <!--added jQuery Event Methods for toggle bar to open and close-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -421,6 +423,9 @@
         $('.loader').fadeToggle();
 
     },2500);
+</script>
+<script>
+
 </script>
 
     <script src="index.js"></script>
