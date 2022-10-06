@@ -423,11 +423,66 @@ body.dark {
 
  <!---Achievements section styles goes here-->
 
+ #achivement
+ {
+  background: #242920;
 
+ }
+.inner_achivement{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 
+}
+.child_achivement
+{
+  flex-basis: 46%;
 
+}
+.child_achivement2
+{
+  flex-basis: 46%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  align-content: center;
+}
 
+.single_detail
+{
+  flex-basis: 48%;
+  padding: 40px 30px;
+  color: #fff;
+  border-radius: 5px;
 
+}
+.sd_1
+{
+  background: orange;
+  margin-bottom: 20px;
+
+}
+
+.sd_2
+{
+  background: red;
+
+}
+
+.sd_3
+{
+  background: green;
+
+}
+.sd_4
+{
+  background: brown;
+
+}
 /*  Our Team section Styles goes here */
 
 
