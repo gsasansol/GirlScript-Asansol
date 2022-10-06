@@ -356,7 +356,20 @@ body.dark {
 /* @media (max-width: 768px) {
 } */
 
+ <!---Achievements section styles goes here-->
+
+
+
+
+
+
 /*  Our Team section Styles goes here */
+
+
+
+
+
+
 
 /*  FAQ section Styles goes here */
 
@@ -467,7 +480,17 @@ body.dark {
 
 /* Contact Us section Styles goes here */
 
+
+
+
+
+
 /*  Footer section Styles goes here */
+
+
+
+
+
 
 /* pre loader  css styles goes here */
 body {
@@ -701,6 +724,7 @@ body {
       var(--pos-1) var(--pos-b) var(--color);
   }
 }
+
 
 /*Cursor section Styles goes here */
 
