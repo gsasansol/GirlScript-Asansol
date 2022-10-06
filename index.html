@@ -30,15 +30,18 @@
         var d = document.getElementById("show1");
         var down = document.getElementById("down1");
         var cross = document.getElementById("cross1");
+        var col = document.getElementById("faq1");
 
         if(d.style.display === "block"){
             d.style.display="none";
             down.style.display="block";
             cross.style.display="none";
+            col.style.backgroundColor="rgb(243,242,198)";
         }else{
             d.style.display="block";
             down.style.display="none";
             cross.style.display="block";
+            col.style.backgroundColor="rgb(238, 149, 90)";
         }
         
     }
@@ -46,15 +49,17 @@
         var d = document.getElementById("show2");
         var down = document.getElementById("down2");
         var cross = document.getElementById("cross2");
-
+        var col = document.getElementById("faq2");
         if(d.style.display === "block"){
             d.style.display="none";
             down.style.display="block";
             cross.style.display="none";
+            col.style.backgroundColor="rgb(243,242,198)";
         }else{
             d.style.display="block";
             down.style.display="none";
             cross.style.display="block";
+            col.style.backgroundColor="rgb(238, 149, 90)";
         }
         
     }
@@ -62,15 +67,18 @@
         var d = document.getElementById("show3");
         var down = document.getElementById("down3");
         var cross = document.getElementById("cross3");
+        var col = document.getElementById("faq3");
 
         if(d.style.display === "block"){
             d.style.display="none";
             down.style.display="block";
             cross.style.display="none";
+            col.style.backgroundColor="rgb(243,242,198)";
         }else{
             d.style.display="block";
             down.style.display="none";
             cross.style.display="block";
+            col.style.backgroundColor="rgb(238, 149, 90)";
         }
         
     }
@@ -265,59 +273,65 @@
     <!---FAQ section goes here-->
     <h1 class="faq-heading">Frequently Asked Questions</h1>
     <div class="faq-container">
-        <div class="faq" onclick="show1()">
+        <div class="faq" id="faq1" onclick="show1()">
+            <div>
             <h3 class="faq-title">
                 What is GS Asansol?
             </h3>
-            
-            <p class="faq-text" id="show1">
+
+            <!-- <button class=""> -->
+                <div class="show_hide">
+                    <i class="fas fa-chevron-down" id="down1"></i>
+                    <i class="fas fa-times" id="cross1" style="display: none;"></i>
+                </div>
+                <!-- </button> -->
+            </div>
+            <p class="faq-text" style="display: none;" id="show1">
                 GirlScript Asansol is a non-profit student run community registered under the GirlScript Foundation on
                 23rd April, 2022. We aim to empower people and especially underrepresented groups in the field of
                 technology. GirlScript Asansol's mission is to create opportunity, learning, growth and diversity in
                 technology academia and industry.
             </p>
-
-            <!-- <button class=""> -->
-            <div class="show_hide">
-                <i class="fas fa-chevron-down" id="down1"></i>
-                <i class="fas fa-times" id="cross1" style="display: none;"></i>
-            </div>
-            <!-- </button> -->
+            
         </div>
-        <div class="faq" onclick="show2()">
+        <div class="faq" id="faq2" onclick="show2()">
+            <div>
             <h3 class="faq-title">
                 How to join the community?
             </h3>
-            
-            <p class="faq-text" id="show2">
+            <!-- <button class=""> -->
+                <div class="show_hide">
+                    <i class="fas fa-chevron-down" id="down2"></i>
+                    <i class="fas fa-times" id="cross2" style="display: none;"></i>
+                </div>
+                <!-- </button> -->
+        </div>
+            <p class="faq-text" style="display: none;" id="show2">
                 Join our discord server to become a member: <a href="https://discord.gg/vYSspBkgNc"><u> Discord </u></a>
             </p>
 
-            <!-- <button class=""> -->
-            <div class="show_hide">
-                <i class="fas fa-chevron-down" id="down2"></i>
-                <i class="fas fa-times" id="cross2" style="display: none;"></i>
-            </div>
-            <!-- </button> -->
+            
         </div>
-        <div class="faq" onclick="show3()">
+        <div class="faq" id="faq3" onclick="show3()">
+            <div>
             <h3 class="faq-title">
                 Benefits of joining the community?
             </h3>
-            
-            <p class="faq-text" id="show3">
+            <!-- <button class=""> -->
+                <div class="show_hide">
+                    <i class="fas fa-chevron-down" id="down3"></i>
+                    <i class="fas fa-times" id="cross3" style="display: none;"></i>
+                </div>
+                <!-- </button> -->
+        </div>
+            <p class="faq-text" style="display: none;" id="show3">
                 ► GUIDE & SUPPORT<br>
                 ► HELP EVERYONE TO LEARN & GROW<br>
                 ► WORKSHOPS AND MEETING SESSIONS <br>
                 ► HACKATHONS & INTERNSHIP OPPORTUNITY
             </p>
 
-            <!-- <button class=""> -->
-            <div class="show_hide">
-                <i class="fas fa-chevron-down" id="down3"></i>
-                <i class="fas fa-times" id="cross3" style="display: none;"></i>
-            </div>
-            <!-- </button> -->
+            
         </div>
     </div>
 
