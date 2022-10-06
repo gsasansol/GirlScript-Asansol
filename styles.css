@@ -48,7 +48,7 @@ body.dark {
 
 
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
-.navbar {
+.gs-navbar {
   position: sticky;
   z-index: 69;
   box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 50%);
