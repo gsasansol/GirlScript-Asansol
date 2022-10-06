@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap');
+
 
 * {
   margin: 0;
@@ -380,7 +383,10 @@ body.dark {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   font-size: large;
-  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: auto;
 }
 
 .faq.active {
@@ -410,6 +416,8 @@ body.dark {
 .faq-text {
   display: block;
   margin: 30px 0 0;
+  /* border: 2px solid black; */
+  width: 100%;
   font-family: "Lato", sans-serif;
 }
 
@@ -422,7 +430,7 @@ body.dark {
   color: #000;
 }
 
-.faq-toggle {
+.show_hide {
   background-color: transparent;
   border: 0;
   border-radius: 50%;
@@ -433,6 +441,7 @@ body.dark {
   font-size: 16px;
   padding: 0;
   position: absolute;
+  /* background-color: red; */
   top: 30px;
   right: 30px;
   height: 30px;
@@ -471,6 +480,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  font-family: 'Gemunu Libre', sans-serif;
   --color: rgb(238, 149, 90);
   --pos-1: -8vmin;
   --pos-2: -2.66vmin;
@@ -481,12 +491,17 @@ body {
   --pos-c: 10.66vmin;
   box-sizing: border-box;
   font-size: 10vmin;
-  color: #fafad2;
+  color: orange;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("./Assets/asn-junction.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-shadow: 0.5vmin 0.5vmin 0 #000;
 }
 .loader:before {
-  content: "loading";
-  font-family: fantasy;
+  content: "Welcome!";
+  font-family: 'Gemunu Libre', sans-serif;
   display: block;
   width: 40vmin;
   height: 20vmin;
@@ -494,6 +509,7 @@ body {
   text-align: center;
 }
 .loader:after {
+  font-family: 'Gemunu Libre', sans-serif;
   display: block;
   content: " ";
   background: #f000;
