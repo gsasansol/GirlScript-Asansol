@@ -38,7 +38,7 @@ body.dark {
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   transition: height 500ms; /*smooth collapse transistion added*/
 }
 
