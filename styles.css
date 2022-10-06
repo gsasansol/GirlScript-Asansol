@@ -49,6 +49,8 @@ body.dark {
 
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
 .navbar {
+  z-index: 69;
+  box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 50%);
   padding: 10px;
   background: url(back5.jpg);
   /* background-color: rgb(252,115,60); */
@@ -59,9 +61,6 @@ body.dark {
   gap: 10px;
   position: sticky;
   top: 0;
-  z-index: 1;
-  position: sticky;
-  top:0;
   
   /* overflow: hidden; */
   /*added a gap between the logo and the brandname*/
