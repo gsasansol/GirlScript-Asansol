@@ -398,7 +398,10 @@ body.dark {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   font-size: large;
-  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: auto;
 }
 
 .faq.active {
@@ -417,6 +420,8 @@ body.dark {
 .faq-text {
   display: block;
   margin: 30px 0 0;
+  /* border: 2px solid black; */
+  width: 100%;
   font-family: "Lato", sans-serif;
 
 }
@@ -430,7 +435,7 @@ body.dark {
   color: #000;
 }
 
-.faq-toggle {
+.show_hide {
   background-color: transparent;
   border: 0;
   border-radius: 50%;
@@ -441,6 +446,7 @@ body.dark {
   font-size: 16px;
   padding: 0;
   position: absolute;
+  /* background-color: red; */
   top: 30px;
   right: 30px;
   height: 30px;
