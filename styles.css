@@ -964,7 +964,7 @@ padding-bottom: 1%;
   border-radius: 15px;
 }
 
-@import url(@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+/* @import url(@import url(https://fonts.googleapis.com/css?family=Lato:400,300); */
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 .stage {
 padding:40px;
