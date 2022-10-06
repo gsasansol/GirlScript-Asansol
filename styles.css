@@ -10,6 +10,7 @@
 body {
   transition: background 0.2s linear;
   overflow: overlay;
+  line-height: 1.5px;
 }
 
 body.dark {
@@ -468,6 +469,75 @@ body.dark {
 /* Contact Us section Styles goes here */
 
 /*  Footer section Styles goes here */
+
+.footer
+{
+  background-color: #24262b;
+  padding: 70px 0;
+  
+}
+.container{
+  max-width: 1170px;
+  background-color: red;
+  margin:auto;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight:500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+
+  position: absolute;
+  left:0;
+  bottom:-10px;
+  background-color: #e91e63;
+  height:2px;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footeer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color:#fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+  color:#ffffff;
+  padding-left: 8px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* pre loader  css styles goes here */
 body {
