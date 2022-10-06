@@ -1,8 +1,10 @@
 body{
     margin:0;
-    height:100vh;
     padding:40px 15% 0;
-    background-color: lightgray;
+    background-image: url(../Assets/asn-junction.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -43,7 +45,7 @@ body{
 
 
 a i{
-    color: orange;
+    color: rgb(248, 114, 3);
     font-size:20px;
     padding:5px;
     margin-left:5px;
@@ -53,7 +55,7 @@ a i{
 
 a i:hover{
     color:white;
-    background-color: orange;
+    background-color: rgb(89, 37, 9);
 }
 
 /* Article Body */
@@ -62,24 +64,28 @@ a i:hover{
 
 .article_body h1{
     margin-left:5px;
+    text-align: center;
 }
 
 .article_body img{
     width:80%;
-    margin-left:20px;
+    margin-bottom:30px;
+    margin-left: 10%;
     border-radius: 10px;
+    text-align: center;
 
 }
 
 .article_body p{
     font-size:20px;
     margin:10px 20px;
+    margin-bottom: 20px;
 }
 
 /* Add New Comment */
 
 .comment_box{
-    margin-top:15px;
+    margin-top:20px;
 }
 
 .add_comment{
@@ -94,20 +100,20 @@ a i:hover{
     border:0;
     outline:0;
     margin-top:5px;
-    background-color: rgb(211 211 211/31%);
     padding: 5px;
     font-size: 16px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .add_comment textarea{
     width:100%;
     min-height:100px;
     border:0;
-    font-size:20px;
+    font-size:18px;
     outline:0;
     padding-top:10px 0px;
     letter-spacing: 1px;
+    color:rgb(248, 114, 3);
 }
 
 .post_comment{
@@ -115,33 +121,34 @@ a i:hover{
     float:right;
     outline:0;
     border:0;
-    border-radius: 15px;
-    padding:5px;
+    border-radius: 5px;
+    padding:10px 15px;
     font-size: 16px;
     font-weight: 600;
-    color: orange;
-    background-color: rgb(211 211 211/41%);
+    color: rgb(90, 62, 10);
+    background-color: rgba(255, 128, 0, 0.41);
     cursor:pointer;
 }
 
 .post_comment:hover{
-    background-color: orange;
-    color:white;
+    background-color: rgb(245, 103, 8);
+    color:rgb(7, 7, 7);
 }
 
 fieldset{
     border-radius:10px;
-    border:2px solid orange;
+    border:1px solid rgba(255, 128, 0);
     margin-right: 5px;
 }
 
 /* posted comment */
 
 .comment{
-    margin-top:10px;
+    margin-top:20px;
     background-color:white;
     border-radius: 10px;
     padding:10px;
+    margin-bottom: 50px;
 }
 
 .comment hr{

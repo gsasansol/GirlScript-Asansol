@@ -1,66 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a43ef1b1c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GirlScript Asansol</title>
 </head>
+<script>
+    const handleClose = () =>{
+        var d = document.getElementById("close");
+        console.log("clicked",d)
+        d.style.display="none";
+    }
+    const show1 = () => {
+        var d = document.getElementById("show1");
+        var down = document.getElementById("down1");
+        var cross = document.getElementById("cross1");
+        var col = document.getElementById("faq1");
+
+        if(d.style.display === "block"){
+            d.style.display="none";
+            down.style.display="block";
+            cross.style.display="none";
+            col.style.backgroundColor="rgb(243,242,198)";
+        }else{
+            d.style.display="block";
+            down.style.display="none";
+            cross.style.display="block";
+            col.style.backgroundColor="rgb(238, 149, 90)";
+        }
+        
+    }
+    const show2 = () => {
+        var d = document.getElementById("show2");
+        var down = document.getElementById("down2");
+        var cross = document.getElementById("cross2");
+        var col = document.getElementById("faq2");
+        if(d.style.display === "block"){
+            d.style.display="none";
+            down.style.display="block";
+            cross.style.display="none";
+            col.style.backgroundColor="rgb(243,242,198)";
+        }else{
+            d.style.display="block";
+            down.style.display="none";
+            cross.style.display="block";
+            col.style.backgroundColor="rgb(238, 149, 90)";
+        }
+        
+    }
+    const show3 = () => {
+        var d = document.getElementById("show3");
+        var down = document.getElementById("down3");
+        var cross = document.getElementById("cross3");
+        var col = document.getElementById("faq3");
+
+        if(d.style.display === "block"){
+            d.style.display="none";
+            down.style.display="block";
+            cross.style.display="none";
+            col.style.backgroundColor="rgb(243,242,198)";
+        }else{
+            d.style.display="block";
+            down.style.display="none";
+            cross.style.display="block";
+            col.style.backgroundColor="rgb(238, 149, 90)";
+        }
+        
+    }
+</script>
+
 <body>
+
     
-     <!--Navbar section goes here-->
+    <div class="loader"></div>
+   
+    
+    <!-- Dismissable notification bar  -->
+    <div class="notif-bar-btn" id="close">
+        <div style="display: flex;width:73%;align-items: flex-end;">
+        <div style="margin-right: 1rem;">Join us on Discord!</div>
+        <a href="https://discord.gg/vYSspBkgNc"><Button style="background-color: rgb(54,66,86);color:white;margin-right: 1rem;border-radius: 0.5rem;">Join Discord</Button></a>
+    </div>
+        <div style="display: flex;width: 10%;justify-content: flex-end; margin-right: 1rem;">
+            <i class="fa fa-remove" style="cursor: pointer;font-size: 1.3rem;" onclick="handleClose()"></i>
+        </div>
+        
+    </div>
+    <!--Navbar section goes here-->
     <div class="navbar">
         <!--logo-->
-        <img src="https://avatars.githubusercontent.com/u/104223990?v=4" alt="logo" > 
+        <img src="https://avatars.githubusercontent.com/u/104223990?v=4" alt="logo">
         <!--name of the community added beside the logo-->
         <div class="name">
-            <p>GirlScript Asansol</p> <!--GirlScript Asansol in one line instead of 2 seperate lines-->
+            <p>GirlScript Asansol</p>
+            <!--GirlScript Asansol in one line instead of 2 seperate lines-->
         </div>
         <!--toggle bar for small screens-->
         <div class="toggle">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg></i></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></i></a>
         </div>
         <!--the other items of navbar is added below-->
         <div class="options">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
             <a href="#">About Us</a>
             <a href="#">Resources</a>
-            <a href="#">Past Events</a>
+            <a href="#pastevents">Past Events</a>
             <a href="#">Our Team</a>
-            <a href="#">FAQ</a>
+            <a href="#faq">FAQ</a>
             <a href="#">Contact Us</a>
-
-            <button onclick="darkMode()" class="toggleButton">
-                <i class='fas fa-sun' ></i>
-            </button>
-           
         </div>
+        <!--dark mode button is now outside the option class-->
+        <button onclick="darkMode()" class="toggleButton">
+            <i class='fas fa-sun'></i>
+        </button>
     </div>
 
     <!--added jQuery Event Methods for toggle bar to open and close-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
-        $(function(){
-            $(".toggle").on("click", function(){
-                if($(".options").hasClass("active")){
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".options").hasClass("active")) {
                     $(".options").removeClass("active");
                     $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>`);
                 }
-                else{
+                else {
                     $(".options").addClass("active");
                     $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>`);
                 }
             });
         });
     </script>
-  
-    <!---Header section goes here-->    
-    
-    <header>
+
+    <!---Header section goes here-->
+
+    <div class="header" id="home">
         <div class="header-content">
             <h2>Welcome to GirlScript Asansol <br>
                 Education First</h2>
@@ -76,19 +169,101 @@
                     class="shape-fill"></path>
             </svg>
         </div>
-    </header>
-    
-    
+    </div>
+
+
     <!---About Us section goes here-->
 
 
 
 
-    
+
     <!--Past events secton goes here--->
 
 
+    <div class="past-events" id="pastevents">
+        <h1 class="events-title">Our Past Events</h1>
+        <div class="overlay-image">
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-lg-6 ">
+                                <div class="card-deck ">
+                                    <div class="card">
+                                        <img src="./Assets/event2.png" class="card-img-top" alt="event1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Digital Poster Making Competetion</h5>
+                                            <p class="card-text">Theme based upon Mother's Day.Templates are allowed but
+                                                not
+                                                Palgiarism.Certification of participation provided to all.Top 3 winners
+                                                selected as sub committe members of Girlscript Anasol. </p>
+                                            <p class="card-text"><small class="text-muted">Last Date of Submission:6th
+                                                    May
+                                                    2022</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./Assets/event3.png" class="card-img-top" alt="event2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Careerscript Episode #1</h5>
+                                            <p class="card-text">Live session with Soumyajit Bhattacharya,Engineering
+                                                Manager @Amazon.Students guided with career choices, Roadmap to Off
+                                                Campus
+                                                Placements,etc.Certification of participation provided to all</p>
+                                            <p class="card-text"><small class="text-muted">Date: 29th May 2022 <br>
+                                                    Platform: MS Team</small></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-6">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img src="./Assets/event1.png" class="card-img-top" alt="event3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Portfolio Competetion</h5>
+                                            <p class="card-text">Flex your dev skills through your amazing portfolios!
+                                                Preferred tech stacks : HTML, CSS JS, ReactJs, Angular Js,
+                                                etc...(anything
+                                                of your choice).Verified Certification to all Participants. </p>
+                                            <p class="card-text"><small class="text-muted">Date : 9th-10th July</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./Assets/event4.png" class="card-img-top" alt="event4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Careerscript Episode #2</h5>
+                                            <p class="card-text">Live session with Soumyajit Bhattacharya,Engineering
+                                                Manager @Amazon.Students guided with career choices, Roadmap to Off
+                                                Campus
+                                                Placements,etc.Certification of participation provided to all</p>
+                                            <p class="card-text"><small class="text-muted">Date: 21st August 2022 <br>
+                                                    Platform: Google Meet</small></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!---Our team section goes here-->
 
@@ -96,6 +271,77 @@
 
 
     <!---FAQ section goes here-->
+    <h1 class="faq-heading">Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq" id="faq1" onclick="show1()">
+            <div>
+            <h3 class="faq-title">
+                What is GS Asansol?
+            </h3>
+
+            <!-- <button class=""> -->
+                <div class="show_hide">
+                    <i class="fas fa-chevron-down" id="down1"></i>
+                    <i class="fas fa-times" id="cross1" style="display: none;"></i>
+                </div>
+                <!-- </button> -->
+            </div>
+            <p class="faq-text" style="display: none;" id="show1">
+                GirlScript Asansol is a non-profit student run community registered under the GirlScript Foundation on
+                23rd April, 2022. We aim to empower people and especially underrepresented groups in the field of
+                technology. GirlScript Asansol's mission is to create opportunity, learning, growth and diversity in
+                technology academia and industry.
+            </p>
+            
+        </div>
+        <div class="faq" id="faq2" onclick="show2()">
+            <div>
+            <h3 class="faq-title">
+                How to join the community?
+            </h3>
+            <!-- <button class=""> -->
+                <div class="show_hide">
+                    <i class="fas fa-chevron-down" id="down2"></i>
+                    <i class="fas fa-times" id="cross2" style="display: none;"></i>
+                </div>
+                <!-- </button> -->
+        </div>
+            <p class="faq-text" style="display: none;" id="show2">
+                Join our discord server to become a member: <a href="https://discord.gg/vYSspBkgNc"><u> Discord </u></a>
+            </p>
+
+            
+        </div>
+        <div class="faq" id="faq3" onclick="show3()">
+            <div>
+            <h3 class="faq-title">
+                Benefits of joining the community?
+            </h3>
+            <!-- <button class=""> -->
+                <div class="show_hide">
+                    <i class="fas fa-chevron-down" id="down3"></i>
+                    <i class="fas fa-times" id="cross3" style="display: none;"></i>
+                </div>
+                <!-- </button> -->
+        </div>
+            <p class="faq-text" style="display: none;" id="show3">
+                ► GUIDE & SUPPORT<br>
+                ► HELP EVERYONE TO LEARN & GROW<br>
+                ► WORKSHOPS AND MEETING SESSIONS <br>
+                ► HACKATHONS & INTERNSHIP OPPORTUNITY
+            </p>
+
+            
+        </div>
+    </div>
+
+
+
+
+
+    <!---Contact Us section goes here-->
+
+
 
 
 
@@ -104,7 +350,25 @@
 
 
 
+    
+    
+    
+    <!---Cursor-->
+    <div class="cursor"></div>
 
-<script src="index.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader').fadeToggle();
+
+    },2500);
+</script>
+
+    <script src="index.js"></script>
+
 </body>
+
 </html>
