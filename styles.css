@@ -449,6 +449,9 @@ body.dark {
   overflow: hidden;
   border-radius: px;
   height: 600px;
+  width: 550px;
+  margin: 0 auto;
+
 }
 #past-event-card:hover {
   background-image: linear-gradient(
@@ -468,11 +471,31 @@ body.dark {
   transform: scale(0.9);
 }
 .card img {
-  height: 250px;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto; 
+  border-radius: 10px;
 }
 .card-title {
   font-size: 1.5rem;
 }
+@media(max-width: 768px) {
+  #past-event-card {
+    width: 100%;
+    height: 85vh;
+    /* margin: 0 auto; */
+
+  }
+  .card img {
+    height: 60%;
+    width: 80%;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+ 
+}
+
 
 /* Achievements section styles goes here */
 .achievement-section h1 {
