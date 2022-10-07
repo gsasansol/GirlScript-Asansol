@@ -463,7 +463,6 @@ body.dark {
 .card-links:hover {
   text-decoration: none;
   color: #000;
-  transform: scale(0.9);
 }
 .card img {
   height: 250px;
