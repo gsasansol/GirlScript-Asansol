@@ -1,8 +1,6 @@
 *{
-    height: 100%;
-    width: 100%;
-}
-
+  height:100%;
+}  
 body{
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -20,7 +18,7 @@ body{
     text-align:center;
     font-family: "Goudy Bookletter 1911", sans-serif;;
     margin-top:-40px;
-    color: rgb(39, 14, 2);
+    color: rgb(39,14,2);
 }
 .bg{
     height: 50%;
@@ -53,6 +51,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 12px;
+  color:white;
 }
 .contact-me div div{
     margin: auto;
@@ -67,7 +66,7 @@ body{
       width: 100%;
       justify-content: center;
       align-items: center;
-      background-color: rgb(27, 25, 25);
+      background-color: rgb(27,25,25);
      
   }
   .contact-me a{
@@ -75,14 +74,13 @@ body{
     height: 20px;
     width: 20px;
     display: flex;
-    
     text-decoration: none;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
     margin: 10px;
   }
   .contact-me i{
-    color: rgb(247, 232, 232);
+    color: rgb(247,232,232);
     border: solid 1px black;
     border-radius: 10px;
     padding: 10%;
@@ -90,13 +88,36 @@ body{
    
   }
   i:hover{
-    color: rgb(245, 125, 65);
+    color: rgb(185,80,28);
   }
-  
-  .section{
-    color: beige;
-  }
-  .link{
-    text-decoration: none;
-    color:rgb(185, 80, 28);
-  }
+
+  @media (max-width: 720px) {
+    body{
+        margin:0;
+        height:100vh;
+    }
+    .bg{
+      height: 60%;
+      width: 60%;
+      margin-bottom: 10px;
+    }
+    .head1{
+      font-size: 30px;
+      text-align:center;
+      font-family: "Goudy Bookletter 1911", sans-serif;;
+      margin-top:-40px;
+      color: rgb(39, 14, 2);
+    }
+    .container .message{
+      font-size: 20px;
+      padding: 10px;
+      text-align: center;
+      width: 70%;
+    }
+    .contact-me div h2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+    }
+}
