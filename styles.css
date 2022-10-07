@@ -967,3 +967,13 @@ span.text {
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid red;
 }
+
+
+/*Mouse Trail*/
+.trail { 
+  position: absolute;
+  height: 7px; width: 7px;
+  border-radius: 3px;
+  background: rgb(204, 8, 8);
+  z-index: 100;
+}
