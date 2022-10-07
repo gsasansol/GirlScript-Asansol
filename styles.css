@@ -13,11 +13,11 @@ html {
 
 body {
   transition: background 0.2s linear;
-  overflow: overlay;
+  overflow-x: hidden;
 }
 
 body.dark {
-  background-color: #292c35;
+  background-color: #242425;
 }
 
 /* Scrollbar Effects Goes Here */

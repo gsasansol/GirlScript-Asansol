@@ -1,20 +1,15 @@
 function darkMode() {
   document.body.classList.toggle("dark");
   // Added if/else condiditon to change the color of past event heading, faq heading and header wave
-  if (
-    (document.getElementById("p-heading").style.color === "white" &&
-      document.getElementById("f-heading").style.color === "white") ||
-    document.getElementById("h-wave").style.fill === "#292c35"
-  ) {
+  if ((document.getElementById("p-heading").style.color === "white") && (document.getElementById("f-heading").style.color === "white") || (document.getElementById("h-wave").style.fill === "#292c35")) {
     document.getElementById("p-heading").style.color = "black";
     document.getElementById("f-heading").style.color = "black";
-    document.getElementById("achievement-heading").style.color = "black";
     document.getElementById("h-wave").style.fill = "#ffffff";
-  } else {
+  }
+  else {
     document.getElementById("p-heading").style.color = "white";
     document.getElementById("f-heading").style.color = "white";
-    document.getElementById("achievement-heading").style.color = "white";
-    document.getElementById("h-wave").style.fill = "#292c35";
+    document.getElementById("h-wave").style.fill = "#242425";
   }
 }
 const toggles = document.querySelectorAll(".faq-toggle");
