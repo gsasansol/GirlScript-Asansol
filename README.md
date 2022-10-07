@@ -14,15 +14,19 @@ This is the student-run community site and event management webapp for GS's Asan
 
 ## 💻 Getting started
 
-- Star & fork this repo and join the Discord server (mandatory for communication with maintainers).
+- Star & fork this repo and join the Discord server (mandatory for communication with maintainers and for raising self-assigned issues).
 - Clone repo locally using `git clone https://github.com/gsasansol/GirlScript-Asansol.git`.
 - After cloning make sure you create a new branch by using `git checkout -b my-branch`.
 - Add your name in the CONTRIBUTORS.md file.
 - Add the modified/created files to the staging using `git add .`
 - Commit the changes made into the checked out branch using `git commit -m "commit message"`. 
-- Push the changes using `git push origin my-branch`. 
+- Push the changes using `git push origin my-branch`.
 
 Wow, you did it, happy codding!
+
+<h6><code>Note 1:</code> If you'd like to create and claim your own issues, discuss your idea by starting a thread in our <a href="https://discord.com/channels/963463889692020827/1023601705704755211">Discord forum</a> mentioning your GitHub username to have them assigned to you after the maintainers' approval. We're restricting creation of new issues to maintainers and core team only. While we respect contributors' autonomy, we would like to follow a well charted road-map to the first release of our website. Until then, all 'custom' issues making their way to the issue window on GitHub will be closed, without exceptions.</h6>
+
+<h6><code>Note 2:</code> We're observing beginners addressing bugs and creating feature updates without any assignment or prior approval from the maintainers. Even though we appreciate the enthusiasm, that is not how we are accepting contributions in our repository and we encourage all beginners to read and properly follow the contribution policies. Please ensure all ideas are thoroughly discussed and have received approval from the moderatig team before collaborators begin working on the updates.</h6>
 
 ## ⚒️ Tools and Frameworks
 
