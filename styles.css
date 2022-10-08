@@ -1,16 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap");
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.h-line {
+  width: 60px;
+  height: 3px;
+  margin: 10px auto;
+  background-image: linear-gradient(
+    270deg,
+    rgb(252, 115, 60),
+    rgb(252, 176, 76)
+  );
 }
 
 body {
   transition: background 0.2s linear;
   overflow: overlay;
+  overflow-x: hidden;
+  line-height: 1.5px;
 }
 
 body.dark {
-  background-color: #292c35;
+  background-color: #242425;
 }
 
 /* Scrollbar Effects Goes Here */
@@ -29,39 +50,131 @@ body.dark {
 
 /*  NavBar Styles goes here */
 
+/* general styling for dismissable alert  */
+.notif-bar-btn {
+  background-color: #00111c;
+  /*mentioned color added*/
+  color: white;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 500ms;
+  /*smooth collapse transistion added*/
+}
+
+.button-61 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: 0.0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform, opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,
+    rgba(0, 0, 0, 0.12) 0 0 0 0;
+  color: rgba(0, 0, 0, 0.37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: #737df1;
+  /*mentioned color added*/
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px,
+    rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;
+  background: #a46bf5;
+}
+
+@media screen and (max-width: 408px) {
+  .button-61 {
+    margin-bottom: 6px;
+  }
+}
 
 /*general styling of the navbar like the background color, alignment of the items, gap between the items*/
-.navbar {
+.gs-navbar {
+  top: 0;
+  position: sticky;
+  z-index: 69;
+  box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 50%);
   padding: 10px;
-  background-color: beige;
+  background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
+  /* background-color: rgb(252,115,60); */
   display: flex;
   /*to put the elements one beside the other*/
   align-items: center;
   font-family: Lato;
-  gap: 10px;
+
+  /* overflow: hidden; */
   /*added a gap between the logo and the brandname*/
 }
 
 /*for the styling the name of community beside the logo*/
-.navbar .name {
-  line-height: 1.0;
+.gs-navbar .name {
+  font-size: 1.2rem;
+  line-height: 1;
   font-weight: 900;
-}
-.navbar .name p{
-  margin-bottom: 5px;
-}
-/*to set the size of the logo and make it circular*/
-.navbar img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  color: rgb(107, 27, 27);
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
+.gs-navbar .name p {
+  margin-bottom: 5px;
+}
+
+/*to set the size of the logo and make it circular*/
+.gs-navbar img {
+  height: 50px;
+  border-radius: 50%;
+}
 
 .options {
   margin-left: auto;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -69,18 +182,21 @@ body.dark {
 /*styling the items in the navbar(except logo and community name) here*/
 .options a {
   text-decoration: none;
-  color: black;
-  margin: 0 10px;
-  font-size: 1.1rem;
-
+  color: rgb(107, 27, 27);
+  margin: 0 5px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .options a:hover {
-  border-bottom: 2px solid rgb(255, 81, 0);
+  border-bottom: 3.5px solid rgb(255, 0, 0);
+  border-radius: 4.5px;
   text-decoration: none;
-  color: rgb(255, 81, 0);
-  /*added a simple hover event so that a line appears when someone hovers over the items*/
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.2s linear;
 
+  /*added a simple hover event so that a line appears when someone hovers over the items*/
 }
 
 .toggle {
@@ -90,7 +206,7 @@ body.dark {
 
 /*media queries for responsiveness of navbar*/
 @media screen and (max-width: 750px) {
-  .navbar {
+  .gs-navbar {
     display: block;
     position: relative;
     padding: 15px 20px;
@@ -123,6 +239,11 @@ body.dark {
     left: 81px;
     top: 30px;
   }
+
+  .options a {
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 .toggleButton {
@@ -135,7 +256,8 @@ body.dark {
 }
 
 .toggleButton .fa-sun {
-  color: rgb(168, 105, 22);
+  color: rgb(241, 191, 124);
+  margin-left: 10px;
 }
 
 /* dark mode button positioning for mobile */
@@ -147,7 +269,6 @@ body.dark {
     min-width: 50%;
   }
 }
-
 
 /*  Header Section Styles goes here */
 
@@ -162,6 +283,7 @@ body.dark {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-attachment: fixed;
 }
 
 .header-content {
@@ -178,7 +300,7 @@ body.dark {
 .line {
   width: 150px;
   height: 3px;
-  background: rgb(255, 117, 26);;
+  background: rgb(255, 117, 26);
   margin: 20px auto;
   border-radius: 5px;
 }
@@ -214,7 +336,11 @@ body.dark {
   z-index: -1;
   border-radius: 5px;
   background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(315deg, rgb(238, 149, 90) 0%, rgb(238, 149, 90)  74%);
+  background-image: linear-gradient(
+    315deg,
+    rgb(238, 149, 90) 0%,
+    rgb(238, 149, 90) 74%
+  );
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -283,29 +409,10 @@ body.dark {
   }
 }
 
-
 /* css for header ends here */
-
-
-
-
-
 
 /*  About Us section Styles goes here */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
-}
 
 .container {
     
@@ -680,42 +787,31 @@ textarea.input {
 }
 
 
-
-
 /*  Past Events section Styles goes here */
-.past-events{
+.past-events {
   margin: 100px 0;
 }
 
-.events-title{
+.events-title {
   margin-top: 100px;
   text-align: center;
-  margin-bottom: 20px;
-}
-.carousel-item {
-  margin-left: 300px;
 }
 
 .overlay-image {
-  background-image: url(./Assets/pastEventbg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(./Assets/pastEventbg.png);
   background-position: center;
   background-size: cover;
   padding: 50px 20px 10px;
+  margin: 40px 0;
 }
 
 .past-events h5 {
-  font-family: 'Gemunu Libre', sans-serif;
-
+  font-family: "Gemunu Libre", sans-serif;
 }
 
 .past-events p {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.carousel-inner {
-  padding: 0 0 4% 5%;
-  text-align: center;
-
+  font-family: "Ubuntu", sans-serif;
 }
 
 .carousel-indicators {
@@ -728,126 +824,689 @@ textarea.input {
   border-radius: 50%;
 }
 
-
-
-
-/*  Our Team section Styles goes here */
-
-
-
-
-
-
-
-
-/*  FAQ section Styles goes here */
-
-.faq-heading {
-  margin: 50px 0 30px;
+.carousel-inner {
+  padding: 0 15% 3% 15%;
   text-align: center;
 }
 
-.faq-container {
-  max-width: 700px;
-  margin: 0 auto;
-  /* border-radius: 30px; */
-}
-
-.faq {
-  background-color: rgb(243, 242, 199);
-  border: 1px solid #c1c4c7;
-  border-radius: 15px;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s ease;
-  font-size: large;
-}
-
-.faq.active {
-  font-size: large;
-  background-color: rgb(238, 149, 90) ;
-  background-image: linear-gradient(315deg, rgb(238, 149, 90)  0%, rgb(238, 149, 90)  74%);
-  transition: all 0.3s ease;
-  color: #000;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faq-title {
-  margin: 0 35px 0 0;
-}
-
-.faq-text {
-  display: none;
-  margin: 30px 0 0;
-  font-family: "Lato", sans-serif;
-
-}
-
-.faq-text a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Lato", sans-serif;
-}
-.faq-text a:hover{
-  color: #000;
-}
-.faq.active .faq-text {
-  display: block;
-}
-
-.faq-toggle {
-  background-color: transparent;
-  border: 0;
+.carousel-indicators li {
   border-radius: 50%;
-  cursor: pointer;
+}
+
+#past-event-card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+#past-event-card:hover {
+  background-image: linear-gradient(
+    115deg,
+    rgb(245, 201, 173) 0%,
+    rgb(241, 163, 111) 80%
+  );
+  transition: all 0.3s ease;
+}
+
+.card-links {
+  text-decoration: none;
+  color: #000;
+}
+
+.card-links:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.card img {
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.mobile-events {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #past-event-card {
+    width: 100%;
+    height: 85vh;
+    /* margin: 0 auto; */
+  }
+
+  .card img {
+    height: 60%;
+    width: 80%;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .desktop-events {
+    display: none;
+  }
+
+  .mobile-events {
+    display: block;
+  }
+  .past-events{
+    margin: 42px 0;
+  }
+  .events-title{
+    margin-top: 50px;
+  }
+  .card img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+}
+
+/* Achievements section styles goes here */
+.achievement-section {
+  margin: 100px 0;
+}
+
+.achievement-section h1 {
+  text-align: center;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+
+.achievement-wrapper {
+  position: relative;
+  margin-top: 140px;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.achievement-container {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
   font-size: 16px;
-  padding: 0;
+  border-radius: 0.5em;
+  background-color: #21242b;
+  border-bottom: 10px solid rgb(252, 176, 76);
+}
+
+.achi-icon {
+  color: rgb(252, 176, 76);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .achievement-wrapper {
+    width: 85vw;
+  }
+
+  .achievement-container {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .achievement-wrapper {
+    margin-top: -15px;
+    /* padding: 200px 11px 0px 30px  ; */
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .achievement-container {
+    width: calc(50% - 40px);
+    height: 20vmin;
+    font-size: 10px;
+    padding: 0.5em 0;
+  }
+
+  .achievement-section {
+    margin: 40px 0 70px;
+    padding-bottom: 10px;
+    height: 450px;
+  }
+
+  .achi-icon {
+    /* width: fit-content; */
+    width: 60px;
+    /* height: 60px; */
+    margin-top: 25px;
+    font-size: 5em;
+  }
+
+  .num {
+    width: 60px;
+    padding-left: 155px;
+    position: absolute;
+  }
+
+  .text {
+    padding-left: 140px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+   .achievement-wrapper {
+    gap: 15px;
+  }
+
+  .achievement-container {
+    width: 70%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+}
+
+/*  Our Team section Styles goes here */
+
+/*  FAQ section Styles goes here */
+.faq-section h1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.container.faq-container {
+  margin: 80px auto 100px;
+}
+
+.faq-card,
+.faq-card-header {
+  /* background-color: transparent !important; */
+  background: linear-gradient(
+    270deg,
+    rgb(252, 115, 60),
+    rgb(252, 176, 76)
+  ) !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 20px;
+}
+
+.faq-card {
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208.18);
+}
+
+.btn-link {
+  width: 100%;
+  height: 60px;
+  color: #000 !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  text-decoration: none !important;
+}
+
+.faq-card-body {
+  background: beige;
+}
+
+.btn-link:after {
+  content: "\2212";
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
   position: absolute;
-  top: 30px;
-  right: 30px;
-  height: 30px;
-  width: 30px;
+  background: beige;
 }
 
-.faq-toggle:focus {
-  outline: 0;
+.btn-link.collapsed:after {
+  content: "\002B";
 }
 
-.faq-toggle .fa-times {
-  display: none;
+#faq-illlustration {
+  width: 430px;
+  margin-top: 15px;
+  margin-left: 9rem;
 }
 
-.faq.active .faq-toggle .fa-times {
-  color: #222;
-  display: block;
+@media (max-width: 768px) {
+  #faq-illlustration {
+    width: 240px;
+    margin-top: 41px;
+    margin-left: -1rem;
+  }
+  .container.faq-container {
+    margin: 40px auto 120px;
+  }
 }
-
-.faq.active .faq-toggle .fa-chevron-down {
-  display: none;
-}
-
-
-
 
 /* Contact Us section Styles goes here */
 
-
-
-
-
-
 /*  Footer section Styles goes here */
 
+.footer {
+  background-color: #24262b;
+  padding: 40px 0 10px;
+  bottom: 0;
+  color: #bbbbbb;
+}
 
+.container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
+ul {
+  list-style: none;
+}
 
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 30%;
+  padding: 0 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(252, 115, 60);
+  height: 2px;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-col .social-links {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.footer-col ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.footer hr {
+  background-color: #fff;
+}
+
+.footer-credit {
+  color: #bbbbbb;
+  text-align: center;
+}
+
+/*responsiveness of footer*/
+@media (max-width: 768px) {
+  .footer-col {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 90%;
+  }
+}
+
+/* pre loader  css styles goes here */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Gemunu Libre", sans-serif;
+  --color: rgb(238, 149, 90);
+  --pos-1: -8vmin;
+  --pos-2: -2.66vmin;
+  --pos-3: 2.66vmin;
+  --pos-4: 8vmin;
+  --pos-a: 5.33vmin;
+  --pos-b: 16vmin;
+  --pos-c: 10.66vmin;
+  box-sizing: border-box;
+  font-size: 10vmin;
+  color: orange;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("./Assets/asn-junction.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-shadow: 0.5vmin 0.5vmin 0 #000;
+}
+
+.loader:before {
+  content: "Welcome!";
+  font-family: "Gemunu Libre", sans-serif;
+  display: block;
+  width: 40vmin;
+  height: 20vmin;
+  position: absolute;
+  text-align: center;
+}
+
+.loader:after {
+  font-family: "Gemunu Libre", sans-serif;
+  display: block;
+  content: " ";
+  background: #f000;
+  width: 5vmin;
+  height: 5vmin;
+  box-shadow: var(--pos-1) var(--pos-c) var(--color),
+    var(--pos-2) var(--pos-c) var(--color),
+    var(--pos-3) var(--pos-c) var(--color),
+    var(--pos-4) var(--pos-c) var(--color),
+    var(--pos-1) var(--pos-b) var(--color);
+  animation: 6s infinite loader;
+  position: absolute;
+}
+
+@keyframes loader {
+  0% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-b) var(--color);
+  }
+
+  4.16% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color);
+  }
+
+  8.33% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  12.5% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  16.66% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  20.83% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  25% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  29.16% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  33.33% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  37.5% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  41.66% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color);
+  }
+
+  45.83% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-a) var(--color);
+  }
+
+  50% {
+    box-shadow: var(--pos-1) var(--pos-b) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  54.16% {
+    box-shadow: var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  58.33% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  62.5% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  66.66% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  70.83% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-b) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  75% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  79.16% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  83.33% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  87.5% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  91.66% {
+    box-shadow: var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  95.83% {
+    box-shadow: var(--pos-1) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  100% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-b) var(--color);
+  }
+}
 
 /*Cursor section Styles goes here */
 
@@ -859,7 +1518,7 @@ textarea.input {
   position: absolute;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
-  animation: cursorAnim .5s infinite alternate;
+  animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
 }
 
@@ -870,51 +1529,48 @@ textarea.input {
   position: absolute;
   border: 8px solid gray;
   border-radius: 50%;
-  opacity: .5;
+  opacity: 0.5;
   top: -8px;
   left: -8px;
-  animation: cursorAnim2 .5s infinite alternate;
+  animation: cursorAnim2 0.5s infinite alternate;
 }
 
 @keyframes cursorAnim {
   from {
-      transform: scale(1);
+    transform: scale(1);
   }
+
   to {
-      transform: scale(.7);
+    transform: scale(0.7);
   }
 }
 
 @keyframes cursorAnim2 {
   from {
-      transform: scale(1);
+    transform: scale(1);
   }
+
   to {
-      transform: scale(.4);
+    transform: scale(0.4);
   }
 }
 
 @keyframes cursorAnim3 {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
-      transform: scale(3);
+    transform: scale(3);
   }
+
   100% {
-      transform: scale(1);
-      opacity: 0;
+    transform: scale(1);
+    opacity: 0;
   }
 }
+
 .expand {
-  animation: cursorAnim3 .5s forwards;
+  animation: cursorAnim3 0.5s forwards;
   border: 1px solid red;
 }
-
-/*Canvas*/
-#myCanvas {
-  background-color: #1f1f1f;
-}
-
-
-
