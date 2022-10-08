@@ -135,7 +135,7 @@
                 <a href="#pastevents">Past Events</a>
                 <a href="#">Our Team</a>
                 <a href="#faq">FAQ</a>
-                <a href="#">Contact Us</a>
+                <a href="#contact-us">Contact Us</a>
             </div>
             <!--dark mode button is now outside the option class-->
             <button onclick="darkMode()" class="toggleButton">
@@ -596,7 +596,7 @@
 
        
     <!---Contact Us section goes here-->
-     <div class="contact-container">
+     <div class="contact-container" id="contact-us">
       
       <span class="big-circle"></span>
       <img src="img/shape.png" class="square" alt="" />
@@ -610,15 +610,11 @@
           <div class="info">
             <div class="information">
               <img src="img/location.png" class="icon" alt="" />
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
+              <p>Asansol WestBengal, India</p>
             </div>
             <div class="information">
               <img src="img/email.png" class="icon" alt="" />
-              <p>lorem@ipsum.com</p>
-            </div>
-            <div class="information">
-              <img src="img/phone.png" class="icon" alt="" />
-              <p>123-456-789</p>
+              <p>girlscriptasansol@gmail.com</p>
             </div>
           </div>
 
@@ -649,26 +645,15 @@
           <form action="index.html" autocomplete="off">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
-              <span>Username</span>
+              <input type="text" name="name" class="input" placeholder="Name"/>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
-              <span>Phone</span>
+              <input type="email" name="email" class="input" placeholder="Email"/>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
+              <textarea name="message" class="input" placeholder="Message"></textarea>
             </div>
-             <button class="button-38" role="button">Send</button>
+             <button class="contact-button" role="button">Send</button>
           </form>
         </div>
       </div>
