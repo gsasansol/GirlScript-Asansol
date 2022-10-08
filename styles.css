@@ -10,6 +10,14 @@
 html {
   scroll-behavior: smooth;
 }
+.debu{
+      width: 50%;
+      height: 8px;
+      margin: 10px auto;
+      border-radius: 100px;
+      background-image:linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76)) ;
+}
+
 
 body {
   transition: background 0.2s linear;
@@ -513,12 +521,15 @@ body.dark {
 
 /* Achievements section styles goes here */
 .achievement-section{
-  margin: 100px 0;
+  margin: 0px 0;
+  /* padding-bottom: 10px; */
+  /* height: 500px; */
 }
 .achievement-section h1 {
   text-align: center;
   position: relative;
   font-family: "Lato", sans-serif;
+ 
 }
 .achievement-wrapper {
   position: relative;
@@ -576,17 +587,46 @@ span.text {
 }
 @media screen and (max-width: 768px) {
   .achievement-wrapper {
-    margin-top: 190px;
+    margin-top: -55px;
+    /* padding: 200px 11px 0px 30px  ; */
     width: 90vw;
     flex-wrap: wrap;
     gap: 30px;
   }
   .achievement-container {
     width: calc(50% - 40px);
-    height: 30vmin;
-    font-size: 14px;
+    height: 20vmin;
+    font-size: 10px;
+    padding: 0.5em 0;
+  }
+  .achievement-section{
+    margin: 0px 0;
+    padding-bottom: 10px;
+    height: 450px;
+
+  }
+  .achievement-section h1{
+    padding-bottom: 25px;
+  }
+  .achi-icon{
+    /* width: fit-content; */
+    width: 60px;
+    /* height: 60px; */
+    margin-top: 25px;
+    font-size: 5em;
+
+  } 
+  .num{
+    width: 60px;
+    padding-left: 155px;
+    position: absolute;
+  }
+  .text{
+    padding-left: 140px;
+    padding-bottom: 20px;
   }
 }
+
 @media screen and (max-width: 480px) {
   .achievement-section h1 {
     font-size: 3em;
@@ -595,10 +635,11 @@ span.text {
     gap: 15px;
   }
   .achievement-container {
-    width: 80%;
+    width: 70%;
     height: 25vmin;
     font-size: 8px;
   }
+  
 }
 
 /*  Our Team section Styles goes here */
