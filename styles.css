@@ -563,20 +563,32 @@ body.dark {
 
 /*  Footer section Styles goes here */
 
-.footer
-{
+.footer{
   background-color: #24262b;
-  padding: 70px 0;
-  
+  padding: 40px 0 10px;
+  bottom: 0;
+  color: #bbbbbb;
 }
+
 .container{
   max-width: 1170px;
-  background-color: red;
   margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-col{
-  width: 25%;
+  width: 30%;
   padding: 0 15px;
   font-family: 'Lato', sans-serif;
 }
@@ -585,18 +597,17 @@ body.dark {
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-weight:500;
   position: relative;
 }
 
 .footer-col h4::before{
   content: '';
-
   position: absolute;
   left:0;
   bottom:-10px;
-  background-color: #e91e63;
+  background-color: rgb(252, 115, 60);
   height:2px;
   width: 50px;
 }
@@ -605,10 +616,9 @@ body.dark {
   margin-bottom: 10px;
 }
 
-.footeer-col ul li a{
+.footer-col ul li a{
   font-size: 16px;
   text-transform: capitalize;
-  color:#fff;
   text-decoration: none;
   font-weight: 300;
   color: #bbbbbb;
@@ -620,16 +630,62 @@ body.dark {
   color:#ffffff;
   padding-left: 8px;
 }
-
-ul {
-  list-style: none;
+.first{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
-
-.row{
+.footer-col .social-links{
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-logo{  
+  width: 100%;
+  max-width:200px;
+  border-radius: 50%;
+}
+.footer-col ul{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.footer hr{
+  background-color:#fff;
+}
+.footer-credit{
+  color: #bbbbbb;
+  text-align: center;
+}
+
+/*responsiveness of footer*/
+@media(max-width: 768px){
+  .footer-col{
+    width: 45%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 90%;
+}
 }
 
 /* pre loader  css styles goes here */
