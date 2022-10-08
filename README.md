@@ -16,6 +16,7 @@ This is the student-run community site and event management webapp for GS's Asan
 ## 💻 Getting started
 
 - Star & fork this repo and join the Discord server (mandatory for communication with maintainers and for raising self-assigned issues).
+- Initialize git in your folder `git init`.  
 - Clone repo locally using `git clone https://github.com/gsasansol/GirlScript-Asansol.git`.
 - After cloning make sure you create a new branch by using `git checkout -b my-branch`.
 - Add your name in the CONTRIBUTORS.md file.
