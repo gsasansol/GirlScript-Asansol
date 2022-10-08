@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tomorrow', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to top, #2e1753, #1f1746, #131537, #0d1028, #050819);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 10%;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.message {
+    font-family: Geneva;
+    font-size: 20px;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    right: 0;
+    animation: starTwinkle 3s infinite linear;
+}
+
+.astronaut img {
+    width: 100px;
+    position: absolute;
+    top: 55%;
+    animation: astronautFly 6s infinite linear;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-family: serif;
+    font-size: 1.2rem;
+}
+
+.link:hover {
+    color: black;
+}
+
+.container .message {
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-me div {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    position: relative;
+    top: 325px;
+}
+
+.contact-me a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.contact-me i {
+    color: rgb(247, 232, 232);
+    border: solid 1px rgb(255, 252, 252);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    padding: 5px 8px;
+    align-items: center;
+}
+
+i:hover {
+    color: rgb(185, 80, 28);
+}
+
+.btn {
+    border-radius: 10px;
+    border: 2px solid rgb(185, 80, 28);
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(45deg, #eaee0df1, #ef6a0be8);
+}
+
+@keyframes astronautFly {
+    0% {
+        left: -100px;
+    }
+
+    25% {
+        top: 50%;
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+        top: 55%;
+    }
+
+    75% {
+        top: 60%;
+        transform: rotate(30deg);
+    }
+
+    100% {
+        left: 110%;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes starTwinkle {
+    0% {
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    25% {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    50% {
+        background: rgba(255, 255, 255, 1);
+    }
+
+    75% {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.4);
+    }
+}
