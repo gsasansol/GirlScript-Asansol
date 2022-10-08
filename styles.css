@@ -6,16 +6,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+.col-md-16 {
+  width: 50%;
+  float: left;
+  padding: 25px;
+}
+.achievement-container:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
 }
 html {
   scroll-behavior: smooth;
 }
 .debu{
       width: 50%;
-      height: 8px;
-      margin: 10px auto;
+      height: 10px;
+      
+      margin:  auto;
       border-radius: 100px;
-      background-image:linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76)) ;
+      background-image: linear-gradient(to right top, #ff6e00, #ff8e00, #ffac00, #ffc900, #ffe600);
 }
 
 
@@ -134,7 +145,7 @@ body.dark {
   z-index: 69;
   box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 50%);
   padding: 10px;
-  background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
+  background-image: linear-gradient(to right, #ff6e00, #ff7c00, #ff8a00, #ff9700, #ffa400, #ffac00, #ffb300, #ffbb00, #ffc100, #ffc600, #ffcc00, #ffd200);
   /* background-color: rgb(252,115,60); */
   display: flex;
   /*to put the elements one beside the other*/
@@ -279,7 +290,9 @@ body.dark {
   position: relative;
   background-attachment: fixed;
 }
-
+.events-title.h1 span{
+  color: #ff8c00;
+}
 .header-content {
   margin-bottom: 160px;
   color: #fff;
@@ -419,6 +432,7 @@ body.dark {
 }
 
 .overlay-image {
+  
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
     url(./Assets/pastEventbg.png);
   background-position: center;
@@ -647,18 +661,15 @@ span.text {
 /*  FAQ section Styles goes here */
 .faq-section h1 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-family: "Lato", sans-serif;
 }
 
 .faq-card,
 .faq-card-header {
   /* background-color: transparent !important; */
-  background: linear-gradient(
-    270deg,
-    rgb(252, 115, 60),
-    rgb(252, 176, 76)
-  ) !important;
+  background-image: linear-gradient(to right top, #ff6e00, #ff8e00, #ffac00, #ffc900, #ffe600);
+ important;
   border: none !important;
   padding: 0 !important;
   margin-bottom: 20px;
