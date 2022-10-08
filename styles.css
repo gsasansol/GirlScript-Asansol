@@ -522,7 +522,12 @@ body.dark {
   .mobile-events {
     display: block;
   }
-
+  .past-events{
+    margin: 42px 0;
+  }
+  .events-title{
+    margin-top: 50px;
+  }
   .card img {
     height: 200px;
     width: 100%;
@@ -611,7 +616,7 @@ span.text {
 
 @media screen and (max-width: 768px) {
   .achievement-wrapper {
-    margin-top: -55px;
+    margin-top: -15px;
     /* padding: 200px 11px 0px 30px  ; */
     width: 90vw;
     flex-wrap: wrap;
@@ -626,13 +631,9 @@ span.text {
   }
 
   .achievement-section {
-    margin: 0px 0;
+    margin: 40px 0 70px;
     padding-bottom: 10px;
     height: 450px;
-  }
-
-  .achievement-section h1 {
-    padding-bottom: 25px;
   }
 
   .achi-icon {
@@ -656,11 +657,7 @@ span.text {
 }
 
 @media screen and (max-width: 480px) {
-  .achievement-section h1 {
-    font-size: 3em;
-  }
-
-  .achievement-wrapper {
+   .achievement-wrapper {
     gap: 15px;
   }
 
@@ -740,6 +737,9 @@ span.text {
     width: 240px;
     margin-top: 41px;
     margin-left: -1rem;
+  }
+  .container.faq-container {
+    margin: 40px auto 120px;
   }
 }
 
