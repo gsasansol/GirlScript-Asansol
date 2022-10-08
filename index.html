@@ -163,8 +163,7 @@
 
         <div class="header" id="home">
             <div class="header-content">
-                <h2>Welcome to GirlScript Asansol <br>
-                    Education First</h2>
+                <h2>Welcome to <span class="typedjs_animated"></span></h2>
                 <div class="line"></div>
                 <button onclick="window.location.href='https://discord.gg/vYSspBkgNc';" class="cta-button">Join
                     Us</button>
@@ -611,11 +610,22 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         document.getElementById('web-contents').style.display = 'none';
         setTimeout(function () {
             $('.loader').fadeToggle();
             document.getElementById('web-contents').style.display = 'block';
+			
+			//created the typed reference with a few options, and three phrases to the span 
+			var typed = new Typed(".typedjs_animated", {
+				strings:[
+					"our community!","the opportunities!","GirlScript Asansol <br>Education First"
+				],
+				typeSpeed:60,
+				backSpeed:60,
+				loop:true
+			})
         }, 2500);
     </script>
 
