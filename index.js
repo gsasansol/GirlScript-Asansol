@@ -39,3 +39,10 @@ document.addEventListener("click", () => {
     cursor.classList.remove("expand");
   }, 500);
 });
+var typed = new Typed(".auto-type",{
+  strings: ["GirlScript Asansol "],
+  typeSpeed: 100,
+  backSpeed: 50,
+  backDelay: 2000,
+  loop:true
+})
