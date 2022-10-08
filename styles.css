@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap");
 
+:root {
+  ---primary-contactus-circle-after-bg: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,11 +35,7 @@ html {
   width: 60px;
   height: 3px;
   margin: 10px auto;
-  background-image: linear-gradient(
-    270deg,
-    rgb(252, 115, 60),
-    rgb(252, 176, 76)
-  );
+  background-image: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
 }
 
 body {
@@ -83,8 +83,7 @@ body.dark {
   appearance: none;
   border-radius: 4px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,
-    rgba(0, 0, 0, 0.12) 0 1px 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0, rgba(0, 0, 0, 0.12) 0 1px 5px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -113,14 +112,12 @@ body.dark {
 }
 
 .button-61:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
-    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0, rgba(0, 0, 0, 0.12) 0 1px 10px 0;
 }
 
 .button-61:disabled {
   background-color: rgba(0, 0, 0, 0.12);
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,
-    rgba(0, 0, 0, 0.12) 0 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0, rgba(0, 0, 0, 0.12) 0 0 0 0;
   color: rgba(0, 0, 0, 0.37);
   cursor: default;
   pointer-events: none;
@@ -132,13 +129,11 @@ body.dark {
 }
 
 .button-61:focus {
-  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
-    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0, rgba(0, 0, 0, 0.12) 0 1px 10px 0;
 }
 
 .button-61:active {
-  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px,
-    rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px, rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;
   background: #a46bf5;
 }
 
@@ -290,8 +285,7 @@ body.dark {
 .header {
   width: 100%;
   height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url("./Assets/asn-junction.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("./Assets/asn-junction.jpg");
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -336,8 +330,8 @@ body.dark {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -351,13 +345,9 @@ body.dark {
   z-index: -1;
   border-radius: 5px;
   background-color: rgb(238, 149, 90);
-  background-image: linear-gradient(
-    315deg,
-    rgb(238, 149, 90) 0%,
-    rgb(238, 149, 90) 74%
-  );
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(315deg, rgb(238, 149, 90) 0%, rgb(238, 149, 90) 74%);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -428,16 +418,6 @@ body.dark {
 
 /*  About Us section Styles goes here */
 
-
-
-
-
-
-
-
-
-
-
 /*  Past Events section Styles goes here */
 .past-events {
   margin: 100px 0;
@@ -449,8 +429,7 @@ body.dark {
 }
 
 .overlay-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url(./Assets/pastEventbg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(./Assets/pastEventbg.png);
   background-position: center;
   background-size: cover;
   padding: 50px 20px 10px;
@@ -490,11 +469,7 @@ body.dark {
 }
 
 #past-event-card:hover {
-  background-image: linear-gradient(
-    115deg,
-    rgb(245, 201, 173) 0%,
-    rgb(241, 163, 111) 80%
-  );
+  background-image: linear-gradient(115deg, rgb(245, 201, 173) 0%, rgb(241, 163, 111) 80%);
   transition: all 0.3s ease;
 }
 
@@ -547,10 +522,10 @@ body.dark {
   .mobile-events {
     display: block;
   }
-  .past-events{
+  .past-events {
     margin: 42px 0;
   }
-  .events-title{
+  .events-title {
     margin-top: 50px;
   }
   .card img {
@@ -683,7 +658,7 @@ span.text {
 }
 
 @media screen and (max-width: 480px) {
-   .achievement-wrapper {
+  .achievement-wrapper {
     gap: 15px;
   }
 
@@ -709,11 +684,7 @@ span.text {
 .faq-card,
 .faq-card-header {
   /* background-color: transparent !important; */
-  background: linear-gradient(
-    270deg,
-    rgb(252, 115, 60),
-    rgb(252, 176, 76)
-  ) !important;
+  background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76)) !important;
   border: none !important;
   padding: 0 !important;
   margin-bottom: 20px;
@@ -771,7 +742,7 @@ span.text {
 
 /* Contact Us section Styles goes here */
 
-.contact-container{ 
+.contact-container {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -873,7 +844,6 @@ textarea.input {
   resize: none;
   overflow-y: auto;
 }
-
 
 .contact-button {
   padding: 0.6rem 1.3rem;
@@ -1012,7 +982,7 @@ textarea.input {
   position: absolute;
   width: 360px;
   height: 360px;
-  background-color: #fff;
+  background-color: var(---primary-contactus-circle-after-bg);
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
@@ -1266,8 +1236,7 @@ ul {
   box-sizing: border-box;
   font-size: 10vmin;
   color: orange;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url("./Assets/asn-junction.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("./Assets/asn-junction.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1291,10 +1260,8 @@ ul {
   background: #f000;
   width: 5vmin;
   height: 5vmin;
-  box-shadow: var(--pos-1) var(--pos-c) var(--color),
-    var(--pos-2) var(--pos-c) var(--color),
-    var(--pos-3) var(--pos-c) var(--color),
-    var(--pos-4) var(--pos-c) var(--color),
+  box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-c) var(--color),
+    var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
     var(--pos-1) var(--pos-b) var(--color);
   animation: 6s infinite loader;
   position: absolute;
@@ -1302,202 +1269,152 @@ ul {
 
 @keyframes loader {
   0% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-b) var(--color);
   }
 
   4.16% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-b) var(--color);
   }
 
   8.33% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-a) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   12.5% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-a) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   16.66% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-b) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   20.83% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-b) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-b) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   25% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-a) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-4) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   29.16% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-a) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-a) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   33.33% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-b) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   37.5% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-b) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-c) var(--color);
   }
 
   41.66% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-2) var(--pos-a) var(--color);
   }
 
   45.83% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-a) var(--color);
   }
 
   50% {
-    box-shadow: var(--pos-1) var(--pos-b) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-b) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   54.16% {
-    box-shadow: var(--pos-2) var(--pos-b) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-b) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   58.33% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-a) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   62.5% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-a) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   66.66% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-b) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-3) var(--pos-b) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   70.83% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-b) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color), var(--pos-4) var(--pos-b) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   75% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-a) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-a) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   79.16% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-a) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   83.33% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-b) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   87.5% {
-    box-shadow: var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-b) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-c) var(--color), var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   91.66% {
-    box-shadow: var(--pos-2) var(--pos-a) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-2) var(--pos-a) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   95.83% {
-    box-shadow: var(--pos-1) var(--pos-a) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-a) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-c) var(--color);
   }
 
   100% {
-    box-shadow: var(--pos-1) var(--pos-c) var(--color),
-      var(--pos-2) var(--pos-c) var(--color),
-      var(--pos-3) var(--pos-c) var(--color),
-      var(--pos-4) var(--pos-c) var(--color),
+    box-shadow: var(--pos-1) var(--pos-c) var(--color), var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color), var(--pos-4) var(--pos-c) var(--color),
       var(--pos-1) var(--pos-b) var(--color);
   }
 }
@@ -1571,7 +1488,7 @@ ul {
 
 /* ABOUT US SECTION CSS GOES HERE */
 
-.aboutus-section-wrapper{
+.aboutus-section-wrapper {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -1580,7 +1497,7 @@ ul {
   align-items: center;
 }
 
-.aboutus-section-container{
+.aboutus-section-container {
   width: 95%;
   height: 100vh;
   padding: 20px;
@@ -1589,21 +1506,21 @@ ul {
   overflow: scroll;
 }
 
-.aboutus-container{
+.aboutus-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.aboutus-img-container{
+.aboutus-img-container {
   flex: 0.7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.aboutus-img-container img{
+.aboutus-img-container img {
   height: 400px;
   width: 400px;
   object-fit: cover;
@@ -1611,26 +1528,26 @@ ul {
   box-shadow: 24px 24px 30px #888888;
 }
 
-.aboutus-text-container{
+.aboutus-text-container {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;;
+  font-family: "Roboto", sans-serif;
 }
 
-.aboutus-text-container h1{
+.aboutus-text-container h1 {
   font-size: 50px;
   padding: 10px 0px;
 }
 
-.aboutus-text-container p{
+.aboutus-text-container p {
   font-size: 22px;
   padding: 10px 0px;
 }
 
-.aboutus-text-container a{
+.aboutus-text-container a {
   text-decoration: none;
   padding: 12px;
   margin-top: 30px;
@@ -1642,13 +1559,13 @@ ul {
   transition: 0.3s all ease-in-out;
 }
 
-.aboutus-text-container a:hover{
+.aboutus-text-container a:hover {
   text-decoration: none;
   background-color: lightgrey;
   color: white;
 }
 
-.ourservices-container{
+.ourservices-container {
   padding-top: 100px;
   position: absolute;
   display: flex;
@@ -1656,14 +1573,14 @@ ul {
   align-items: center;
 }
 
-.ourservices-img-container{
+.ourservices-img-container {
   flex: 0.7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.ourservices-img-container img{
+.ourservices-img-container img {
   height: 400px;
   width: 400px;
   object-fit: cover;
@@ -1671,76 +1588,76 @@ ul {
   box-shadow: 24px 24px 30px #888888;
 }
 
-.ourservices-text-container{
+.ourservices-text-container {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;;
+  font-family: "Roboto", sans-serif;
 }
 
-.ourservices-text-container h1{
+.ourservices-text-container h1 {
   font-size: 50px;
   padding: 10px 0px;
 }
 
-.ourservices-text-container p{
+.ourservices-text-container p {
   font-size: 22px;
   padding: 10px 0px;
 }
 
 @media screen and (max-width: 1600px) {
-  .aboutus-container{
+  .aboutus-container {
     width: 95%;
   }
-  .aboutus-img-container img{
+  .aboutus-img-container img {
     height: 400px;
     width: 400px;
   }
-  .aboutus-text-container h1{
+  .aboutus-text-container h1 {
     font-size: 40px;
   }
-  .ourservices-container{
+  .ourservices-container {
     width: 95%;
   }
-  .ourservices-img-container img{
+  .ourservices-img-container img {
     height: 400px;
     width: 400px;
   }
-  .ourservices-text-container h1{
+  .ourservices-text-container h1 {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .aboutus-container{
+  .aboutus-container {
     flex-direction: column;
-  } 
-  .aboutus-text-container{
+  }
+  .aboutus-text-container {
     align-items: center;
   }
-  .ourservices-container{
+  .ourservices-container {
     flex-direction: column;
-  } 
-  .ourservices-text-container{
+  }
+  .ourservices-text-container {
     align-items: center;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .aboutus-img-container img{
+  .aboutus-img-container img {
     height: 300px;
     width: 300px;
   }
-  .aboutus-text-container p{
+  .aboutus-text-container p {
     font-size: 20px;
   }
-  .ourservices-img-container img{
+  .ourservices-img-container img {
     height: 300px;
     width: 300px;
   }
-  .ourservices-text-container p{
+  .ourservices-text-container p {
     font-size: 20px;
   }
 }
