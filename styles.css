@@ -7,20 +7,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
-.debu{
-      width: 50%;
-      height: 8px;
-      margin: 10px auto;
-      border-radius: 100px;
-      background-image:linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76)) ;
-}
 
+.h-line {
+  width: 60px;
+  height: 3px;
+  margin: 10px auto;
+  background-image: linear-gradient(
+    270deg,
+    rgb(252, 115, 60),
+    rgb(252, 176, 76)
+  );
+}
 
 body {
   transition: background 0.2s linear;
+  overflow: overlay;
   overflow-x: hidden;
   line-height: 1.5px;
 }
@@ -178,9 +183,8 @@ body.dark {
 .options a {
   text-decoration: none;
   color: rgb(107, 27, 27);
-  margin: 0 10px;
+  margin: 0 5px;
   font-size: 1.2rem;
-  font-weight: 700;
   text-align: center;
 }
 
@@ -253,6 +257,7 @@ body.dark {
 
 .toggleButton .fa-sun {
   color: rgb(241, 191, 124);
+  margin-left: 10px;
 }
 
 /* dark mode button positioning for mobile */
@@ -416,7 +421,6 @@ body.dark {
 .events-title {
   margin-top: 100px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .overlay-image {
@@ -425,6 +429,7 @@ body.dark {
   background-position: center;
   background-size: cover;
   padding: 50px 20px 10px;
+  margin: 40px 0;
 }
 
 .past-events h5 {
@@ -453,10 +458,12 @@ body.dark {
 .carousel-indicators li {
   border-radius: 50%;
 }
+
 #past-event-card {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
- }
+}
+
 #past-event-card:hover {
   background-image: linear-gradient(
     115deg,
@@ -465,73 +472,82 @@ body.dark {
   );
   transition: all 0.3s ease;
 }
+
 .card-links {
   text-decoration: none;
   color: #000;
 }
+
 .card-links:hover {
   text-decoration: none;
   color: #000;
 }
+
 .card img {
   height: 250px;
-  margin: 0 auto; 
+  margin: 0 auto;
   border-radius: 10px 10px 0 0;
 }
+
 .card-title {
   font-size: 1.5rem;
 }
-.mobile-events{
+
+.mobile-events {
   display: none;
 }
-@media(max-width: 768px) {
+
+@media (max-width: 768px) {
   #past-event-card {
     width: 100%;
     height: 85vh;
     /* margin: 0 auto; */
-
   }
+
   .card img {
     height: 60%;
     width: 80%;
   }
+
   .card-title {
     font-size: 1.5rem;
   }
- 
 }
+
 @media (max-width: 500px) {
-  .desktop-events{
+  .desktop-events {
     display: none;
   }
-  .mobile-events{
+
+  .mobile-events {
     display: block;
   }
-  .card img{
+
+  .card img {
     height: 200px;
     width: 100%;
   }
-  .card-title{
+
+  .card-title {
     font-size: 1.1rem;
   }
-  .card-text{
+
+  .card-text {
     font-size: 12px;
   }
 }
 
-
 /* Achievements section styles goes here */
-.achievement-section{
-  margin: 0px 0;
-  /* padding-bottom: 10px; */
-  /* height: 500px; */
+.achievement-section {
+  margin: 100px 0;
 }
+
 .achievement-section h1 {
   text-align: center;
   position: relative;
   font-family: "Lato", sans-serif;
- 
 }
+
 .achievement-wrapper {
   position: relative;
   margin-top: 140px;
@@ -543,6 +559,7 @@ body.dark {
   justify-content: space-around;
   gap: 10px;
 }
+
 .achievement-container {
   width: 28vmin;
   height: 28vmin;
@@ -556,11 +573,13 @@ body.dark {
   background-color: #21242b;
   border-bottom: 10px solid rgb(252, 176, 76);
 }
+
 .achi-icon {
   color: rgb(252, 176, 76);
   font-size: 2.5em;
   text-align: center;
 }
+
 span.num {
   color: #ffffff;
   display: grid;
@@ -568,6 +587,7 @@ span.num {
   font-weight: 600;
   font-size: 3em;
 }
+
 span.text {
   color: #e0e0e0;
   font-size: 1em;
@@ -576,16 +596,19 @@ span.text {
   font-weight: 400;
   line-height: 0;
 }
+
 @media screen and (max-width: 1024px) {
   .achievement-wrapper {
     width: 85vw;
   }
+
   .achievement-container {
     height: 26vmin;
     width: 26vmin;
     font-size: 12px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .achievement-wrapper {
     margin-top: -55px;
@@ -594,35 +617,39 @@ span.text {
     flex-wrap: wrap;
     gap: 30px;
   }
+
   .achievement-container {
     width: calc(50% - 40px);
     height: 20vmin;
     font-size: 10px;
     padding: 0.5em 0;
   }
-  .achievement-section{
+
+  .achievement-section {
     margin: 0px 0;
     padding-bottom: 10px;
     height: 450px;
-
   }
-  .achievement-section h1{
+
+  .achievement-section h1 {
     padding-bottom: 25px;
   }
-  .achi-icon{
+
+  .achi-icon {
     /* width: fit-content; */
     width: 60px;
     /* height: 60px; */
     margin-top: 25px;
     font-size: 5em;
+  }
 
-  } 
-  .num{
+  .num {
     width: 60px;
     padding-left: 155px;
     position: absolute;
   }
-  .text{
+
+  .text {
     padding-left: 140px;
     padding-bottom: 20px;
   }
@@ -632,15 +659,16 @@ span.text {
   .achievement-section h1 {
     font-size: 3em;
   }
+
   .achievement-wrapper {
     gap: 15px;
   }
+
   .achievement-container {
     width: 70%;
     height: 25vmin;
     font-size: 8px;
   }
-  
 }
 
 /*  Our Team section Styles goes here */
@@ -648,8 +676,11 @@ span.text {
 /*  FAQ section Styles goes here */
 .faq-section h1 {
   text-align: center;
-  margin-bottom: 50px;
   font-family: "Lato", sans-serif;
+}
+
+.container.faq-container {
+  margin: 80px auto 100px;
 }
 
 .faq-card,
@@ -716,16 +747,16 @@ span.text {
 
 /*  Footer section Styles goes here */
 
-.footer{
+.footer {
   background-color: #24262b;
   padding: 40px 0 10px;
   bottom: 0;
   color: #bbbbbb;
 }
 
-.container{
+.container {
   max-width: 1170px;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -735,41 +766,41 @@ ul {
   list-style: none;
 }
 
-.footer-row{
+.footer-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer-col{
+.footer-col {
   width: 30%;
   padding: 0 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-.footer-col h4{
+.footer-col h4 {
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
   margin-bottom: 35px;
-  font-weight:500;
+  font-weight: 500;
   position: relative;
 }
 
-.footer-col h4::before{
-  content: '';
+.footer-col h4::before {
+  content: "";
   position: absolute;
-  left:0;
-  bottom:-10px;
+  left: 0;
+  bottom: -10px;
   background-color: rgb(252, 115, 60);
-  height:2px;
+  height: 2px;
   width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.footer-col ul li a{
+.footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
   text-decoration: none;
@@ -779,66 +810,74 @@ ul {
   transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
-  color:#ffffff;
+.footer-col ul li a:hover {
+  color: #ffffff;
   padding-left: 8px;
 }
-.first{
+
+.first {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.footer-col .social-links{
+
+.footer-col .social-links {
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
 }
-.footer-logo{  
+
+.footer-logo {
   width: 100%;
-  max-width:200px;
+  max-width: 200px;
   border-radius: 50%;
 }
-.footer-col ul{
+
+.footer-col ul {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.footer hr{
-  background-color:#fff;
+.footer hr {
+  background-color: #fff;
 }
-.footer-credit{
+
+.footer-credit {
   color: #bbbbbb;
   text-align: center;
 }
 
 /*responsiveness of footer*/
-@media(max-width: 768px){
-  .footer-col{
+@media (max-width: 768px) {
+  .footer-col {
     width: 45%;
     margin-bottom: 30px;
+  }
 }
-}
-@media(max-width: 574px){
-  .footer-col{
+
+@media (max-width: 574px) {
+  .footer-col {
     width: 90%;
-}
+  }
 }
 
 /* pre loader  css styles goes here */
