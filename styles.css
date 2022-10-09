@@ -719,9 +719,8 @@ span.text {
 }
 
 #faq-illlustration {
-  width: 430px;
-  margin-top: 15px;
-  margin-left: 9rem;
+  width: 100%;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
