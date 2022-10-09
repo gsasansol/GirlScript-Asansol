@@ -15,13 +15,6 @@
 html {
   scroll-behavior: smooth;
 }
-.debu{
-      width: 30%;
-      height: 8px;
-      margin: 10px auto;
-      border-radius: 100px;
-      background-image: linear-gradient(to right top, #ff6e00, #ff8e00, #ffac00, #ffc900, #ffe600);
-}
 .col-md-16 {
   width: 50%;
   float: left;
@@ -32,10 +25,12 @@ html {
     transform: scale(1.10, 1.10);
 }
 .h-line {
-  width: 60px;
-  height: 3px;
+  width: 80px;
+  height: 4px;
   margin: 10px auto;
-  background-image: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
+  border-radius: 50px;
+  background-image: linear-gradient(to right top, #ff6e00, #ff8e00, #ffac00, #ffc900, #ffe600);
+  
 }
 
 body {
