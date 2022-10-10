@@ -1767,8 +1767,8 @@ ul {
   background-color: rgb(233, 72, 2);
   color: white;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 30px;
+  padding: 12px 18px;
+  border-radius: 50px;
 }
 
 #myBtn:hover {
