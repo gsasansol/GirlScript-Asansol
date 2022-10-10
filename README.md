@@ -9,7 +9,8 @@
 
 <h6 align="center"><img src="https://raw.githubusercontent.com/gsasansol/branding/main/assets/asn-logo.png" height="250" /></p></h6>
 <h1 align="center"><code>&nbsp;GirlScript Asansol Community Website&nbsp;</code></h1>
-This is the student-run community site and event management webapp for GS's Asansol Students' Chapter using HTML, CSS and JavaScript. For any queries join our <a href="https://discord.com/invite/aVRPbMYfFH"> Discord  server.
+
+This is the student-run community site and event management webapp for GS's Asansol Students' Chapter using HTML, CSS and JavaScript. For any queries join our [Discord](https://discord.com/invite/aVRPbMYfFH).
 
 <br>
 
@@ -20,21 +21,26 @@ This is the student-run community site and event management webapp for GS's Asan
 - After cloning make sure you create a new branch by using `git checkout -b my-branch`.
 - Add your name in the CONTRIBUTORS.md file.
 - Add the modified/created files to the staging using `git add .`
-- Commit the changes made into the checked out branch using `git commit -m "commit message"`. 
+- Commit the changes made into the checked out branch using `git commit -m "commit message"`.
 - Push the changes using `git push origin my-branch`.
 
 Wow, you did it, happy codding!
 
-<h6><code>Note 1:</code> If you'd like to create and claim your own issues, discuss your idea by starting a thread in our <a href="https://discord.com/channels/963463889692020827/1023601705704755211">Discord forum</a> mentioning your GitHub username to have them assigned to you after the maintainers' approval. We're restricting creation of new issues to maintainers and core team only. While we respect contributors' autonomy, we would like to follow a well charted road-map to the first release of our website. Until then, all 'custom' issues making their way to the issue window on GitHub will be closed, unless in special circumstances.</h6>
+<h6><code>Note 1:</code>
 
-<h6><code>Note 2:</code> We're observing beginners addressing bugs and creating feature updates without any assignment or prior approval from the maintainers. Even though we appreciate the enthusiasm, that is not how we are accepting contributions in our repository and we encourage all beginners to read and properly follow the contribution policies. Please ensure all ideas are thoroughly discussed and have received approval from the moderatig team before collaborators begin working on the updates.</h6>
+If you'd like to create and claim your own issues, discuss your idea by starting a thread in our [Discord](https://discord.com/channels/963463889692020827/1023601705704755211) forum mentioning your GitHub username to have them assigned to you after the maintainers' approval. We're restricting creation of new issues to maintainers and core team only. While we respect contributors' autonomy, we would like to follow a well charted road-map to the first release of our website. Until then, all 'custom' issues making their way to the issue window on GitHub will be closed, unless in special circumstances.</h6>
 
-<h6><code>Note 3:</code> Once an issue is assigned to an individual (and one individual only at a time) we'll not reassign the same to anyone else unless the pull-request window expires (5 days from time of assignment) or the assignee unassigns themself. Any message from new-comers requesting assignment to an issue already claimed, will be ignored. First-time contributors are especially asked to take heed of this.</h6>
+<h6><code>Note 2:</code>
+
+We're observing beginners addressing bugs and creating feature updates without any assignment or prior approval from the maintainers. Even though we appreciate the enthusiasm, that is not how we are accepting contributions in our repository and we encourage all beginners to read and properly follow the contribution policies. Please ensure all ideas are thoroughly discussed and have received approval from the moderating team before collaborators begin working on the updates.</h6>
+
+<h6><code>Note 3:</code>
+
+Once an issue is assigned to an individual (and one individual only at a time) we'll not reassign the same to anyone else unless the pull-request window expires (5 days from time of assignment) or the assignee unassign themselves. Any message from new-comers requesting assignment to an issue already claimed, will be ignored. First-time contributors are especially asked to take heed of this.</h6>
 
 ## ⚒️ Tools and Frameworks
 
 <h6 align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-CC6699?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/Bootstrap-FFFFFF?style=for-the-badge&logo=Bootstrap&logoColor=purple"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/VSCode-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white"></h6>
-
 
 <br>
 
@@ -72,9 +78,8 @@ This project is made possible by our valuable contributors .Thanks to all the **
 
 [`MIT License`](./LICENSE) Copyright (c) 2022 GirlScript Asansol
 
-
-
 # Hacktoberfest 2022
+
 Repository designed for beginner to contribute to open-source
 
 ![image here](https://hacktoberfest.com/_next/static/media/opengraph.da6e44c0.png)
@@ -82,8 +87,7 @@ Repository designed for beginner to contribute to open-source
 ## ❓ What is Hacktoberfest 2022?
 
 Hacktoberfest 2022 is a month long virtual festival event to celebrate open source contributions presented by Digital Ocean, Intel and DEV. It is the easiest way to get into open source!
-https://hacktoberfest.digitalocean.com/
-During the entire month of October 2022, all you have to do is contribute to any open source projects and open at least 4 pull requests. Yes, any project and any kind of contributions. You don’t need to be an expert in programming or coding. It can be a be a bug fix, improvement, or even a documentation change! And win an awesome T-shirt and awesome stickers.
+During the entire month of October 2022, all you have to do is contribute to any open source projects and open at least 4 pull requests. Yes, any project and any kind of contributions. You don’t need to be an expert in programming or coding. It can be a be a bug fix, improvement, or even a documentation change! And win an awesome T-shirt and awesome stickers. Get [started](https://hacktoberfest.digitalocean.com/)!
 
 ## 😕 Why Should I Contribute?
 
@@ -91,7 +95,7 @@ The Hacktoberfest’s simple plain objective is:
 
     Support open source and earn a limited edition T-shirt!
 
-But, it’s not just about the t-shirts or stickers. Its about supporting open source. Its about celebrating open source, and giving it back. If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides a large list of available contribution opportunities (and yes, there are always plenty for beginners too).
+But, it’s not just about the T-shirts or stickers. Its about supporting open source. Its about celebrating open source, and giving it back. If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides a large list of available contribution opportunities (and yes, there are always plenty for beginners too).
 
 ## 👌 What Can I Contribute?
 
@@ -102,17 +106,19 @@ It doesn’t need to be code. It can be even documentation. Or spelling fix.
 You can contribute to any open source project hosted on Github.com and contribute anything between October 1 to October 31 midnight in 2020. You will find plenty of issues labeled with hacktoberfest or good-first-issue etc on Github. These will be the simple ones most probably and easy to fix.
 
 ## How to contribute
+
 Submit your pull request here for Hacktoberfest-2022 in any language you prefer, if language folder not present, create one as a part of it, after script add your name and GitHub profile into Contributors.md file.
 
 👕 Win Your T-Shirt
 
-In past years, shirts have arrived in November or December, depending on how far you live from San Francisco.
+In past years, T-shirts have arrived in November or December, depending on how far you live from San Francisco.
 
 The Digital Ocean team should eventually contact you asking for your shirt size and shipping address. (Keep in mind they are shipping 40,000 shirts so this process will take a while.) And yes, they will ship internationally.
 
 Don’t miss this opportunity. Start contributing to open source and get a limited edition T-shirt for Free! And also, Stickers!
 
 # Event details
+
 Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
 
 Hacktoberfest is open to everyone in our global community!
@@ -120,10 +126,11 @@ Pull requests can be made in any GitHub-hosted repositories/projects.
 Sign up anytime between October 1 and October 31.
 
 # Rules
-To qualify for the official limited edition Hacktoberfest shirt, you must register and make four pull requests (PRs) between October 1-31 (in any time zone). PRs can be made to any public repo on GitHub, not only the ones with issues labeled Hacktoberfest. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants who successfully complete the challenge will earn a T-shirt.
 
+To qualify for the official limited edition Hacktoberfest T-shirt, you must register and make four pull requests (PRs) between October 1-31 (in any time zone). PRs can be made to any public repo on GitHub, not only the ones with issues labeled Hacktoberfest. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants who successfully complete the challenge will earn a T-shirt.
 
-# Do's and Dont's of Hacktoberfest
+# Do's and Don'ts of Hacktoberfest
+
 <h4>Don't: open pull requests with minor text edits on other people's repositories</h4>
  If you're looking for a faster way to open four PR's and win, there's a better way!
 

@@ -7,17 +7,17 @@
 * To Delete Values ```Delete from Table-name where condition```
 * Query Optimization ~> The query optimizer attempts to determine the most efficient way to execute a given query by considering the possible query plans.
 
-* Anomally
-Anomalies are problems that can occur in poorly planned, un-normalised databases where all the data is stored in one table (a flat-file database).
+* Anomaly
+Anomalies are problems that can occur in poorly planned, un-normalized databases where all the data is stored in one table (a flat-file database).
 
 Insertion Anomaly - The nature of a database may be such that it is not possible to add a required piece of data unless another piece of unavailable data is also added. E.g. A library database that cannot store the details of a new member until that member has taken out a book.
 
-Deletion Anomaly - A record of data can legitimately be deleted from a database, and the deletion can result in the deletion of the only instance of other, required data, E.g. Deleting a book loan from a library member can remove all details of the particular book from the database such as the author, book title etc.
+Deletion Anomaly - A record of data can legitimately be deleted from a database, and the deletion can result in the deletion of the only instance of other, required data, E.g. Deleting a book loan from a library member can remove all details of the particular book from the database such as the author, book title, etc.
 
 Modification Anomaly - Incorrect data may have to be changed, which could involve many records having to be changed, leading to the possibility of some changes being made incorrectly.
 
 * Problems with File System:
-    1. Data Redundancy: It is possible that the same information may be duplicated in different files. ...
+    1. Data Redundancy: The same information may be duplicated in different files. ...
     2. Data Inconsistency: ...
     3. Difficulty in Accessing Data: ...
     4. Limited Data Sharing: ...
@@ -27,21 +27,21 @@ Modification Anomaly - Incorrect data may have to be changed, which could involv
     8. Security Problems:
 
 ## Keys
-* it is used for identifying unique rows from table. It also establishes relationship among tables.
+* it is used for identifying unique rows from a table. It also establishes a relationship among tables.
     1. Primary Key – A primary is a column or set of columns in a table that uniquely identifies tuples (rows) in that table and is not NULL.
 
-    2. Super Key – A super key is a set of one of more columns (attributes) to uniquely identify rows in a table.
+    2. Super Key – A super key is a set of one or more columns (attributes) to uniquely identify rows in a table.
 
-    3. Candidate Key – A super key with no redundant attribute is known as candidate key. There can be more then one candidate key.
+    3. Candidate Key – A super key with no redundant attribute is known as a candidate key. There can be more than one candidate key.
 
-    4. Alternate Key – Out of all candidate keys, only one gets selected as primary key, remaining keys are known as alternate or secondary keys.
+    4. Alternate Key – Out of all candidate keys, only one gets selected as the primary key, the remaining keys are known as alternate or secondary keys.
 
-    5. Composite Key – A key that consists of more than one attribute to uniquely identify rows (also known as records & tuples) in a table is called composite key.
+    5. Composite Key – A key that consists of more than one attribute to uniquely identify rows (also known as records & tuples) in a table is called a composite key.
 
     6. Foreign Key – Foreign keys are the columns of a table that points to the primary key of another table. They act as a cross-reference between tables.
 
 * What is the Domain of an attribute
-    It is the type of value that is present that is int,string,char etc.
+    It is the type of value that is present that is int, string, char, etc.
 
 * Normalisation
     1. Functional Dependency ~> Analyse on which dependency database is set, Relationship between two attributes
@@ -52,39 +52,39 @@ Modification Anomaly - Incorrect data may have to be changed, which could involv
     1. DDL  ~> Data Definition Language (Create/Alter/Drop/Truncate)
     2. DML ~> Data Manipulation Language (Select,Insert,Update)
     3. DCL ~> Data Control Language (Grant/Revoke)
-    4. TCL ~> Trasaction Control Language (Commit/Roll back)
+    4. TCL ~> Transaction Control Language (Commit/Rollback)
     5. VDL ~> View Definition Language
 
 * Levels of abstraction in DBMS
-    1. Physical ~> This is the lowest level of data abstraction. It describes how data is actually stored in database. You can get the complex data structure details at this level.
-    2. Logical ~> It describes what data is stored in database
-    3. View ~> This level describes the user interaction with database system.
+    1. Physical ~> This is the lowest level of data abstraction. It describes how data is stored in a database. You can get complex data structure details at this level.
+    2. Logical ~> It describes what data is stored in a database
+    3. View ~> This level describes the user interaction with the database system.
 
 * Aggregation
-    1. Maintain relationship between 2 RDBMS
-    2. Feature of Entity relation model which allow 1 relationship set to participate with another Relationship set
-    3. How more then one record collectively represent a dataset
+    1. Maintain a relationship between 2 RDBMS
+    2. Feature of Entity relation model which allows 1 relationship set to participate with another Relationship set
+    3. How more than one record collectively represents a dataset
 
 * Properties of Transaction are ACID properties
 * Locking Scheme in Transaction:
-    1. Shared Lock ~> Other transaction can only read and not write (paise nikalte samey)
-    2. Exclusive Lock ~> Other transaction can neither read nor write (for other operations like pin change karna/check balance)
+    1. Shared Lock ~> Other transactions can only read and not write 
+    2. Exclusive Lock ~> Other transactions can neither read nor write
 
 * UNIQUE Key can be NULL for once only
 * Triggers
-    * Set of commands executed when certain event occurrs
-* Stored Procedure is basically a set of SQL queries that are executed all together in a pre-maded sequence
+    * Set of commands executed when a certain event occurs
+* Stored Procedure is a set of SQL queries that are executed altogether in a pre-made sequence
 
 * the most commonly used normal forms:
-    1. First normal form(1NF) ~> A relation is in first normal form if every attribute in that relation is singled valued attribute.
-    2. Second normal form(2NF) ~> A relation must be in first normal form and relation must not contain any partial dependency.
+    1. First normal form(1NF) ~> A relation is in first normal form if every attribute in that relation is a single-valued attribute.
+    2. Second normal form(2NF) ~> A relation must be in first normal form and the relation must not contain any partial dependency.
     3. Third normal form(3NF) ~> Transitive dependencies are removed in this form
     4. Boyce & Codd normal form (BCNF)
 
 * Weak Entity Set
     A weak entity set is an entity set that does not contain sufficient attributes to uniquely identify its entities
 * Multivalue Attrivute
-    An attribute that can hold multiple values is known as multivalued attribute. It is represented with double ovals in an ER Diagram.
+    An attribute that can hold multiple values is known as a multivalued attribute. It is represented with double ovals in an ER Diagram.
 * Strong Entity Set
     A strong entity set is an entity set that contains sufficient attributes to uniquely identify all its entities.
 
@@ -97,26 +97,26 @@ Modification Anomaly - Incorrect data may have to be changed, which could involv
 * Partial Dependency
     Partial Dependency occurs when a nonprime attribute is functionally dependent on part of a candidate key.
 * Fully-functionally Dependency
-    An attribute is fully functional dependent on another attribute, if it is Functionally Dependent on that attribute and not on any of its proper subset.
+    An attribute is a fully functional dependent on another attribute if it is Functionally Dependent on that attribute and not on any of its proper subsets.
 
 * Concurrency Control ~> Concurrency control is the procedure in DBMS for managing simultaneous operations without conflicting with each another. It helps you to make sure that database transactions are performed concurrently without violating the data integrity of respective databases.
 
 # Data Model
 <a href="https://afteracademy.com/blog/what-is-data-model-in-dbms-and-what-are-its-types">Learn More</a>
 
-* Data Model gives us an idea that how the final system will look like after its complete implementation.
+* Data Model gives us an idea that how the final system will look after its complete implementation.
 * Some of them are:
-1. Hierarchical Model ~> Hierarchical Model was the first DBMS model. This model organises the data in the hierarchical tree structure. The hierarchy starts from the root which has root data and then it expands in the form of a tree adding child node to the parent node.
+1. Hierarchical Model ~> Hierarchical Model was the first DBMS model. This model organizes the data in the hierarchical tree structure. The hierarchy starts from the root which has root data and then it expands in the form of a tree adding a child node to the parent node.
 
 2. Network Model ~> a record can have more than one parent.
 
-3. Entity-Relationship Model ~> the real-world problem in the pictorial form to make it easy for the stakeholders to understand. 
+3. Entity-Relationship Model ~> the real-world problem in pictorial form to make it easy for the stakeholders to understand. 
 
-4. Relational Model ~> In this model, the data is maintained in the form of a two-dimensional table. All the information is stored in the form of row and columns. The basic structure of a relational model is tables. So, the tables are also called relations in the relational model.
+4. Relational Model ~> In this model, the data is maintained in the form of a two-dimensional table. All the information is stored in the form of rows and columns. The basic structure of a relational model is tables. So, the tables are also called relations in the relational model.
 
 5. Object-Oriented Data Model ~> both the data and relationship are present in a single structure known as an object. 
 
-6. Object-Relational Data Model ~> This model was built to fill the gap between object-oriented model and the relational model. We can have many advanced features like we can make complex data types according to our requirements using the existing data types.
+6. Object-Relational Data Model ~> This model was built to fill the gap between the object-oriented model and the relational model. We can have many advanced features like we can make complex data types according to our requirements using the existing data types.
 
 7. Flat Data Model ~> It is a simple model in which the database is represented as a table consisting of rows and columns. To access any data, the computer has to read the entire table. This makes the modes slow and inefficient.
 
@@ -131,7 +131,7 @@ Context Data Model
 * To disconnect from database ```\quit```
 * To change language from ```JS``` to ```SQL``` use ```\sql```
 * To Create a database ```create database db-name```
-* To clear shell screen, use ```Ctrl + L```
+* To clear the shell screen, use ```Ctrl + L```
 * To Create a table 
 ```sql
 create table tb-name(
@@ -149,18 +149,18 @@ create table tb-name(
 * To Count no of rows in table ```SELECT COUNT(*) FROM tb-name```
 * For logical operations ```AND```, ```OR``` are used
 * To Apply Condition for range, use ```BETWEEN``` keyword as ```SELECT * FROM tb-name WHERE field1 BETWEEN range-1 AND range-2```
-* ```BETWEEN``` is inclusive in nature
-* To check condition from a iterative object, use ```IN``` as ```SELECT * FROM tb-name WHERE age IN (2,4,6,8,10)``` , this will result in list of tuples with age equal to 2,4,6,8 or 10.
+* ```BETWEEN``` is inclusive
+* To check the condition from an iterative object, use ```IN``` as ```SELECT * FROM tb-name WHERE age IN (2,4,6,8,10)``` , this will result in a list of tuples with age equal to 2,4,6,8 or 10.
 * Missing or Unknown Values are represented by ```NULL``` in SQL and they can be checked by using ```IS NULL``` or ```IS NOT NULL``` expression
 * IN SQL, ```LIKE``` operator is used with ```WHERE``` clause to search for a ```pattern``` in a column. It uses 2 types of wildcards:
-    1. ```%``` ~> represents zero, one or more charcater
+    1. ```%``` ~> represents zero, one or more characters
     2. ```_``` ~> represents a single character
 * Similar to ```LIKE```, we can use ```NOT LIKE``` operator for values not matching certain ```pattern```
-* To Perform arithematic operations , queries like ```SELECT (a+b)``` or ```SELECT (a-b)``` or ```SELECT (a/b)``` can be used
-* Arithematic operations are similar to C programming as Int/Int is INT
-* Aliasing ~> Assigning a temporary name to something, it is done in SQL using ```AS``` keyword
+* To Perform arithmetic operations , queries like ```SELECT (a+b)``` or ```SELECT (a-b)``` or ```SELECT (a/b)``` can be used
+* Arithmetic operations are similar to C programming as Int/Int is INT
+* Aliasing ~> Assigning a temporary name to something, is done in SQL using ```AS``` keyword
 * To Comment something in SQL use ```--``` or ```/* */``` for multiline comment
-* To Sort results ```ORDER BY``` keyword is used, by default its in ```Ascending``` order and for ```Descending``` order we use ```DESC``` as ```SELECT * FROM tb-name ORDER BY field1 DESC```
+* To Sort results ```ORDER BY``` keyword is used, by default it's in ```Ascending``` order and for ```Descending``` order we use ```DESC``` as ```SELECT * FROM tb-name ORDER BY field1 DESC```
 * ```ORDER BY``` can be used to sort table data based on multiple columns as ```SELECT * FROM tb-name ORDER BY col1,col2```
 * To Count the Value of cells based on Groups, or basically to divide the data into multiple groups, ```GROUP BY``` is used
 * ```ORDER BY``` is always used after the ```GROUP BY```
@@ -188,14 +188,14 @@ WHERE year = 2015;
 
 * <u>SET THEORY</u>
 * ```UNION``` and ```UNION ALL``` are used to group or merge the output of two or more queries.
-* ```UNION``` refers to summing up of only UNIQUE records where as ```UNION ALL``` refers to summing up of all the records
-* QUERY is as ```SELECT * FROM tb1 WHERE condition UNION SELECT * FROM tb2 WHERE condition2```, the only thing to make sure is that domain of each field from output of both sub-query should be same
-* ```INTERSECT``` is used to extract records that are unique in both the sub queries
+* ```UNION``` refers to summing up only UNIQUE records whereas ```UNION ALL``` refers to summing up all the records
+* QUERY is as ```SELECT * FROM tb1 WHERE condition UNION SELECT * FROM tb2 WHERE condition2```, the only thing to make sure of is that the domain of each field from the output of both sub-query should be the same
+* ```INTERSECT``` is used to extract records that are unique in both the subqueries
 * ```SELECT * FROM tb1 INTERSECT SELECT * FROM tb2```
-* ```EXCEPT``` is used to find the ```A-B``` of two sub-queries in table, ```SELECT * FROM tb1 EXCEPT SELECT * FROM tb2```
-* ```SEMI JOIN```, is query where contents in tb1 match to contents in tb2, ```SELECT * FROM tb1 WHERE field IN (SELECT * FROM tb2);```
-* ```ANTI JOIN```, is query where contents in tb1 not match to contents in tb2, ```SELECT * FROM tb1 WHERE field NOT IN (SELECT * FROM tb2);```
-* Sample of Subquery inside query
+* ```EXCEPT``` is used to find the ```A-B``` of two sub-queries in the table, ```SELECT * FROM tb1 EXCEPT SELECT * FROM tb2```
+* ```SEMI JOIN```, is a query where contents in tb1 match to contents in tb2, ```SELECT * FROM tb1 WHERE field IN (SELECT * FROM tb2);```
+* ```ANTI JOIN```, is a query where contents in tb1 do not match to contents in tb2, ```SELECT * FROM tb1 WHERE field NOT IN (SELECT * FROM tb2);```
+* Sample of Subquery inside a query
 ```sql
 -- Select fields
 SELECT *
@@ -212,7 +212,7 @@ WHERE life_expectancy > 1.15 *
 ```
 * Subqueries are most frequently used in ```WHERE``` clause
 * Cross JOIN is used as ```SELECT * FROM tb1 CROSS JOIN tb2```
-* To get the Round-of value, we can use ```ROUND(value,decimal-pomit)``` to get the required output as ```ROUND(0.3434,2)``` to get ```0.34```
+* To get the Round-of value, we can use ```ROUND(value,decimal-point)``` to get the required output as ```ROUND(0.3434,2)``` to get ```0.34```
 
 ## Correlated Subqueries
 * Simple Subquery Vs Correlated Subqueries
@@ -223,7 +223,7 @@ WHERE life_expectancy > 1.15 *
 </tr>
 <tr>
     <td>Can be run independently from the main query </td>
-    <td>Dependent on the main query to eecute </td>
+    <td>Dependent on the main query to execute </td>
 </tr>
 <tr>
     <td>Evaluated once in the whole query</td>
@@ -237,7 +237,7 @@ WHERE life_expectancy > 1.15 *
     2. Can reference information from the outer subquery or main query
 
 ## Common Table Expressions
-* Table declared before main query
+* Table declared before the main query
 * Named and referenced later in ```FROM``` statement
 ```sql
 WITH cte AS (
@@ -250,28 +250,28 @@ FROM cte;
 * Executed only once
     1. CTE is stored in memory
     2. Improves query performance
-* Improving organization of queries
+* Improving the organization of queries
 * Referencing other CTEs
 * Referencing itself (SELF JOIN)
 * To declare multiple ```CTE``` just separate them with a ```comma(,)```
 ```sql
 WITH home AS (
   SELECT m.id, m.date, 
-  		 t.team_long_name AS hometeam, m.home_goal
+         t.team_long_name AS hometeam, m.home_goal
   FROM match AS m
   LEFT JOIN team AS t 
   ON m.hometeam_id = t.team_api_id),
--- Declaring another CTE after ,
+-- Declaring another CTE after,
 -- Declare and set up the away CTE
 away AS (
   SELECT m.id, m.date, 
-  		 t.team_long_name AS awayteam, m.away_goal
+         t.team_long_name AS awayteam, m.away_goal
   FROM match AS m
   LEFT JOIN team AS t 
   ON m.awayteam_id = t.team_api_id)
 -- Select date, home_goal, and away_goal
 SELECT 
-	home.date,
+    home.date,
     home.hometeam,
     away.awayteam,
     home.home_goal,
@@ -296,7 +296,7 @@ FROM match
 WHERE season = '2011/2012';
 ```
 ```sql
--- RANK() function orders rank from smallest to largest value
+-- RANK() function orders rank from smallest to the largest value
 SELECT 
     date,
     (home_goal + away_goal) AS goals,
@@ -305,8 +305,8 @@ FROM match
 WHERE season = '2011/2012';
 ```
 * Processed after every part of query except ```ORDER BY```
-    1. Uses information in result set rather than database
-* Available in PostgreSQL, Oracle   , MySQL, SQL Server.. but not SQLite
+    1. Uses information in a result set rather than a database
+* Available in PostgreSQL, Oracle, MySQL, and SQL Server.. but not SQLite
 ```sql
 -- PARTITION BY
 /*
@@ -333,12 +333,12 @@ ROWS BETWEEN <start> AND <finish>
     2. FOLLOWING
     3. UNBOUNDED PRECEDING -> since the beginning
     4. UNBOUNDED FOLLOWING
-    5. CURRENT ROW -> stop at current row
+    5. CURRENT ROW -> stop at the current row
 ```sql
 SELECT 
-	date,
-	home_goal,
-	away_goal,
+    date,
+    home_goal,
+    away_goal,
     -- Create a running total and running average of home goals
     SUM(home_goal) OVER(ORDER BY date 
          ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_total,
@@ -346,28 +346,28 @@ SELECT
          ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_avg
 FROM match
 WHERE 
-	hometeam_id = 9908 
-	AND season = '2011/2012';
+    hometeam_id = 9908 
+    AND season = '2011/2012';
 ```
 
 * to add a ```DATE``` in sql, we use ```Date``` data-type and it is inserted as ```DATE 'yyyy/MM/dd'``` format
 * to add a ```TIMESTAMP``` in sql, we use ```timestamp``` data-type and it is inserted as ```TIMESTAMP 'yyyy/MM/dd HH:MM:SS```
 * Timestamp from ```1900``` onwards can only be inserted into SQL
-* To insert characters like ```'(single quote)```, one need to use ```\(backslash)```
+* To insert characters like ```'(single quote)```, one needs to use ```\(backslash)```
 * to use column names with space in between like ```Column Number 1```, we need to represent it inside ```back-quotes``` like ``` `Column Number 1` ``` though it is preferable to always use ```underscore _``` instead of ```space```
-* To change password use ```ALTER USER 'root'@'localhost' IDENTIFIED BY 'New-Password'```
+* To change the password use ```ALTER USER 'root'@'localhost' IDENTIFIED BY 'New-Password'```
 
 
 # View
-* It is a keyword which can be used as data table
+* It is a keyword that can be used as a data table
 * It creates an alias for a ```SELECT``` query
-* Its syntasx is
+* Its syntax is
 ```sql
 CREATE VIEW name_for_view AS select_query
 ```
 
 # Stored Function
-* Delimeters are applied at the client 
+* Delimeters are applied to the client 
 ```sql
 DELIMETER //
 CREATE FUNCTION track_len(seconds INT)
@@ -396,7 +396,7 @@ SELECT @output_variable;
 ```
 * We can call any function/procedure from inside of another function or procedure
 * To Check all procedures use ```SHOW PROCEDURES STATUS WHERE DEFINER LIKE 'admin%';```
-* To drop procedure use ```DROP PROCEDURE IF EXISTS procedure_name```
+* To drop the procedure use ```DROP PROCEDURE IF EXISTS procedure_name```
 
 
 # Variables and Loops
@@ -432,8 +432,8 @@ START TRANSACTION
     INSERT INTO TB3
 END TRANSACTION
 ```
-* State of database rolls back to original shape if any statement fails from an transaction
-* Each transaction occurs isolately
+* State of the database rolls back to its original shape if any statement fails from a transaction
+* Each transaction occurs isolated
 * Example
 ```sql
 DROP TABLE IF EXISTS widgetInventory;
@@ -544,43 +544,43 @@ DELIMITER ;
 
 # SQL languages
 
-**DDL** is short name of Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database.
+**DDL** is the short name of Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database.
 
-**DML** is short name of Data Manipulation Language which deals with data manipulation, and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE etc, and it is used to store, modify, retrieve, delete and update data in database.
+**DML** is the short name of Data Manipulation Language that deals with data manipulation, and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE, etc, and it is used to store, modify, retrieve, delete and update data in the database.
 
-**DCL** is short name of Data Control Language which includes commands such as GRANT, and mostly concerned with rights, permissions and other controls of the database system.
+**DCL** is the short name of Data Control Language which includes commands such as GRANT, and is mostly concerned with rights, permissions, and other controls of the database system.
 
 # Datatypes
 Text types
 
 | Data type        | Description                                                                                                                                                                                                                                                                                      |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CHAR(size)       | Holds a fixed length string (can contain letters, numbers, and special characters). The fixed size is specified in parenthesis. Can store up to 255 characters                                                                                                                                   |
-| VARCHAR(size)    | Holds a variable length string (can contain letters, numbers, and special characters). The maximum size is specified in parenthesis. Can store up to 255 characters. Note: If you put a greater value than 255 it will be converted to a TEXT type                                               |
+| CHAR(size)       | Holds a fixed-length string (can contain letters, numbers, and special characters). The fixed size is specified in parentheses. Can store up to 255 characters                                                                                                                                   |
+| VARCHAR(size)    | Holds a variable-length string (can contain letters, numbers, and special characters). The maximum size is specified in parentheses. Can store up to 255 characters. Note: If you put a greater value than 255 it will be converted to a TEXT type                                               |
 | TINYTEXT         | Holds a string with a maximum length of 255 characters                                                                                                                                                                                                                                           |
 | TEXT             | Holds a string with a maximum length of 65,535 characters                                                                                                                                                                                                                                        |
 | BLOB             | For BLOBs (Binary Large OBjects). Holds up to 65,535 bytes of data                                                                                                                                                                                                                               |
 | MEDIUMTEXT       | Holds a string with a maximum length of 16,777,215 characters                                                                                                                                                                                                                                    |
 | MEDIUMBLOB       | For BLOBs (Binary Large OBjects). Holds up to 16,777,215 bytes of data                                                                                                                                                                                                                           |
 | LONGTEXT         | Holds a string with a maximum length of 4,294,967,295 characters                                                                                                                                                                                                                                 |
-| LONGBLOB         | For BLOBs (Binary Large OBjects). Holds up to 4,294,967,295 bytes of data                                                                                                                                                                                                                        |
-| ENUM(x,y,z,etc.) | Let you enter a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a blank value will be inserted.Note: The values are sorted in the order you enter them.You enter the possible values in this format: ENUM('X','Y','Z') |
+| LONGBLOB         | For BLOBs (Binary Large Objects). Holds up to 4,294,967,295 bytes of data                                                                                                                                                                                                                        |
+| ENUM(x,y,z, etc.) | Let you enter a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a blank value will be inserted. Note: The values are sorted in the order you enter them.You enter the possible values in this format: ENUM('X','Y','Z') |
 | SET              | Similar to ENUM except that SET may contain up to 64 list items and can store more than one choice                                                                                                                                                                                               |
 
 Number types
 
 | Data type       | Description                                                                                                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TINYINT(size)   | -128 to 127 normal. 0 to 255 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                                                  |
-| SMALLINT(size)  | -32768 to 32767 normal. 0 to 65535 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                                            |
-| MEDIUMINT(size) | -8388608 to 8388607 normal. 0 to 16777215 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                                     |
-| INT(size)       | -2147483648 to 2147483647 normal. 0 to 4294967295 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                             |
-| BIGINT(size)    | -9223372036854775808 to 9223372036854775807 normal. 0 to 18446744073709551615 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                 |
+| TINYINT(size)   | -128 to 127 normal. 0 to 255 UNSIGNED*. The maximum number of digits may be specified in parentheses |
+| SMALLINT(size)  | -32768 to 32767 normal. 0 to 65535 UNSIGNED*. The maximum number of digits may be specified in parentheses |
+| MEDIUMINT(size) | -8388608 to 8388607 normal. 0 to 16777215 UNSIGNED*. The maximum number of digits may be specified in parentheses |
+| INT(size)       | -2147483648 to 2147483647 normal. 0 to 4294967295 UNSIGNED*. The maximum number of digits may be specified in parentheses |
+| BIGINT(size)    | -9223372036854775808 to 9223372036854775807 normal. 0 to 18446744073709551615 UNSIGNED*. The maximum number of digits may be specified in parentheses |
 | FLOAT(size,d)   | A small number with a floating decimal point. The maximum number of digits may be specified in the size parameter. The maximum number of digits to the right of the decimal point is specified in the d parameter                     |
 | DOUBLE(size,d)  | A large number with a floating decimal point. The maximum number of digits may be specified in the size parameter. The maximum number of digits to the right of the decimal point is specified in the d parameter                     |
-| DECIMAL(size,d) | A DOUBLE stored as a string , allowing for a fixed decimal point. The maximum number of digits may be specified in the size parameter. The maximum number of digits to the right of the decimal point is specified in the d parameter |
+| DECIMAL(size,d) | A DOUBLE stored as a string, allowing for a fixed decimal point. The maximum number of digits may be specified in the size parameter. The maximum number of digits to the right of the decimal point is specified in the d parameter |
 
-Date types
+Data types
 
 | Data type   | Description                                                                                                                                                                                                                              |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -588,7 +588,7 @@ Date types
 | DATETIME()  | *A date and time combination. Format: YYYY-MM-DD HH:MI:SSNote: The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'                                                                                                |
 | TIMESTAMP() | *A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD HH:MI:SSNote: The supported range is from '1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07' UTC |
 | TIME()      | A time. Format: HH:MI:SSNote: The supported range is from '-838:59:59' to '838:59:59'                                                                                                                                                    |
-| YEAR()      | A year in two-digit or four-digit format.Note: Values allowed in four-digit format: 1901 to 2155. Values allowed in two-digit format: 70 to 69, representing years from 1970 to 2069                                                     |
+| YEAR()      | A year in two-digit or four-digit format.Note: Values allowed in the four-digit format: 1901 to 2155. Values allowed in the two-digit format: 70 to 69, representing years from 1970 to 2069                                                     |
 
 # Database
 Create
@@ -604,7 +604,7 @@ drop database dbname;
 Check if not exit and create
 ```sql
 IF OBJECT_ID('tbl_kunde', N'U') is not null
-	drop table tbl_kunde;
+    drop table tbl_kunde;
 GO
 create table tbl_kunde (
   id_kunde int not null primary key,
@@ -721,7 +721,7 @@ Grant rights
 ```sql
 grant select, insert, delete, references, update to romulus
 ```
-Grant refrences
+Grant references
 ```sql
 grant references (id_moral_nr) on tkey_moral to romulus
 ```
@@ -853,7 +853,7 @@ FROM customers, items
 WHERE customers.id=seller_id
 ORDER BY customers.id
 ```
-**Join tables** -> Joining two tables together in a query output. The third line is important because it shows how the two tables are related (in this case it is their key values).   
+**Join tables** -> Joining two tables together in query output. The third line is important because it shows how the two tables are related (in this case it is their key values).   
 
 ```sql
 SELECT customers.name, items.name FROM customers
@@ -870,7 +870,7 @@ where dt_zeit = (select max(dt_zeit) from tbl_stueck)
 or dt_zeit = (select min(dt_zeit) from tbl_stueck)
 order by dt_zeit;
 ```
-Select with query in condition
+Select with a query in condition
 ```sql
 select dt_stueck_titel as Titel, dt_zeit as Zeit
 from tbl_stueck
@@ -938,7 +938,7 @@ create function f_rabatt(@name varchar(40), @vers varchar(30))
 ```
 
 #Procedure
-Stored procedures are stored as precompilated code (stored routine) and called by the programmer wherever it wants to fire. Stored procedure can return value(s).
+Stored procedures are stored as precompiled code (stored routine) and called by the programmer wherever it wants to fire. The stored procedure can return value(s).
 
 Create and execute
 ```sql
@@ -968,7 +968,7 @@ DECLARE @neue_summe INT;
 ```
 
 #Trigger
-Triggers are named database objects fired automatically when insert, delete, update (or other event) occurred, there can be no explicit invocation. Trigger can not return any data.
+Triggers are named database objects fired automatically when insert, delete, update (or another event) occurred, there can be no explicit invocation. A trigger can not return any data.
 
 Create simple
 ```sql
@@ -989,47 +989,47 @@ drop trigger t_ort
 Checks the referential integrity
 ```sql
 create trigger t_bst_mut on bst
-	for insert, update
-	as
-	begin
-		set nocount on;
-		if(select id_fi_k from inserted) NOT IN (select id_kund from knd)
-			begin
-				raiserror('Es besteht kein entsprechender Kunde.', 15, 1);
-				rollback transaction;
-			end
-	end;
+    for insert, update
+    as
+    begin
+        set nocount on;
+        if(select id_fi_k from inserted) NOT IN (select id_kund from knd)
+            begin
+                raiserror('Es besteht kein entsprechender Kunde.', 15, 1);
+                rollback transaction;
+            end
+    end;
 ```
 Replaces on delete no action
 ```sql
 create trigger t_ku_del on knd
-	for delete
-	as
-	begin
-		set nocount on;
-		if((select id_kunde from deleted) IN (select id_fi_k from bst))
-			begin
-				raiserror('Löschung verwert; es bestehen noch Bestelungen für diesen Kunden.', 15, 1)
-				rollback transaction
-			end
-	end;
+    for delete
+    as
+    begin
+        set nocount on;
+        if((select id_kunde from deleted) IN (select id_fi_k from bst))
+            begin
+                raiserror('Löschung verwert; es bestehen noch Bestelungen für diesen Kunden.', 15, 1)
+                rollback transaction
+            end
+    end;
 ```
 Replaces on update cascade
 ```sql
 create trigger t_update_knd on knd
-	after update
-	as
-	begin
-		set nocount on;
-		update bst set id_fi_k = (select id_kund from inserted)
-	end;
+    after update
+    as
+    begin
+        set nocount on;
+        update bst set id_fi_k = (select id_kund from inserted)
+    end;
 ```
 Replaces on delete cascade
 ```sql
 create trigger t_delete_knd on knd
-	after delete
-	as
-	begin
-		delete from bst where id_fi_k = (select id_kund from deleted)
-	end;
+    after delete
+    as
+    begin
+        delete from bst where id_fi_k = (select id_kund from deleted)
+    end;
 ```
