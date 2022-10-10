@@ -71,11 +71,11 @@ performance based on metrics such as F1 score, precision, etc.
 ![](components/articles/artificial-intelligence/assets/image2.png){width="4.145833333333333in"
 height="1.6208661417322834in"}
 
--   As can be referenced from the above image, in **traditional
+-   >As can be referenced from the above image, in **traditional
     > programs** we feed in the input and the logic/program and we
     > obtain the output accordingly.
 
--   In **Machine learning**, however, we feed in the Data/input obtained
+-   >In **Machine learning**, however, we feed in the Data/input obtained
     > from the training set, along with the output from the previous
     > cycle, or the expected output. The algorithm produces its own
     > program which is then tested for performance.
@@ -84,43 +84,42 @@ height="1.6208661417322834in"}
 
 -   **Supervised learning:**
 
-    -   *Supervised learning is the machine learning task of learning a
+    - >   *Supervised learning is the machine learning task of learning a
         > function that maps an input to an output based on an example
         > input-output pairs. The given data is labeled. Both
         > classification and regression problems are supervised learning
         > problems.*
 
     -   Example: Consider data of teenagers. The data consists of the
-        > gender and age of each teenager and each teenager is labeled
-        > as 'student' or 'non-student'
+        gender and age of each teenager and each teenager is labeled
+         as 'student' or 'non-student'
 
 -   **Unsupervised learning:**
 
-    -   *Unsupervised learning is a type of machine learning algorithm
+    -  > *Unsupervised learning is a type of machine learning algorithm
         > used to draw inferences from datasets consisting of input data
         > without labeled responses. In unsupervised learning
         > algorithms, classification, or categorization is not included
         > in the observations.*
-
     -   Hence, for our previous example of data on teenagers, the data
-        > would be given, and a correlation within the data would be
-        > inferred by the algorithm itself.
+         would be given, and a correlation within the data would be
+         inferred by the algorithm itself.
 
 -   **Reinforcement learning:**
 
-    -   *Reinforcement learning is the problem of getting an agent to
+    - >  *Reinforcement learning is the problem of getting an agent to
         > act in the world to maximize its rewards.*
 
     -   A learner is not told what actions to take as in most forms of
-        > machine learning but instead must discover which actions yield
-        > the most reward by trying them. For example --- Consider
-        > teaching a dog a new trick: we cannot tell it what to tell it
-        > to do what to do, but we can reward/punish it if it does the
-        > right/wrong thing.
+         machine learning but instead must discover which actions yield
+         the most reward by trying them. For example --- Consider
+         teaching a dog a new trick: we cannot tell it what to tell it
+         to do what to do, but we can reward/punish it if it does the
+         right/wrong thing.
 
 -   **Semi-supervised learning**
 
-    -   *Semi-supervised learning is an approach to machine learning
+    -  > *Semi-supervised learning is an approach to machine learning
         > that combines small labeled data with a large amount of
         > unlabeled data during training. Semi-supervised learning falls
         > between unsupervised learning and supervised learning.*
@@ -130,13 +129,13 @@ height="1.6208661417322834in"}
 Some of the applications of Artificial intelligence/Machine learning is
 as follows:
 
--   **Speech Recognition:** One of the most common and extensive
+-  > **Speech Recognition:** One of the most common and extensive
     > applications of AI, speech recognition makes use of NLP to convert
     > human speech into an understandable format, which is then refined,
     > processed and converted into written format if needed. An example
     > of this would be Siri or the Amazon echo.
 
--   **Computer vision:** CV has been on the rise in recent years,
+-   >**Computer vision:** CV has been on the rise in recent years,
     > especially with the popularization of tesla, and its self-driving
     > feature. It is the process wherein visual data such as from videos
     > and images, and then processing them to take the appropriate action
@@ -145,13 +144,13 @@ as follows:
     > radiology imaging in healthcare, and self-driving cars within the
     > automotive industry.
 
--   **Fraud detection:** Banks and other financial institutions make use
+-  > **Fraud detection:** Banks and other financial institutions make use
     > of AI and ML to capture fraud and have a robust fraud detection
     > system, which allows them to promise more secure services, and
     > reduces the probability of fraud, especially due to rising fraud
     > numbers in recent times.
 
--   **Customer service:** Usage of AI/ML-based online chatbots has
+-   >**Customer service:** Usage of AI/ML-based online chatbots has
     > become quite popular and is cost-intensive, since it allows one to
     > run their business without having to hire a customer service
     > agent. Due to the improvements in AI/ML technologies, the service
@@ -166,20 +165,20 @@ as follows:
 
 ## **Advantages of AI/ML**
 
--   **Reduced errors:** One of the advantages of establishing an AI/ML
+-   >**Reduced errors:** One of the advantages of establishing an AI/ML
     > model and then using it for your processes is that it reduces the
     > manual interference that is required for data processing and onboarding.
     > This results in the lowering of manual errors and remedial tasks
     > becoming background processes, which makes the entire process more
     > efficient and less error-prone.
 
--   **Automation:** With the increased adoption of AI/ML, there is an
+-   >**Automation:** With the increased adoption of AI/ML, there is an
     > increase in automation of most trivial tasks as well as tasks that
     > are business-facing. AI can be used to automate most tasks with
     > quite good results, leading to cost-effectiveness, and better
     > business processes.
 
--   **Better customer experience:** With the usage of online ML based
+-   >**Better customer experience:** With the usage of online ML based
     > chatbots, the speedy resolution of a customer's query results in
     > better satisfaction in comparison to having to call and wait for
     > customer care to get back to you. Furthermore, the automation
@@ -187,7 +186,7 @@ as follows:
     > in case needed, makes the entire experience much more satisfactory
     > and seamless.
 
--   **Decision making:** Although humans do not lack decision making,
+-   >**Decision making:** Although humans do not lack decision making,
     > they do lack the ability to process high amounts of information
     > with a high degree of accuracy. However, AI models can take large
     > datasets, make meaning out of them, and produce data trends,
