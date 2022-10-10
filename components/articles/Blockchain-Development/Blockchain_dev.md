@@ -73,7 +73,7 @@ The blockchain is an incorruptible digital ledger of economic transactions that 
 -   [Mastering BitCoin](https://github.com/bitcoinbook/bitcoinbook) / [Chinese version](http://book.8btc.com/books/6/masterbitcoin2cn/_book/) / [pdf download](http://book.8btc.com/master_bitcoin?export=pdf)
 -   [Bitcoin Improvement Proposals (BIPs)](https://github.com/bitcoin/bips/)
 
-+   [But how does bitcoin actually work?](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
++   [But how does bitcoin work?](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
 +   [Mining visualization](http://www.yogh.io/#mine:last)
 +   [Wallets](./BitCoin/awesome.md#wallets-api)
 +   [Explorers](./BitCoin/awesome.md#blockchain-explorers)
@@ -86,9 +86,9 @@ The blockchain is an incorruptible digital ledger of economic transactions that 
 
 [<img src="assets/ethereum.png" align="right" width="80">](https://www.ethereum.org/)
 
-**Ethereum** is a **decentralized platform that runs smart contracts**: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference.
+**Ethereum** is a **decentralized platform that runs smart contracts**: applications that run exactly as programmed without any possibility of downtime, censorship, fraud, or third-party interference.
 
-These apps run on a custom built **blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property.**
+These apps run on a custom-built **blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property.**
 
 
 -   [Ethereum white paper](https://github.com/ethereum/wiki/wiki/White-Paper) / [Chinese version](./Ethereum/white%20paper.md) / [Annotated Ethereum white paper](https://fermatslibrary.com/s/ethereum-a-next-generation-smart-contract-and-decentralized-application-platform)
@@ -137,7 +137,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
     -   [Benefits of Enterprise Ethereum](https://101blockchains.com/enterprise-ethereum/#3)
     -   [Architecture Stack of the Enterprise Ethereum Blockchain](https://101blockchains.com/enterprise-ethereum/#4)
     -   [What Are The Possible Enterprise Ethereum Use Cases?](https://101blockchains.com/enterprise-ethereum/#5)
-    -   [Ethereum Blockchain as a Service Providers](https://101blockchains.com/enterprise-ethereum/#6)
+    -   [Ethereum Blockchain as a Service Provider](https://101blockchains.com/enterprise-ethereum/#6)
     -   [Real-World Companies Using Enterprise Ethereum](https://101blockchains.com/enterprise-ethereum/#7)
     -   [Final Words](https://101blockchains.com/enterprise-ethereum/#8)
 
@@ -149,7 +149,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
     -   [5 consortium blockchain comparison](http://www.infoq.com/cn/articles/5-consortium-blockchain-comparison) / [quick version](https://upload-images.jianshu.io/upload_images/11336404-f753396df0e930c8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)    
     -   [FISCO BCOS vs Fabric](http://www.infoq.com/cn/news/2018/09/uncover-consortium-blockchain)   
 
-*   **Implement a consortium blockchain using ethereum**  
+*   **Implement a consortium blockchain using Ethereum**  
     -   [Building a Private Ethereum Consortium](https://www.microsoft.com/developerblog/2018/06/01/creating-private-ethereum-consortium-kubernetes/)
     -   [Deploying a private Ethereum blockchain to Microsoft Azure Cloud](https://www.youtube.com/watch?v=HsConsFaZG8)
     -   [Ethereum Consortium Network Deployments Made Easy](https://github.com/CatalystCode/ibera-ethereum-consortium-blockchain-network)
@@ -181,9 +181,9 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
 #### [XuperChain](https://github.com/xuperchain/xuperchain)
 [<img src="https://avatars3.githubusercontent.com/u/43258643?s=200&v=4" align="right" width="80">](https://xchain.baidu.com/)
 
-**XuperChain**, the first open source project of XuperChain Lab, introduces a highly flexible blockchain architecture with great transaction performance.
+**XuperChain**, the first open-source project of XuperChain Lab, introduces a highly flexible blockchain architecture with great transaction performance.
 
-**XuperChain** is the underlying solution for union networks with following highlight features:
+**XuperChain** is the underlying solution for union networks with the following highlight features:
 
 **High Performance**
 *   Creative XuperModel technology makes contract execution and verification run parallelly.
@@ -192,11 +192,11 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
 
 **Solid Security**
 *   Contract account protected by multiple private keys ensures assets safety.
-*   [Flexible authorization system](https://xuperchain.readthedocs.io/zh/latest/design_documents/permission_model.html) supports weight threshold, AK sets and could be easily extended.
+*   [Flexible authorization system](https://xuperchain.readthedocs.io/zh/latest/design_documents/permission_model.html) supports weight threshold, and AK sets, and could be easily extended.
 
 **High Scalability**
-*   Robust [P2P](https://xuperchain.readthedocs.io/zh/latest/design_documents/p2p.html) network supports a large scale network with thousands of nodes.
-*   Branch management on ledger makes automatic convergence consistency and supports global deployment.
+*   Robust [P2P](https://xuperchain.readthedocs.io/zh/latest/design_documents/p2p.html) network supports a large-scale network with thousands of nodes.
+*   Branch management on the ledger makes automatic convergence consistency and supports global deployment.
 
 **Multi-Language Support**: Support pluggable multi-language contract VM using [XuperBridge](https://xuperchain.readthedocs.io/zh/latest/design_documents/XuperBridge.html) technology.
 
@@ -222,7 +222,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
 +   [Comparation with Fabric and Ethereum](https://github.com/xuperchain/xuperchain/wiki/%E9%99%84-%E8%AF%84%E6%B5%8B%E6%95%B0%E6%8D%AE%E5%AF%B9%E6%AF%94)
 
 #### [FISCO-BCOS](https://github.com/FISCO-BCOS/Wiki)
-## Releated Tools
+## Related Tools
 
 ### Solidity
 -   [doc](https://solidity.readthedocs.io/en/develop/index.html) / [Chinese version](https://solidity-cn.readthedocs.io/zh/develop/)
@@ -269,19 +269,19 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
 ##### Public Blockchain Identity
 
 -   [Blockstack](https://blockstack.org) - Platform for decentralized, server-less apps where users control their data. Identity included.
--   [Evernym](http://www.evernym.com) - Self-Sovereign identity built on top of open source permissioned blockchain.
--   [Jolocom](https://jolocom.com) - Self-sovereing identity wallet.
+-   [Evernym](http://www.evernym.com) - Self-Sovereign identity built on top of an open source permissioned blockchain.
+-   [Jolocom](https://jolocom.com) - Self-sovereign identity wallet.
 -   [SIN](https://en.bitcoin.it/wiki/Identity_protocol_v1) - Proposed identity protocol for BitCoin.
 -   [uPort](https://www.uport.me) - Self-Sovereign identity on [Ethereum](https://ethereum.org) by [ConsenSys](https://consensys.net).
 
 ##### Blockchain as a collateral
 
--   [ShoCard](https://shocard.com) - Proprietary digital identity service, uses blockchain for time-stamping and secure documents exchange.
--   [Tradle](https://tradle.io/) - Makes a bank on blockchain, identity as a collateral.
+-   [ShoCard](https://shocard.com) - Proprietary digital identity service, that uses blockchain for time-stamping and secure document exchange.
+-   [Tradle](https://tradle.io/) - Makes a bank on blockchain, identity as collateral.
 
 ##### Unclear
 
--   [KYC Chain](http://kyc-chain.com) - Secure platform for sharing verifiable identity claims, data or documents among financial institutions.
+-   [KYC Chain](http://kyc-chain.com) - Secure platform for sharing verifiable identity claims, data, or documents among financial institutions.
 -   [ObjectChain Collab](http://www.objectchain-collab.com) - Cross-industry collaboration over distributed identity.
 -   [UniquID](http://uniquid.com) - Identity both for people and devices.
 -   [Vida Identity](https://vidaidentity.com) - Enterprise-grade Blockchain Identity Software.
@@ -303,7 +303,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
 
 #### Energy Applications
 
--   [bankymoon](http://bankymoon.co.za/) - Blockchain consultancy. [Presented](http://goo.gl/L6vJBx) bitcoin-topped smart electricity meter. Once topped up, it chooses a plan, and starts moving energy.
+-   [bankymoon](http://bankymoon.co.za/) - Blockchain consultancy. [Presented](http://goo.gl/L6vJBx) bitcoin-topped smart electricity meter. Once topped up, it chooses a plan and starts moving energy.
 -   [Co-Tricity](https://co-tricity.com/) - Decentralised energy marketplace by [Innogy](https://innovationhub.innogy.com/) and [ConsenSys](https://consensys.net).
 -   [Electron](http://www.electron.org.uk/) - Reinventing energy on blockchain.
 -   [GridSingularity](http://gridsingularity.com) - Blockchain for Smart Grid. Declare three years of work on the technology.
@@ -331,13 +331,13 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
 +   Tools
     +   [Defi Dashboard](https://debank.com/): portfolio tracker, project lists, rankings, etc.
     +   [Zapper](https://zapper.fi/): dashboard for viewing and managing your DeFi investments.
-    +   [Furucombo](https://furucombo.app/): easily create flashloans without writing a single line of code.
-    +   [Covalent](https://www.covalenthq.com/): an unified API bringing visibility to billions of blockchain data points.
+    +   [Furucombo](https://furucombo.app/): easily create flash loans without writing a single line of code.
+    +   [Covalent](https://www.covalenthq.com/): a unified API bringing visibility to billions of blockchain data points.
 ---
 ### Books
 
 -   [**Blockchain guide**](https://yeasy.gitbooks.io/blockchain_guide/content/) by Baohua Yang, 2017 --
-    Introduce blockchain related technologies, from theory to practice with bitcoin, ethereum and hyperledger.
+    Introduce blockchain-related technologies, from theory to practice with bitcoin, Ethereum, and hyper ledger.
     <!-- -   [区块链原理、设计与应用](https://github.com/yjjnls/books/blob/master/block%20chain/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%8E%9F%E7%90%86%E3%80%81%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%94%E7%94%A8.pdf) -->
 -   [**Blockchain: from Digital Currency to Credit Society**](https://github.com/yjjnls/books/blob/master/block%20chain/%E5%8C%BA%E5%9D%97%E9%93%BE%20%E4%BB%8E%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E5%88%B0%E4%BF%A1%E7%94%A8%E7%A4%BE%E4%BC%9A.pdf)
 -   [**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 --
@@ -345,7 +345,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
     The Bitcoin ideology ++
     The incredible promises of Bitcoin! ++
     Early Bitcoin: the rise to the first bubble ++
-    How Bitcoin mining centralised ++
+    How Bitcoin mining centralized ++
     Who is Satoshi Nakamoto? ++
     Spending bitcoins in 2017 ++
     Trading bitcoins in 2017: the second crypto bubble ++
@@ -476,7 +476,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
       _Learn how blockchain differs from other distributed systems ++
     Smart contract development with Ethereum and the Solidity language ++
     Web UI for decentralized apps ++
-    Identity, privacy and security techniques ++
+    Identity, privacy, and security techniques ++
     On-chain and off-chain data storage_
     
 -   [**Permissioned Blockchains in Action**](https://www.manning.com/books/permissioned-blockchains-in-action) by Mansoor Ahmed-Rengers & Marta Piekarska-Geater, early access --
@@ -488,7 +488,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
     
 -   [**Programming Hyperledger Fabric**](https://www.amazon.com/dp/0578802228) by Siddharth Jain, --
       _A guide to developing blockchain applications for enterprise use cases ++
-    Where Fabric fits in to the blockchain landscape ++
+    Where Fabric fits into the blockchain landscape ++
     The ins and outs of deploying real-world applications ++
     Developing smart contracts and client applications in Node ++
     Debugging and troubleshooting ++
@@ -496,7 +496,7 @@ These apps run on a custom built **blockchain, an enormously powerful shared glo
     
 -   [**Self-Sovereign Identity**](https://www.manning.com/books/self-sovereign-identity) by Alex Preukschat and Drummond Reed, --
       _In Self-Sovereign Identity: Decentralized digital identity and verifiable credentials++
-      you’ll learn how SSI empowers us to receive digitally-signed credentials++
+      you’ll learn how SSI empowers us to receive digitally signed credentials++
       store them in private wallets++
       and securely prove our online identities._
 
