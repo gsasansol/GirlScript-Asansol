@@ -156,7 +156,6 @@ body.dark {
   /*to put the elements one beside the other*/
   align-items: center;
   font-family: Lato;
-
   /* overflow: hidden; */
   /*added a gap between the logo and the brandname*/
 }
@@ -181,12 +180,18 @@ body.dark {
   border-radius: 50%;
 }
 
+.social-icon a {
+  padding: 10px;
+  margin-top: 5px;
+}
+
 .options {
   margin-left: auto;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 /*styling the items in the navbar(except logo and community name) here*/
@@ -194,7 +199,7 @@ body.dark {
   text-decoration: none;
   color: rgb(107, 27, 27);
   margin: 0 5px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -203,7 +208,7 @@ body.dark {
   border-radius: 4.5px;
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: color 0.2s linear;
 
   /*added a simple hover event so that a line appears when someone hovers over the items*/
