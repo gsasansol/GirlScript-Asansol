@@ -688,10 +688,11 @@
                         <div class="input-container">
                             <input type="email" name="email" class="input" placeholder="Email" required/>
                         </div>
+                  
                         <div class="input-container textarea">
-                            <textarea name="message" class="input" placeholder="Message"></textarea>
+                            <textarea name="message" id="contactText" class="input" placeholder="Message"></textarea>
                         </div>
-                        <button class="contact-button" role="button">Send</button>
+                        <button class="contact-button" role="button" onclick="sendMail(); return false">Send</button>
                     </form>
                 </div>
             </div>
