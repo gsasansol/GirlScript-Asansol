@@ -197,20 +197,22 @@ body.dark {
 /*styling the items in the navbar(except logo and community name) here*/
 .options a {
   text-decoration: none;
-  color: rgb(107, 27, 27);
+  color: rgb(0, 0, 0);
   margin: 0 5px;
   font-size: 1.1rem;
   text-align: center;
+  padding: 10px;
 }
 
 .options a:hover {
-  border-bottom: 3.5px solid rgb(255, 0, 0);
+  border-bottom: 2px solid rgb(255, 0, 0);
+  border-top: 2px solid rgb(255, 0, 0);
   border-radius: 4.5px;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.1rem;
   transition: color 0.2s linear;
-
+  padding: 10px;
   /*added a simple hover event so that a line appears when someone hovers over the items*/
 }
 
