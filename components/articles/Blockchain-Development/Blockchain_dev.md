@@ -3,7 +3,7 @@
   <br />
   Blockchain Guide
 </h1>
-#### A guide covering Blockchain including the applications and tools that will make you a better and more efficient Blockchain developer.
+A guide covering Blockchain including the applications and tools that will make you a better and more efficient Blockchain developer.
 The blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value (by [Debjit Purohit])
 
 
