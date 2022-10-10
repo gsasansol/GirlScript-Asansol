@@ -10,10 +10,10 @@ task of using computers to understand human intelligence, but AI does
 not have to confine itself to methods that are biologically
 observable.\"
 
-It has been existent for a long time, and originated from Alan Turing\'s
+It has existed for a long time and originated from Alan Turing\'s
 1950 work "Computer Machinery and Intelligence".
 
-Artificial Intelligence makes use of computers, its extended
+Artificial Intelligence makes use of computers, it's extended
 technologies and tools, to mimic human intelligence/logic as well as our
 decision making.
 
@@ -24,22 +24,22 @@ term AI/Artificial Intelligence: Machine learning and Deep Learning.
 
 These subfields make use of AI algorithms to provide classifications or
 predictions based on the input data provided. They have improved the
-quality and usage experience of multiple expert systems and made it
+quality and user experience of multiple expert systems and made it
 easier to create them as well.
 
 #### Two types of Artificial Intelligence exist: 
 
--   #### [Weak AI]{.ul}: Although termed as weak, weak AI is actually used to power most of the prevalent encounters with AI in the modern world. They are AI geared towards a specific task, and include applications such as Siri, etc.
+-   #### [Weak AI]{.ul}: Although termed as weak, weak AI is used to power most of the prevalent encounters with AI in the modern world. They are AI geared toward a specific task and include applications such as Siri, etc.
 
--   #### [Strong AI]{.ul}: This type consists of AGI (Artificial General Intelligence) and ASI (Artificial Super Intelligence). AGI is an AI system that's equivalent to human systems. ASI is an AI system that far exceeds human intelligence and can be categorized as exponentially growing in its intelligence levels. Strong AI are currently theoretical in nature.
+-   #### [Strong AI]{.ul}: This type consists of AGI (Artificial General Intelligence) and ASI (Artificial Super Intelligence). AGI is an AI system that's equivalent to human systems. ASI is an AI system that far exceeds human intelligence and can be categorized as exponentially growing in its intelligence levels. Strong AI is currently theoretical.
 
 ## **Machine Learning**
 
-A computer is said to be learning from **Experiences** with respect to
+A computer is said to be learning from **Experiences** concerning
 some class of **Tasks** if its performance in a given task improves with
 the Experience. For example, consider a computer playing chess. The
 performance metric to be measured can be the percentage of chess games
-won. The **Experience** in this instance is 'playing chess games', the
+won. The **Experience** in this instance is 'playing chess games, the
 **task** is playing chess games against itself, and the **performance
 measure** is percentage of games
 won.![](components/articles/artificial-intelligence/assets/image1.png){width="2.6195319335083114in"
@@ -47,11 +47,10 @@ height="2.6195319335083114in"}
 
 That definition is the foundation over which the field of Machine
 Learning is built and propagated. Machine learning works by taking past
-data of a format that is suitable for processing. It is necessary for
-the data to be of high quality, since higher the quality of data
+data in a format that is suitable for processing. The data must be of high quality, since the higher the quality of the data
 acquired, the better it shall be for modeling.
 
-One might need to do some data processing on the data sets, in order to
+One might need to do some data processing on the data sets, to
 ensure there are no missing values, the form of data is appropriate, and
 to reduce the amount of noise/inaccuracy in the data. One has to try to
 make the dataset as relevant to the requirements as possible.
@@ -65,7 +64,7 @@ through appropriate algorithms and techniques on the training set.
 
 The final step involves testing the conceptualized model using training
 data that wasn't fed into the model initially and measuring the
-performance on the basis of metrics such as F1 score, precision, etc.
+performance based on metrics such as F1 score, precision, etc.
 
 #### [Difference between traditional programming and machine learning]{.ul}
 
@@ -86,8 +85,8 @@ height="1.6208661417322834in"}
 -   **Supervised learning:**
 
     -   *Supervised learning is the machine learning task of learning a
-        > function that maps an input to an output based on example
-        > input-output pairs. The given data is labeled . Both
+        > function that maps an input to an output based on an example
+        > input-output pairs. The given data is labeled. Both
         > classification and regression problems are supervised learning
         > problems.*
 
@@ -100,17 +99,17 @@ height="1.6208661417322834in"}
     -   *Unsupervised learning is a type of machine learning algorithm
         > used to draw inferences from datasets consisting of input data
         > without labeled responses. In unsupervised learning
-        > algorithms, classification or categorization is not included
+        > algorithms, classification, or categorization is not included
         > in the observations.*
 
-    -   Hence, for our previous example of data of teenagers, the data
+    -   Hence, for our previous example of data on teenagers, the data
         > would be given, and a correlation within the data would be
         > inferred by the algorithm itself.
 
 -   **Reinforcement learning:**
 
     -   *Reinforcement learning is the problem of getting an agent to
-        > act in the world so as to maximize its rewards.*
+        > act in the world to maximize its rewards.*
 
     -   A learner is not told what actions to take as in most forms of
         > machine learning but instead must discover which actions yield
@@ -128,7 +127,7 @@ height="1.6208661417322834in"}
 
 ## **Applications of Artificial Intelligence**
 
-Some of the application of Artificial intelligence/Machine learning are
+Some of the applications of Artificial intelligence/Machine learning is
 as follows:
 
 -   **Speech Recognition:** One of the most common and extensive
@@ -138,9 +137,9 @@ as follows:
     > of this would be Siri or the Amazon echo.
 
 -   **Computer vision:** CV has been on the rise in recent years,
-    > especially with the popularization of tesla, and its self driving
+    > especially with the popularization of tesla, and its self-driving
     > feature. It is the process wherein visual data such as from videos
-    > and images, and then processing it to take the appropriate action
+    > and images, and then processing them to take the appropriate action
     > on the obtained data. Powered by convolutional neural networks,
     > computer vision has applications in photo tagging on social media,
     > radiology imaging in healthcare, and self-driving cars within the
@@ -149,14 +148,14 @@ as follows:
 -   **Fraud detection:** Banks and other financial institutions make use
     > of AI and ML to capture fraud and have a robust fraud detection
     > system, which allows them to promise more secure services, and
-    > reduces the probability of a fraud, especially due to rising fraud
+    > reduces the probability of fraud, especially due to rising fraud
     > numbers in recent times.
 
--   **Customer service:** Usage of AI/ML based online chatbots has
-    > become quite popular and is cost intensive, since it allows one to
+-   **Customer service:** Usage of AI/ML-based online chatbots has
+    > become quite popular and is cost-intensive, since it allows one to
     > run their business without having to hire a customer service
     > agent. Due to the improvements in AI/ML technologies, the service
-    > offered by these chatbots its quite extensive, and satisfactory.
+    > offered by these chatbots is quite extensive, and satisfactory.
     > This domain seems to only be growing with improved datasets
     > collected from previous usage and improvement in algorithm
     > implementations.
@@ -169,28 +168,28 @@ as follows:
 
 -   **Reduced errors:** One of the advantages of establishing an AI/ML
     > model and then using it for your processes is that it reduces the
-    > manual interference required for data-processing and onboarding.
-    > This results in lowering of manual errors and remedial tasks
+    > manual interference that is required for data processing and onboarding.
+    > This results in the lowering of manual errors and remedial tasks
     > becoming background processes, which makes the entire process more
     > efficient and less error-prone.
 
--   **Automation:** With increased adoption of AI/ML, there is an
+-   **Automation:** With the increased adoption of AI/ML, there is an
     > increase in automation of most trivial tasks as well as tasks that
-    > are business facing. AI can be used to automate most tasks with
-    > quite good results, leading into cost effectiveness, and better
+    > are business-facing. AI can be used to automate most tasks with
+    > quite good results, leading to cost-effectiveness, and better
     > business processes.
 
--   **Better customer experience:** With usage of online ML based
+-   **Better customer experience:** With the usage of online ML based
     > chatbots, the speedy resolution of a customer's query results in
     > better satisfaction in comparison to having to call and wait for
-    > the customer care to get back to you. Furthermore, the automation
+    > customer care to get back to you. Furthermore, the automation
     > of the process, including calling a customer care representative
     > in case needed, makes the entire experience much more satisfactory
     > and seamless.
 
 -   **Decision making:** Although humans do not lack decision making,
     > they do lack the ability to process high amounts of information
-    > with high degree of accuracy. However, AI models can take large
+    > with a high degree of accuracy. However, AI models can take large
     > datasets, make meaning out of them, and produce data trends,
     > forecasts and predictions without the human factor of emotions
     > involved, resulting in far more accuracy and preciseness.
@@ -201,16 +200,16 @@ Although AGI and ASI are still a long way off, there is an increased
 adoption in AI/ML pipeline by businesses in their processes, and to
 solve certain challenges in the short term.
 
-With improvement in NLP technologies and increased sophistication, they
+With improvements in NLP technologies and increased sophistication, they
 are being used in multiple business processes that make use of speech
 processing, and are a part of multiple chatbot services currently being
-used by customer care oriented businesses.
+used by customer care-oriented businesses.
 
 Gartner predicts that 50% of enterprises will have platforms to
 operationalize AI by 2025 (a sharp increase from 10% in 2020).
 
 Hence, although hyped at times, it is a growing and in-demand technology
-that is well-worth learning as a specialization and allowing you to grow
+that is well worth learning as a specialization and allows you to grow
 as a computer science enthusiast.
 
 ## **Resources for learning ML:**
