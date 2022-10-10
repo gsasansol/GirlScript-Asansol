@@ -65,3 +65,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//Contact-Us-Send-Buttom
+function sendMail() {
+  var link = "mailto:girlscriptasansol@gmail.com"
+    + "?subject=" + encodeURIComponent("Contact Us: From " + document.getElementById('contactName').value)
+    + encodeURIComponent(" <" + document.getElementById('contactEmail').value + ">")
+    + "&body=" + encodeURIComponent(document.getElementById('contactText').value);
+  window.location.href = link;
+}

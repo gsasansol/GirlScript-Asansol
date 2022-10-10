@@ -1,6 +1,5 @@
 <img src="https://user-images.githubusercontent.com/63467479/190611518-b60d57af-711b-4b8b-9de5-eb2d51ddcb59.png" alt="Project Banner">
 
-
 # Welcome to Hacktoberfest!
 
 Hello coders! this year, we are proud to start our community webapp from scratch as an open source project. We welcome everyone to join our quest and contribute. Join our [Discord](https://discord.gg/vYSspBkgNc) server for all the latest updates on the event, for choosing your team (if you're a team player) and for the how-tos to contribute.
@@ -15,7 +14,7 @@ Hacktoberfest is for everyone. It is a month-long celebration from October 1st -
 
 ## Steps to follow :scroll:
 
-### 1. Register for the Hacktoberfes:
+### 1. Register for the Hacktoberfest:
 
 https://hacktoberfest.digitalocean.com/
 
@@ -27,28 +26,26 @@ as you can and star this repo to help as many people in open-source as you can.
 
 You can get your own fork/copy of this project by using the <kbd><b>Fork</b></kbd></a> button at our [repository home page](https://github.com/gsasansol/GirlScript-Asansol).
 
-
 ### 4. Ready, Steady, Go...!
 
 Once you have completed these steps, you are ready to start contributing
 by checking our [issues tab](https://github.com/gsasansol/GirlScript-Asansol/issues) and creating [pull requests](https://github.com/gsasansol/GirlScript-Asansol/pulls).
 
-
 # Steps to make changes and contribute using Git:
 
-We'll be using Git as our version control system. To check out the installation steps, go to https://nerdschalk.com/how-to-install-and-use-git-on-windows-11/. These steps are applicable for Windows 10/11 both.
+We'll be using Git as our version control system. To check out the installation steps, go to [https://nerdschalk.com/how-to-install-and-use-git-on-windows-11/](https://nerdschalk.com/how-to-install-and-use-git-on-windows-11/). These steps are applicable for Windows 10/11 both.
 
 To make your own local copy of the repository you would like to contribute to, first open up a terminal window.
 
 We’ll use the `git clone` command along with the URL that points to your fork of the repository.
 
-This URL will be similar to the URLs in the hyperlinks above: https://github.com/gsasansol/GirlScript-Asansol.git.
+This URL will be similar to the URLs in the hyperlinks above: [https://github.com/gsasansol/GirlScript-Asansol.git](https://github.com/gsasansol/GirlScript-Asansol.git).
 
 You can alternatively copy the URL by using the green "Clone or download" button from your fork repository page. Once you click the button, you’ll be able to copy the URL by clicking the binder button next to the URL:
 
 Once we have the URL, we’re ready to clone the repository. To do this, we’ll combine the `git clone` command with the repository URL from the command line in a terminal window:
 
-```
+```bash
 git clone https://github.com/gsasansol/GirlScript-Asansol.git
 ```
 
@@ -56,25 +53,25 @@ git clone https://github.com/gsasansol/GirlScript-Asansol.git
 
 To create your branch, from your terminal window, change your directory so that you are working in the directory of the repository. Be sure to use the actual name of the repository (i.e. GirlScript-Asansol) to change into that directory.
 
-```
+```bash
 cd GirlScript-Asansol
 ```
 
 Now, we'll create our new branch with the `git branch` command. Make sure you name it descriptively so that others working on the project understand what you are working on.
 
-```
+```bash
 git branch my-branch
 ```
 
 Now that our new branch is created, we can switch to make sure that we are working on that branch by using the git checkout command:
 
-```
+```bash
 git checkout my-branch
 ```
 
 Once you enter the git checkout command, you will receive the following output:
 
-```
+```bash
 Output:
 Switched to branch 'my-branch'
 ```
@@ -85,13 +82,13 @@ At this point, you can now modify existing files or add new files to the project
 
 Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the `git add` command. Let’s add the `-A` flag to add all changes that we have made:
 
-```
+```bash
 git add -A
 ```
 
 or
 
-```
+```bash
 git add .
 ```
 
@@ -103,7 +100,7 @@ If you have a very short message, you can record that with the `-m` flag and the
 
 Example:
 
-```
+```bash
 git commit -m "Updated Readme.md"
 ```
 
@@ -111,7 +108,7 @@ At this point you can use the `git push` command to push the changes to the curr
 
 Example:
 
-```
+```bash
 git push --set-upstream origin new-branch
 ```
 
@@ -125,7 +122,7 @@ We'll first go over configuring a remote for the fork, then syncing the fork.
 
 Next, you'll have to specify a new remote upstream repository for us to sync with the fork. This will be the original repository that you forked from. You'll have to do this with the `git remote add` command.
 
-```
+```bash
 git remote add upstream https://github.com/gsasansol/GirlScript-Asansol.git
 ```
 
@@ -137,19 +134,19 @@ Once you have configured a remote that references the upstream and original repo
 
 To sync your fork, from the directory of your local repository in a terminal window, you’ll have to use the `git fetch` command to fetch the branches along with their respective commits from the upstream repository. Since you used the shortname "upstream" to refer to the upstream repository, you’ll have to pass that to the command:
 
-```
+```bash
 git fetch upstream
 ```
 
 Switch to the local main branch of your repository:
 
-```
+```bash
 git checkout main
 ```
 
 You'll now have to merge any changes that were made in the original repository's main branch, that you will access through your local upstream/main branch, with your local main branch:
 
-```
+```bash
 git merge upstream/main
 ```
 

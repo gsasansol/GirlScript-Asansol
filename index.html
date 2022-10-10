@@ -130,7 +130,7 @@
             <!--the other items of navbar is added below-->
             <div class="options">
                 <a href="#home">Home</a>
-                <a href="#">About Us</a>
+                <a href="#about">About Us</a>
                 <a href="#">Resources</a>
                 <a href="#pastevents">Past Events</a>
                 <a href="#">Our Team</a>
@@ -183,7 +183,7 @@
 
         <!---About Us section goes here-->
 
-        <div class="aboutus-section-wrapper">
+        <div class="aboutus-section-wrapper" id="about">
             <div class="aboutus-section-container">
                 <div class="aboutus-container">
                     <div class="aboutus-img-container">
@@ -683,15 +683,16 @@
                     <form action="index.html" autocomplete="off">
                         <h3 class="title">Contact us</h3>
                         <div class="input-container">
-                            <input type="text" name="name" class="input" placeholder="Name" />
+                            <input type="text" name="name" class="input" placeholder="Name" required/>
                         </div>
                         <div class="input-container">
-                            <input type="email" name="email" class="input" placeholder="Email" />
+                            <input type="email" name="email" class="input" placeholder="Email" required/>
                         </div>
+                  
                         <div class="input-container textarea">
-                            <textarea name="message" class="input" placeholder="Message"></textarea>
+                            <textarea name="message" id="contactText" class="input" placeholder="Message"></textarea>
                         </div>
-                        <button class="contact-button" role="button">Send</button>
+                        <button class="contact-button" role="button" onclick="sendMail(); return false">Send</button>
                     </form>
                 </div>
             </div>
@@ -728,8 +729,8 @@
                     <h4>Quick links</h4>
 
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about us</a></li>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about us</a></li>
                         <li><a href="#">resources</a></li>
                         <li><a href="#pastevents">Past events</a></li>
                         <li><a href="#">achievements</a></li>
