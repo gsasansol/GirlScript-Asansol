@@ -1571,7 +1571,8 @@ ul {
 
 .aboutus-section-wrapper {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: 4rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -1580,11 +1581,11 @@ ul {
 
 .aboutus-section-container {
   width: 95%;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 20px;
-  position: absolute;
+  /* position: absolute; */
   border-radius: 5px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .aboutus-container {
@@ -1614,13 +1615,17 @@ ul {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding: 0 2rem;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
 
 .aboutus-text-container h1 {
   font-size: 50px;
-  padding: 10px 0px;
+  font-family:"Lato", sans-serif;
+  padding: 10px 0 0;
+  width: 100%;
+  text-align: center;
 }
 
 .aboutus-text-container p {
@@ -1631,7 +1636,7 @@ ul {
 .aboutus-text-container a {
   text-decoration: none;
   padding: 12px;
-  margin-top: 30px;
+  margin-top: 1rem;
   background-color: rgb(252, 115, 60);
   color: white;
   align-self: center;
@@ -1648,7 +1653,7 @@ ul {
 
 .ourservices-container {
   padding-top: 100px;
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1674,13 +1679,17 @@ ul {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding: 0 2rem;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
 
 .ourservices-text-container h1 {
   font-size: 50px;
-  padding: 10px 0px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  padding: 10px 0 0px;
 }
 
 .ourservices-text-container p {
