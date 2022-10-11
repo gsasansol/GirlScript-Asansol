@@ -1,0 +1,43 @@
+name: 🥗 Feature Request
+description: Request for a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request form!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: new-feature
+    attributes:
+      label: What's on your mind?
+      description: Also tell us, how you'd want it to work.
+      placeholder: Tell us what you wish to see!
+      value: "Make it shinier!"
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribution-guidelines
+    attributes:
+      label: Contribution Guidelines
+      description: You agree that you've read the contribution guidelines in our project README before creating this issue
+      options:
+        - label: I have gone through the contribution guidelines
+          required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/gsasansol/GirlScript-Asansol/blob/main/.github/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
