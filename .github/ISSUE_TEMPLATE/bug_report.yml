@@ -57,7 +57,7 @@ body:
       label: Contribution Guidelines
       description: You agree that you've read the contribution guidelines in our project README before creating this issue
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I have gone through the contribution guidelines
           required: true
   - type: checkboxes
     id: terms
