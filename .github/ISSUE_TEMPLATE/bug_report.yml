@@ -52,7 +52,7 @@ body:
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes
-    id: terms
+    id: contribution-guidelines
     attributes:
       label: Contribution Guidelines
       description: You agree that you've read the contribution guidelines in our project README before creating this issue
