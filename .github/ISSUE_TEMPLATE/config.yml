@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: GitHub Discussion threads
+    url: https://github.com/gsasansol/GirlScript-Asansol/discussions
+    about: Please ask and answer questions here.
+  - name: Discord Forums
+    url: https://discord.gg/vYSspBkgNc
+    about: Please join the forums to stay in touch with the maintainers.
