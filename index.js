@@ -14,7 +14,9 @@ function darkMode() {
     document.getElementById("p-aboutus-section-1").style.color = "black";
     document.getElementById("h1-aboutus-section-2").style.color = "black";
     document.getElementById("p-aboutus-section-2").style.color = "black";
-    document.querySelector(".big-circle").style.setProperty("---primary-contactus-circle-after-bg", "white");
+    document
+      .querySelector(".big-circle")
+      .style.setProperty("---primary-contactus-circle-after-bg", "white");
   } else {
     document.getElementById("p-heading").style.color = "white";
     document.getElementById("f-heading").style.color = "white";
@@ -24,7 +26,9 @@ function darkMode() {
     document.getElementById("p-aboutus-section-1").style.color = "white";
     document.getElementById("h1-aboutus-section-2").style.color = "white";
     document.getElementById("p-aboutus-section-2").style.color = "white";
-    document.querySelector(".big-circle").style.setProperty("---primary-contactus-circle-after-bg", "#212529");
+    document
+      .querySelector(".big-circle")
+      .style.setProperty("---primary-contactus-circle-after-bg", "#212529");
   }
 }
 const toggles = document.querySelectorAll(".faq-toggle");
@@ -39,7 +43,10 @@ toggles.forEach((toggle) => {
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", (e) => {
-  cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;");
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+  );
 });
 
 document.addEventListener("click", () => {
@@ -52,7 +59,9 @@ document.addEventListener("click", () => {
 
 //Scroll-to -top
 let mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -67,10 +76,19 @@ function topFunction() {
 }
 
 //Contact-Us-Send-Buttom
+const contactHyperlink = document.querySelector(".contact-hyperlink");
+
 function sendMail() {
-  var link = "mailto:girlscriptasansol@gmail.com"
-    + "?subject=" + encodeURIComponent("Contact Us: From " + document.getElementById('contactName').value)
-    + encodeURIComponent(" <" + document.getElementById('contactEmail').value + ">")
-    + "&body=" + encodeURIComponent(document.getElementById('contactText').value);
+  var link =
+    "mailto:girlscriptasansol@gmail.com" +
+    "?subject=" +
+    encodeURIComponent(
+      "Contact Us: From " + document.getElementById("contactName").value
+    ) +
+    encodeURIComponent(
+      " <" + document.getElementById("contactEmail").value + ">"
+    ) +
+    "&body=" +
+    encodeURIComponent(document.getElementById("contactText").value);
   window.location.href = link;
 }
