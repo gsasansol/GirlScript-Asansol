@@ -1,12 +1,21 @@
 body{
     margin:0;
-    padding:40px 15% 0;
+    padding:40px 7% 0;
     background-image: url(../Assets/asn-junction.jpg);
+    backdrop-filter: blur(5px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/*parallax effect*/
+.parallax {
+        background-image: url(../Assets/asn-junction.jpg);
+        backdrop-filter: blur(5px);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
 
 .article_content{
     background-color:white;
@@ -189,4 +198,16 @@ fieldset{
         margin-right: auto;
         border-radius: 10px;
     }
+}
+/*Scroll bar effect*/
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 81, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(145, 48, 3);
 }
