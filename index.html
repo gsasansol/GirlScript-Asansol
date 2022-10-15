@@ -738,7 +738,7 @@
                     <span class="circle two"></span>
 
 
-                    <form action="index.html" autocomplete="off">
+                    <form action="index.html" autocomplete="off" id="discord-form">
                         <h3 class="title">Contact us</h3>
                         <div class="input-container">
                             <input type="text" name="name" class="input" placeholder="Name" required/>
@@ -751,6 +751,7 @@
                             <textarea name="message" id="contactText" class="input" placeholder="Message"></textarea>
                         </div>
                         <button class="contact-button" role="button" onclick="sendMail(); return false">Send</button>
+                        <a href="" onclick="handleFormSubmit(); return false;">Contact us via Discord (<i>faster</i>)</a>
                     </form>
                 </div>
             </div>

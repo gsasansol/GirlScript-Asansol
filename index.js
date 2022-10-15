@@ -74,3 +74,41 @@ function sendMail() {
     + "&body=" + encodeURIComponent(document.getElementById('contactText').value);
   window.location.href = link;
 }
+
+async function postFormDataAsJson({ url, formData }) {
+  const plainFormData = Object.fromEntries(formData.entries());
+  const formDataJsonString = JSON.stringify(plainFormData);
+  //console.log(formDataJsonString);
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: formDataJsonString,
+    mode: "cors",
+  });
+
+  if (!response.ok) {
+    const errorMessage = await response.text();
+    throw new Error(errorMessage);
+  }
+
+  return response.json();
+}
+
+async function handleFormSubmit() {
+  const username = prompt("Enter your Discord username");
+  //console.log(username);
+  const form = document.getElementById("discord-form");
+  //console.log(form);
+  try {
+    const formData = new FormData(form);
+    formData.append("Discord", username);
+    //console.log(formData);
+    const url = "http://localhost:3000/cweb/contactus";
+    const responseData = await postFormDataAsJson({ url, formData });
+  } catch (err) {
+    console.log(err);
+  }
+}
