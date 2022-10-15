@@ -28,7 +28,7 @@ client.once('ready', () => {
 
 
 client.on('messageCreate', async message => {
-    const contactResponse = await request('/cweb/contactus');
+    const contactResponse = await request('$baseUrl/cweb/contactus');
     const { response } = await getJSONResponse(contactResponse.body);
     message.reply({ response });
 });
