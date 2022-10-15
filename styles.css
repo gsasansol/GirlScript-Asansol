@@ -185,6 +185,7 @@ body.dark {
 .gs-navbar img {
   height: 50px;
   border-radius: 50%;
+  margin-left:20px;
 }
 
 .options {
@@ -199,7 +200,7 @@ body.dark {
 .options a {
   text-decoration: none;
   color:#ffff;
-  opacity:0.4;
+  opacity:0.5;
   margin: 0 10px;
   font-size: 1.2rem;
   font-weight:lighter;
@@ -214,12 +215,19 @@ body.dark {
    opacity: 1;
   font-size: 1.2rem;
   font-weight: 500;
-  transition: all ease-in-out;
-  /* transition: color 0.2s linear; */
-
-  /*added a simple hover event so that a line appears when someone hovers over the items*/
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
+@keyframes  glow {
+  from {
+    text-shadow:  0 0 15px #fff, 0 0 25px;
+  }
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 25px;
+  }
+}
 /* Dropdown button */
  .dropdown  {
   display: inline-block;
@@ -239,10 +247,13 @@ outline: none;
 color:#ffff;
 padding: 14px 16px;
 font-weight:500;
-opacity: 0.45;
+opacity: 0.6;
 
 }
  
+/* .dropbtn:hover{
+  animation: glow 1s ease-in-out infinite alternate;
+} */
 
 /* Add a red background color to navbar links on hover */
 
@@ -266,17 +277,19 @@ opacity: 0.45;
   font-size: 1.2rem;
   color: #ffff;
   text-decoration: none;
-  margin-top: 13px;
-  width: 127px;
+  /* margin-top: 13px; */
   padding: 10px 2px 10px 5px;
   display: block;
-  text-align: left;
+  text-align:center;
   opacity: 0.7;
-  max-width: 144px;
+  width: 150px;
   cursor: pointer;
   background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
 }
-
+.social span{
+  text-align: center;
+  padding-left:3px;
+}
 /* Show the dropdown menu on hover */
 .dropdown:hover .social {
   display: block;
@@ -297,7 +310,7 @@ display: none;
 }
 
 .fa-github:hover{
-  color: #333;
+  color:black;
 }
 
 .fa-twitter:hover {
@@ -641,21 +654,21 @@ display: none;
 .m-social{
   clear: both;
   display: block;
-    
     z-index:10;
     position: fixed;
     right:0;
     top: 50%;
-    width:50px ;
-    padding: 0px;
-    background:#333;
+    /* margin: auto; */
+    width:65px ;
+    background-color:#333;
+    border-radius: 12px 0px 0px 12px ;
     opacity: 0.8;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   
   }
-
+  
   .dropdown:hover .dropbtn {
     background: none;
   }
@@ -665,13 +678,16 @@ display: none;
   text-align: center;
   transition: all 0.3s ease;
   font-size: 20px;
+  padding: 5px;
   margin: auto;
+  cursor: pointer;
   /* visibility: hidden; */
   color: white;
   /* border: 1px solid transparent; */
   }
   .fa-instagram{
     margin-left: -9px;
+  
   }
 
   .fa-linkedin{
@@ -685,10 +701,21 @@ display: none;
       background:black;
       color: #fff;
     }
- .fa-twitter:hover{
-  color:#55acee;
- }
 
+   .fa-twitter:hover{
+    background-color:#55acee;
+    color: #fff;
+   }
+
+   .fa-linkedin:hover {
+    background-color: #007bb5;
+    color:#fff;
+  }
+
+  .fa-instagram:hover{
+    background-color:#fb3958;
+    color: #fff;
+  }
 
  .m-social span {
    visibility: hidden;
