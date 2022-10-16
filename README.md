@@ -7,7 +7,7 @@
     <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgsasansol%2FGirlScript-Asansol&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 </p>
 
-<h6 align="center"><img src="https://raw.githubusercontent.com/gsasansol/branding/main/assets/asn-logo.png" height="250" /></p></h6>
+<h6 align="center"><img src="https://repository-images.githubusercontent.com/540788015/b88395b7-038e-4be1-b532-f482816ed6c3" /></p></h6>
 <h1 align="center"><code>&nbsp;GirlScript Asansol Community Website&nbsp;</code></h1>
 
 This is the student-run community site and event management webapp for GS's Asansol Students' Chapter using HTML, CSS and JavaScript. For any queries join our [Discord](https://discord.com/invite/aVRPbMYfFH).
