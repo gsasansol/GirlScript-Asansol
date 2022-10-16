@@ -73,6 +73,7 @@ body.dark {
 
 /* general styling for dismissable alert  */
 .notif-bar-btn {
+  font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
   background-color: #00111c;
   /*mentioned color added*/
   color: white;
@@ -193,19 +194,23 @@ body.dark {
 }
 
 .options {
+  font-size: xx-small;
   margin-left: auto;
+  margin-right: 0rem;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
   /* display: flex; */
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 5 rem;
+
 }
 
 /*styling the items in the navbar(except logo and community name) here*/
 .options a {
   text-decoration: none;
-  color: rgb(107, 27, 27);
+  color: rgb(216, 199, 199);
   margin: 0 5px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -1780,4 +1785,21 @@ ul {
 
 #myBtn:hover {
   background-color: rgb(18, 18, 18);
+}
+.btnn{
+  background: rgb(181, 95, 20);
+  border-radius: 10px;
+  padding: 7px 7px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+  margin-right: 1rem;
+  position: relative;
+  right:1rem
+}
+.btnn:hover{
+  background: transparent;
+  color: rgb(180, 114, 83);
+  border: 1px solid rgb(152, 106, 7);
 }
