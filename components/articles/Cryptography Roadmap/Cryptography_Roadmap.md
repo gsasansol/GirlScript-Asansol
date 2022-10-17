@@ -1,6 +1,6 @@
 # Cryptography  
   
-*Flowchart* is here:- [Cryptography](https://drive.google.com/file/d/1s_iowVJ9mK4C1RfpwlRxQWUYMNd_LT2H/view?usp=sharing)  
+**Flowchart** is here:- [Cryptography](https://drive.google.com/file/d/1s_iowVJ9mK4C1RfpwlRxQWUYMNd_LT2H/view?usp=sharing)  
   
 *Cryptography* is technique of securing information and communications through use of codes so that only those person for whom the information is intended can understand it and process it. Thus preventing unauthorized access to information. The prefix “crypt” means “hidden” and suffix graphy means “writing”.  
   
@@ -25,7 +25,16 @@ Symmetric or secret-key encryption algorithm that encrypts a single bit at a tim
 ### Block Cipher  
 An encryption method that applies a deterministic algorithm along with a symmetric key to encrypt a block of text, rather than encrypting one bit at a time as in stream ciphers  
 
-*Example*: A common block cipher, AES, encrypts 128-bit blocks with a key of predetermined length: 128, 192, or 256 bits. Block ciphers are pseudorandom permutation (PRP) families that operate on the fixed size block of bits. PRPs are functions that cannot be differentiated from completely random permutations and thus, are considered reliable until proven unreliable.  
+**Example**: A common block cipher, AES, encrypts 128-bit blocks with a key of predetermined length: 128, 192, or 256 bits. Block ciphers are pseudorandom permutation (PRP) families that operate on the fixed size block of bits. PRPs are functions that cannot be differentiated from completely random permutations and thus, are considered reliable until proven unreliable.  
 
 ### Asymmetric Key Encryption (or Public Key Cryptography)  
 The encryption process where different keys are used for encrypting and decrypting the information. Keys are different but are mathematically related, such that retrieving the plain text by decrypting ciphertext is feasible.   
+  
+
+**RSA** is the most widely used form of public key encryption, 
+
+## RSA Algorithm
+RSA stands for Rivest, Shamir, and Adelman, inventors of this technique
+Both public and private key are interchangeable
+Variable Key Size (512, 1024, or 2048 bits)  
+  
