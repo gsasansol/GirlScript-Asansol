@@ -377,6 +377,10 @@ display: none;
     top: 30px;
   }
 
+  .fa-sun{
+    margin-left: 3em;
+  }
+
  
 }
 
@@ -1932,6 +1936,9 @@ ul {
   }
 }
 @media screen and (max-width:500px){
+
+ 
+
   .gs-navbar .name {
     font-size: 1.2rem;
     line-height: 1;
@@ -1954,7 +1961,7 @@ ul {
   }
 
   .fa-sun{
-    margin-left:85px;
+    margin-left:30px;
   }
 }
 
