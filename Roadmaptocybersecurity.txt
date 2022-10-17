@@ -1,0 +1,67 @@
+Roadmap to Cyber Security 
+
+ 1. Educational Requirements
+
+First, you must fulfill the essential educational requirement to pursue your career in cyber security. You must hold a bachelor's degree in computer science, information technology, or a similar field with an emphasis on cyber security.
+
+Undertaking an undergraduate degree in the mentioned areas can help you gain fundamental knowledge on firewalls, computer networks, cyber security measures, cryptography and coding. It is essential to be proficient in programming languages to excel in this field.
+
+The course will also familiarise you with multiple computer languages like JAVA, etc. and the latest cyber security trends. A bachelor's degree in the relevant field can also help you land an entry-level job in cyber security. For example, you might be able to get a job as a cybersecurity analyst for an organisation that doesn't require you to have any experience.
+
+ 2.Acquire Relevant Technical and Soft Skills
+
+Specific technical skills are prerequisites for becoming successful and sought-after cyber security professionals. Therefore, you must acquire these technical skills and be good at them.
+
+First and foremost, you must be good at coding. Acquire working knowledge of programming languages like JAVA, Python, C++, and other latest technologies. Hands-on experience in using tools like PowerShell and OpenSSH is desirable.
+
+This will enable you to design security solutions, task automation, etc., in the field. It helps to gain a comprehensive understanding of concepts related to cyber security. Here are a few of them:
+
+Security Incident Handling & Response:  A cyber security professional should be able to address any looming danger of a present breach of an institution's safety guidelines or standard cyber security procedures. Such security breaches can involve malware, Distributed Denial of Service (DDoS) attacks, etc.
+SIEM Management: As a cyber security professional, you must be able to handle security information and event management (SIEM) services and tools. In addition, you would be required to produce automation using the SIEM tools to understand the real-time assessment delivered via alerts and convert them to incident-reaction plans.
+Audit & Compliance: A cyber security expert has to comprehensively reevaluate the institution's compliance to regulatory policies, including HIPAA, PCI DSS, COBIT, ISO 27001, and 20000. Therefore, it is essential to have comprehensive knowledge of security compliance and regulations to avoid any missed scopes that can lead to critical penalties and liabilities for the organisation.
+Analytics & Intelligence: A security professional must take advantage of analytics and gather intel to recognise and catch attacks quickly. Also, employing analytics and gathered intelligence would enable the expert to bundle networks and applications with data to stop attacks.
+Firewall/IDS/IPS Skills: To evade unauthorised entry to the network, a cyber security professional must use the power of a firewall to screen the network traffic. Therefore, the cyber security professional needs to have complete knowledge of Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) and understand their relation to the firewall.
+Intrusion Detection:  To become a successful security expert, you should be able to use the IDS to recognise any questionable traffic and breach of security policies.
+All this technical knowledge and expertise will help you excel as a cybersecurity professional. You can acquire the required skills and knowledge on the concepts mentioned earlier by enrolling in advanced training sessions, online tutorials, workshops, webinars and other sources like books.
+
+ 3.  Read Books To Upgrade Your Knowledge
+
+In addition, you can read the following books to upgrade your knowledge of the domain:
+
+Cybersecurity For Dummies: This book will help you comprehend cybersecurity fundamentals, including various cybersecurity hazards, ethical hacking, etc.
+Cybersecurity for Beginners: It is a Bible for those from a non-technical background. The authors have used non-technical English and simple terms to explain cybersecurity concepts.
+Hacking: A Beginners' Guide: This book consists of comprehensive knowledge on hacking, like types of hacking, ethical hacking, etc.
+Practical Malware Analysis: It is a detailed guide to all types of malware and enables you to understand debugging of malicious software programs.
+Just like other domains, cyber security is a field that requires you to constantly upskill yourself and keep learning the latest techniques and trends. Therefore, while having technical abilities is essential, developing the soft skills that will help you excel in the field is also necessary. Some of them include communication skills, time management, problem-solving, teamwork, etc.
+
+4. Gain Practical Experience
+
+Once you have the relevant degree, the required technical skills and subject-matter expertise, it is time to gain some hands-on experience in the field. First, search for internships or training programs where you get to work on live projects in a real-time setup.
+
+Alternatively, you can also apply for entry-level jobs in the domain. Positions like cyber security analyst and network analyst can offer you great exposure. It will help you get a more profound understanding of the core functioning of cyber security and prepare you for a higher position in a more prominent company.
+
+Attaining industry experience will be beneficial in further understanding which job profile interests you the most. But, again, networking is an excellent place to begin. You can search for networking groups or any events in the domain or job fairs or network virtually.
+
+Connect with professionals from similar fields on LinkedIn and look for internships or part-time work opportunities. First, work on your resume and highlight relevant projects that you have worked on. Then, find suitable options and start working your way up the ladder.
+
+More significant organisations often look for professionals with relevant and hands-on experience in the field.
+
+5. Get Relevant Certifications
+
+It is one of the most critical aspects of the cyber security career pathway. Therefore, securing the relevant certifications help.
+
+Now, let's address the most obvious question first: Why do you need these certifications if you already possess a suitable degree and the required skills? These certifications are often prerequisites and are included in many organisations' essential criteria for several cyber security jobs.
+
+In addition, these certifications are also a way to examine and validate your skills and knowledge of the domain. Some of the most sought-after certifications are:
+
+Certified Ethical Hacker (CEH)
+Certified Information Systems Security Professional (CISSP)
+Cisco Certified Network Professional (CCNP) Security
+Global Information Assurance Certification (GIAC) Certification
+Make sure to get these certifications from reputed and authorised bodies. It will ensure they are recognised and accepted by all the companies.
+
+ 6. Apply for Cyber Security Jobs
+
+The final step is to apply for cyber security jobs that align with your experience, skills and future career goals. With the required degree, skills, knowledge and certifications, you would be eligible to apply to jobs at most of the tech giants.
+
+You can apply for jobs through LinkedIn or other job search platforms like Naukri, TimesJob, etc. Draft a compelling cover letter and an impressive resume to apply for jobs. You should also be prepared for personal interviews and knowledge assessments rounds to land the highest-paying job in a prominent company.
