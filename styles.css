@@ -1893,6 +1893,7 @@ ul {
   .aboutus-img-container img {
     height: 400px;
     width: 400px;
+    margin: 0 0 50px 0;
   }
 
   .aboutus-text-container h1 {
@@ -1961,6 +1962,7 @@ ul {
   .aboutus-img-container img {
     height: 300px;
     width: 300px;
+    margin: 0 0 50px 0;
   }
 
   .aboutus-text-container p {
@@ -1970,6 +1972,7 @@ ul {
   .ourservices-img-container img {
     height: 300px;
     width: 300px;
+    margin: 0 0 50px 0;
   }
 
   .ourservices-text-container p {
