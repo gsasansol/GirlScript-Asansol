@@ -875,22 +875,15 @@ body.dark {
   display: none;
 }
 
-@media (max-width: 768px) {
-  #past-event-card {
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
+/* @media (max-width: 768px) {
+  .past-events-card {
+    display: none;
   }
 
-  .card img {
-    width: 100%;
-    border-radius: 15px;
+  .swiper-navBtn {
+    display: none;
   }
-
-  .card-title {
-    font-size: 1.5rem;
-  }
-}
+} */
 
 /*  Past Events section Styles Ends here */
 
