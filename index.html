@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -105,7 +106,7 @@
                         Discord</button></a>
                 <!--Material UI button added-->
             </div>
-            <div style="position:absolute; right: 30px">
+            <div style="position:absolute; right: 10px">
                 <i class="fa fa-remove" style="cursor: pointer;font-size: 1.3rem;" onclick="handleClose()"></i>
             </div>
 
@@ -136,6 +137,24 @@
                 <a href="#">Our Team</a>
                 <a href="#faq">FAQ</a>
                 <a href="#contact-us">Contact Us</a>
+
+                 <!-- Follow us section -->
+                <div class="dropdown">
+                    <button class="dropbtn">Follow Us
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="social">
+ <a href="https://github.com/gsasansol" target="_blank"  class="github"><i class="fa fa-github"> <span>GirlScript Asansol</span></i></a>
+  <a href="https://twitter.com/GSAsansol" target="_blank" class="twitter"><i class="fa fa-twitter"><span>GSAsansol</span></i></a>
+  <a href="https://www.instagram.com/gsasansol/" target="_blank" class="Instagram"><i class="fa fa-instagram"> <span> gsasansol</span></i></a>
+  <a href="https://www.linkedin.com/company/gsasansol/" target="_blank" class="linkedin"><i class="fa fa-linkedin"> <span>gsasansol</span></i></a>
+    
+         </div>
+         </div>
+              
+               
+              
+                
             </div>
             <!--dark mode button is now outside the option class-->
             <button onclick="darkMode()" class="toggleButton">
@@ -180,24 +199,29 @@
             </div>
         </div>
 
-
+        <div class="m-social">
+            <a href="https://github.com/gsasansol" target="_blank"  class="github"><i class="fa fa-github"> <span>Github</span></i></a>
+             <a href="https://twitter.com/GSAsansol" target="_blank" class="twitter"><i class="fa fa-twitter"> <span>Twitter</span></i></a>
+             <a href="https://www.instagram.com/gsasansol/" target="_blank" class="Instagram"><i class="fa fa-instagram"><span> Instagram</span></i></a>
+             <a href="https://www.linkedin.com/company/gsasansol/" target="_blank" class="linkedin"><i class="fa fa-linkedin"> <span>Linkedin</span></i></a>   
+        </div>
+       
         <!---About Us section goes here-->
 
         <div class="aboutus-section-wrapper" id="about">
             <div class="aboutus-section-container">
                 <div class="aboutus-container">
                     <div class="aboutus-img-container">
-                        <img src="Assets/asn-about-us.jpg" alt="">
+                        <img src="./Assets/aboutUs.png" alt="">
                     </div>
                     <div class="aboutus-text-container">
                         <h1 id="h1-aboutus-section-1">About Us</h1>
                         <div class="h-line"></div>
                         <br>
 
-                        <p id="p-aboutus-section-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                            veritatis nostrum ad exercitationem nisi fugiat labore, omnis minus autem, ipsam quod
-                            dolorem, maxime voluptates tenetur repellendus sunt nobis minima mollitia.</p>
-                        <a href="https://gsa.bio.link/" target="_blank">Check Our Socials!</a>
+                        <p id="p-aboutus-section-1">GirlScript Organization is a non-profit company registered under the government of India on 2nd June 2017. GirlScript aims to empower people and especially underrepresented groups in the field of technology.
+                            GirlScript Asansol's mission is to create opportunity, learning, growth and diversity in technology academia and industry.</p>
+                        <button onclick="window.location.href='https://gsa.bio.link/';" class="cta-button" style="width: 240px;margin:auto;height: 55px;" >Check Our Socials !</button>
                     </div>
                 </div>
                 <div class="ourservices-container">
@@ -726,11 +750,15 @@
                             <textarea name="message" id="contactText" class="input" placeholder="Message"></textarea>
                         </div>
                         <button class="contact-button" role="button" onclick="sendMail(); return false">Send</button>
+                        <!-- 
                         <a href="" onclick="handleFormSubmit(); return false;">Contact us via Discord (<i>faster</i>)</a>
-                    </form>
+                    -->
+                        </form>
                 </div>
             </div>
         </div>
+
+           
 
         <script src="app.js"></script>
 
