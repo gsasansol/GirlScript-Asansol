@@ -197,7 +197,7 @@ body.dark {
 .options {
   margin-left: 20%;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-  display: flex;
+  display:flow-root;
   justify-content: center;
   align-items: center;
 }
