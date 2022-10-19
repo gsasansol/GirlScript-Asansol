@@ -1,0 +1,726 @@
+/* <<<<<<<<<<<<<<<Template code common for all pages (copied from styles.css) >>>>>>>>>>*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Scrollbar Effects Goes Here */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 81, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(145, 48, 3);
+}
+
+.gs-navbar {
+  top: 0;
+  position: sticky;
+  z-index: 69;
+  box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 50%);
+  padding: 10px;
+  background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
+  display: flex;
+  align-items: center;
+  font-family: Lato;
+}
+
+.gs-navbar .name {
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 900;
+  color: rgb(107, 27, 27);
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.gs-navbar .name p {
+  margin-bottom: 5px;
+}
+
+.gs-navbar img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.options {
+  margin-left: auto;
+  /*to put all the items of navbar(except logo and community name) to the right side of the page*/
+  justify-content: center;
+  align-items: center;
+}
+
+.options a {
+  text-decoration: none;
+  color: rgb(107, 27, 27);
+  margin: 0 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.options a:hover {
+  border-bottom: 3.5px solid rgb(255, 0, 0);
+  border-radius: 4.5px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.2s linear;
+}
+
+.toggle {
+  display: none;
+  /*toggle bar will be hidden until respective screen size meets*/
+}
+
+/*media queries for responsiveness of navbar*/
+@media screen and (max-width: 750px) {
+  .gs-navbar {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+
+  .options {
+    margin-top: 15px;
+    display: none;
+  }
+
+  .options.active,
+  .toggle {
+    display: block;
+  }
+
+  .toggle {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  .options a {
+    display: block;
+    padding: 5px;
+  }
+
+  .name p {
+    display: inline-block;
+    position: absolute;
+    left: 81px;
+    top: 30px;
+  }
+
+  .options a {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.toggleButton {
+  border: none;
+  background-color: transparent;
+}
+
+.toggleButton .fas {
+  font-size: 1.4rem;
+}
+
+.toggleButton .fa-sun {
+  color: rgb(241, 191, 124);
+  margin-left: 10px;
+}
+
+/* dark mode button positioning for mobile */
+@media screen and (max-width: 750px) {
+  .toggleButton {
+    position: absolute;
+    top: 25px;
+    left: 40%;
+    min-width: 50%;
+  }
+}
+
+/*  Footer section Styles goes here */
+.footer {
+  background-color: #24262b;
+  padding: 40px 0 10px;
+  bottom: 0;
+  color: #bbbbbb;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 30%;
+  padding: 0 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(252, 115, 60);
+  height: 2px;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-col .social-links {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.footer-col ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.footer hr {
+  background-color: #fff;
+}
+
+.footer-credit {
+  color: #bbbbbb;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-col {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 90%;
+  }
+}
+
+/* pre loader  css styles goes here */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Gemunu Libre", sans-serif;
+  --color: rgb(238, 149, 90);
+  --pos-1: -8vmin;
+  --pos-2: -2.66vmin;
+  --pos-3: 2.66vmin;
+  --pos-4: 8vmin;
+  --pos-a: 5.33vmin;
+  --pos-b: 16vmin;
+  --pos-c: 10.66vmin;
+  box-sizing: border-box;
+  font-size: 10vmin;
+  color: orange;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("../Assets/asn-junction.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-shadow: 0.5vmin 0.5vmin 0 #000;
+}
+
+.loader:before {
+  content: "Welcome!";
+  font-family: "Gemunu Libre", sans-serif;
+  display: block;
+  width: 40vmin;
+  height: 20vmin;
+  position: absolute;
+  text-align: center;
+}
+
+.loader:after {
+  font-family: "Gemunu Libre", sans-serif;
+  display: block;
+  content: " ";
+  background: #f000;
+  width: 5vmin;
+  height: 5vmin;
+  box-shadow: var(--pos-1) var(--pos-c) var(--color),
+    var(--pos-2) var(--pos-c) var(--color),
+    var(--pos-3) var(--pos-c) var(--color),
+    var(--pos-4) var(--pos-c) var(--color),
+    var(--pos-1) var(--pos-b) var(--color);
+  animation: 6s infinite loader;
+  position: absolute;
+}
+
+@keyframes loader {
+  0% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-b) var(--color);
+  }
+
+  4.16% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color);
+  }
+
+  8.33% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  12.5% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  16.66% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  20.83% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  25% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  29.16% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  33.33% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  37.5% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color);
+  }
+
+  41.66% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color);
+  }
+
+  45.83% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-a) var(--color);
+  }
+
+  50% {
+    box-shadow: var(--pos-1) var(--pos-b) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  54.16% {
+    box-shadow: var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  58.33% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  62.5% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  66.66% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  70.83% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-b) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  75% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  79.16% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-a) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  83.33% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  87.5% {
+    box-shadow: var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-b) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  91.66% {
+    box-shadow: var(--pos-2) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  95.83% {
+    box-shadow: var(--pos-1) var(--pos-a) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-c) var(--color);
+  }
+
+  100% {
+    box-shadow: var(--pos-1) var(--pos-c) var(--color),
+      var(--pos-2) var(--pos-c) var(--color),
+      var(--pos-3) var(--pos-c) var(--color),
+      var(--pos-4) var(--pos-c) var(--color),
+      var(--pos-1) var(--pos-b) var(--color);
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<< STYLES EXCLUSIVE FOR RESOURCES PAGE >>>>>>>>>>>>>>>>>>>>>>>> */
+html {
+  font-size: 16px;
+  font-family: Lato;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+/*Header section code - heading and subheading*/
+.resources-header {
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.resources-header > h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.resources-header > hr {
+  width: 30%;
+  border-top: 0px;
+  border-bottom: 0.3rem solid #FF9347;
+}
+
+.resources-header>p {
+  color: grey;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+/* Code for cards starts */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-evenly;
+  margin-block: 2rem 4rem;
+  margin-left: 10%;
+  row-gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: clamp(16rem, calc(18rem + 2vw), 20rem);
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.4);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  height: 60vh;
+  transition-duration: 0.3s;
+}
+.card:hover {
+  box-shadow: 1rem 1rem 1.6rem rgba(0,0,0, .5);
+  transform: translate(-5px, -5px) ;
+}
+.card__header{
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+}
+.card__body {
+  padding: 1rem 1rem 0 1rem;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card__body h4 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  align-self: center;
+  text-align: center;
+}
+
+.card__body > p {
+  font-size: 0.9rem;
+  width:calc(100%);
+  color: rgb(110, 106, 106);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  /* Addition lines for 2 line or multiline ellipsis*/
+  display: -webkit-box !important;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+/*.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}*/
+.button-center {
+  background: linear-gradient(270deg, rgba(252, 115, 60,1), rgba(252, 176, 76,1));
+  margin-top: 10px;
+}
+a .readmore {
+  height: 2.5rem;
+  width: 6.9rem;
+  padding-left: 10px;
+  line-height: 2.5rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+a .button-center:hover {
+  background: linear-gradient(270deg, rgba(252, 115, 60,1), rgba(255, 185, 94,0.9));
+}
+a .button-center i {
+  margin-left: 5px;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+  transition: all 0.3s ease;
+}
+a .button-center:hover i {
+  margin: 0 0 0 0.8rem;
+}
+/* Code for cards ends */
+
+/* Dark mode effects */
+body.dark {
+  background-color: #242425;
+}
+.dark .resources-header > h1{
+  color: rgb(243, 232, 232);
+}
+.dark .resources-header > p{
+  color: #c4c0c0;
+}
+.dark .card {
+  box-shadow:  0.4rem .5rem 0.7rem rgba(0,0,0,0.7);
+  background: #393939;
+}
+.dark .card:hover {
+  box-shadow: 1rem 1rem 1.6rem rgba(0,0,0,0.7);
+  transform: translate(-5px, -5px) ;
+}
+.dark .card__body > h4 {
+  color:  #DEDADA
+}
+.dark .card__body > p {
+  color: #AEAEAE
+}
+.dark .card__header {
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+.dark a {
+  color:#fff;
+}
+/* code for dark mode ends */
+
+
+/*Code for making the texts responsive*/
+@media screen and (max-width: 768px) {
+  .resources-header > h1{
+    font-size: 2rem;
+  }
+  .resources-header > p{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width:480px){
+  .resources-header > h1{
+    font-size: 1.6rem;
+  }
+  .resources-header > p{
+    font-size: 0.7rem;
+  } 
+}
+@media  screen and (max-width: 360px) {
+  .resources-header > h1{
+    font-size: 1.3rem;
+  }
+}
