@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a43ef1b1c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
@@ -249,146 +253,166 @@
             <div class="h-line"></div>
             <br>
 
-            <div class="overlay-image desktop-events">
-                <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicator">
-                        <li data-target="#carouselExampleIndicator" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicator" data-slide-to="1"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card-deck">
-
-                                <div class="card" id="past-event-card">
+            <div class="past-events-slide-container swiper">
+                <div class="past-events-slide-content">
+                    <div class="past-events-card-wrapper swiper-wrapper">
+                        <div class="past-events-card swiper-slide">
+                            <div class="past-events-image-content">
+                                <div class="past-events-card-image">
                                     <a class="card-links"
                                         href="https://www.linkedin.com/feed/update/urn:li:activity:6926402246406467584"
                                         target="_blank">
-                                        <img src="./Assets/event1.png" class="card-img-top" alt="event1">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color: rgb(233, 99, 247)">Digital Poster
-                                                Making Competetion</h5>
-                                            <p class="card-text">Theme based upon Mother's Day.Templates are allowed but
-                                                not
-                                                Palgiarism.Certification of participation provided to all.Top 3 winners
-                                                selected as sub committe members of Girlscript Asansol. </p>
-                                            <p class="card-text"><small class="text-muted">Last Date of Submission:6th
-                                                    May
-                                                    2022</small>
-                                            </p>
-                                        </div>
+                                        <img src="./Assets/event1.png" alt="event1" class="past-events-card-img">
                                     </a>
                                 </div>
-
-                                <div class="card" id="past-event-card">
-                                    <a class="card-links" href="https://www.youtube.com/watch?v=dESy5UpKN2c"
+                            </div>
+                            <div class="past-events-card-content">
+                                <h2 class="past-events-title">
+                                    Digital Poster Making Competition
+                                </h2>
+                                <p class="past-events-description">
+                                    Theme based upon Mother's Day. Templates were allowed but were not 
+                                        completely plagiarised. Certification of participation were provided to all. Top 3 winners
+                                            selected as sub committee members of Girlscript Asansol. 
+                                </p>
+                                <p class="past-events-footer-text">
+                                    Last Date of submission: 6th May 2022
+                                </p>
+                            </div>
+                        </div>
+                        <div class="past-events-card swiper-slide">
+                            <div class="past-events-image-content">
+                                <div class="past-events-card-image">
+                                    <a class="card-links"
+                                        href="https://www.youtube.com/watch?v=dESy5UpKN2c"
                                         target="_blank">
-                                        <img src="./Assets/event2.png" class="card-img-top" alt="event2">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(249, 79, 41)">Careerscript Episode
-                                                #1</h5>
-                                            <p class="card-text">Live session with Soumyajit Bhattacharya,Engineering
-                                                Manager @Amazon.Students guided with career choices, Roadmap to Off
-                                                Campus
-                                                Placements,etc.Certification of participation provided to all</p>
-                                            <p class="card-text"><small class="text-muted">Date: 29th May 2022 <br>
-                                                    Platform: Google Meet</small></p>
-                                        </div>
+                                        <img src="./Assets/event2.png" alt="event2" class="past-events-card-img">
                                     </a>
                                 </div>
-                                <div class="card" id="past-event-card">
+                            </div>
+                            <div class="past-events-card-content">
+                                <h2 class="past-events-title">
+                                    Careerscript Episode #1
+                                </h2>
+                                <p class="past-events-description">
+                                    Live session with Soumyajit Bhattacharya, Engineering
+                                        Manager @Amazon. Students guided with career choices, Roadmap to Off Campus
+                                            Placements, etc. Certification of participation provided to all.
+                                </p>
+                                <p class="past-events-footer-text">
+                                    Date: 29th May, 2022<br>
+                                    Platform: Google Meet
+                                </p>
+                            </div>
+                        </div>
+                        <div class="past-events-card swiper-slide">
+                            <div class="past-events-image-content">
+                                <div class="past-events-card-image">
                                     <a class="card-links"
                                         href="https://www.linkedin.com/feed/update/urn:li:activity:6949757600250888192"
                                         target="_blank">
-                                        <img src="./Assets/event3.png" class="card-img-top" alt="event3">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(12, 171, 211)">Portfolio Competetion
-                                            </h5>
-                                            <p class="card-text">Flex your dev skills through your amazing portfolios!
-                                                Preferred tech stacks : HTML, CSS JS, ReactJs, Angular Js,
-                                                etc...(anything of your choice).Verified Certification to all
+                                        <img src="./Assets/event3.png" alt="event3" class="past-events-card-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="past-events-card-content">
+                                <h2 class="past-events-title">
+                                    Portfolio Competition
+                                </h2>
+                                <p class="past-events-description">
+                                    Flex your dev skills through your amazing portfolios!
+                                        Preferred tech stacks: HTML, CSS JS, ReactJs, Angular Js,
+                                            etc... (anything of your choice). Verified Certification to all
                                                 Participants.
-                                            </p>
-                                            <p class="card-text"><small class="text-muted">Date : 9th-10th July</small>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-
+                                </p>
+                                <p class="past-events-footer-text">
+                                    Date: 9th-10th July
+                                </p>
                             </div>
-
                         </div>
-                        <div class="carousel-item ">
-                            <div class="card-deck">
-
-                                <div class="card" id="past-event-card">
-                                    <a class="card-links" href="https://www.youtube.com/watch?v=-DPTkXIp9cE"
+                        <div class="past-events-card swiper-slide">
+                            <div class="past-events-image-content">
+                                <div class="past-events-card-image">
+                                    <a class="card-links"
+                                        href="https://www.youtube.com/watch?v=-DPTkXIp9cE"
                                         target="_blank">
-                                        <img src="./Assets/event4.png" class="card-img-top" alt="event4">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(249, 79, 41)">Careerscript
-                                                Episode #2
-                                            </h5>
-                                            <p class="card-text">Live session with : Karuna Karan Vijayaraghavan, oracle
-                                                certified @Gssoc career choices, Roadmap to Ai and Machine Learning
-                                                Certification of participation provided to all</p>
-                                            <p class="card-text"><small class="text-muted">21st Aug,2022</small>
-                                            </p>
-                                        </div>
+                                        <img src="./Assets/event4.png" alt="event4" class="past-events-card-img">
                                     </a>
                                 </div>
-                                <div class="card" id="past-event-card">
-                                    <a class="card-links" href="https://github.com/gsasansol/GirlScript-Asansol"
-                                        target="_blank">
-                                        <img src="./Assets/event5.png" class="card-img-top" alt="event5">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color:rgb(22, 216, 238) ;">Hacktoberfest 2022
-                                            </h5>
-                                            <p class="card-text">We have made a beginner friendly repository for all the
-                                                open source enthusiast. To create issues, so that you find it easy to
-                                                contribute
-                                                and easily complete the criteria for winning the swags. </p>
-                                            <p class="card-text"><small class="text-muted">Date: 1st Oct to 31st
-                                                    Oct,2022
-                                                    <br>
-                                                    Platform: Google Meet </small></p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card" id="past-event-card">
-                                    <a class="card-links" href="#">
-                                        <img src="./Assets/event6.png" class="card-img-top" alt="event6">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color: rgb(216, 148, 30)">Comming soon</h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Cupiditate deserunt doloremque earum adipisci illo, accusamus
-                                                magni incidunt iusto nisi officiis numquam veritatis perferendis dolore
-                                                dolorem, architecto nulla perspiciatis ea consectetur? </p>
-                                            <p class="card-text"><small class="text-muted">Date: 0.0.0</small></p>
-                                        </div>
-                                    </a>
-                                </div>
-
                             </div>
-
-
+                            <div class="past-events-card-content">
+                                <h2 class="past-events-title">
+                                    Careerscript Episode #2
+                                </h2>
+                                <p class="past-events-description">
+                                    Live session with: Karuna Karan Vijayaraghavan, oracle
+                                        certified @Gssoc career choices, Roadmap to Ai and Machine Learning
+                                            Certification of participation provided to all.
+                                </p>
+                                <p class="past-events-footer-text">
+                                    21st Aug, 2022
+                                </p>
+                            </div>
                         </div>
-
+                        <div class="past-events-card swiper-slide">
+                            <div class="past-events-image-content">
+                                <div class="past-events-card-image">
+                                    <a class="card-links"
+                                        href="https://github.com/gsasansol/GirlScript-Asansol"
+                                        target="_blank">
+                                        <img src="./Assets/event5.png" alt="event5" class="past-events-card-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="past-events-card-content">
+                                <h2 class="past-events-title">
+                                    Hacktoberfest 2022
+                                </h2>
+                                <p class="past-events-description">
+                                    We have made a beginner friendly repository for all the
+                                        open source enthusiast. To create issues, so that you find it easy to
+                                            contribute and easily complete the criteria for winning the swags.
+                                </p>
+                                <p class="past-events-footer-text">
+                                    Date: 1st-31st Oct, 2022
+                                    Platform: Google Meet
+                                </p>
+                            </div>
+                        </div>
+                        <div class="past-events-card swiper-slide">
+                            <div class="past-events-image-content">
+                                <div class="past-events-card-image">
+                                    <a class="card-links"
+                                        href="#"
+                                        target="_blank">
+                                        <img src="./Assets/event6.png" alt="event6" class="past-events-card-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="past-events-card-content">
+                                <h2 class="past-events-title">
+                                    Coming soon...
+                                </h2>
+                                <p class="past-events-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Cupiditate deserunt doloremque earum adipisci illo, accusamus
+                                            magni incidunt iusto nisi officiis numquam veritatis perferendis dolore
+                                                dolorem, architecto nulla perspiciatis ea consectetur?
+                                </p>
+                                <p class="past-events-footer-text">
+                                    Date: 0.0.0
+                                </p>
+                            </div>
+                        </div>
                     </div>
-
-
-                    <a class="carousel-control-prev" href="#carouselExampleIndicator" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicator" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-
                 </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
+
+        <!-- Past Events Section End -->
 
         <!-- Mobile view section -->
         <div class="past-events mobile-events" id="pastevents">
@@ -826,6 +850,9 @@
             document.getElementById('web-contents').style.display = 'block';
         }, 2500);
     </script>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
 
     <script src="index.js"></script>
 
