@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources - GirlScript Asansol</title>
+    <link rel="stylesheet" href="resource.css" />
+    <script src="https://kit.fontawesome.com/cad7156e83.js"></script>
+    <link rel="icon" type="image/x-icon" href="/Assets/asn-logo-modified.png">
+  </head>
+  <body>
+    <div class="loader"></div>
+
+    <div id="web-contents">
+      <!-- <<<<<Template code (copied from index.html)>>>> -->
+      <!--Navbar section-->
+      <nav class="gs-navbar">
+        <!--logo-->
+        <img
+          src="https://avatars.githubusercontent.com/u/104223990?v=4"
+          alt="logo"
+        />
+
+        <div class="name">
+          <p>GirlScript Asansol</p>
+        </div>
+        <!--toggle bar for small screens-->
+        <div class="toggle">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="black"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              /></svg
+          ></a>
+        </div>
+        <div class="options">
+          <a href="../index.html#home">Home</a>
+          <a href="../index.html#about">About Us</a>
+          <a href="#">Resources</a>
+          <a href="../index.html#pastevents">Past Events</a>
+          <a href="#">Our Team</a>
+          <a href="../index.html#faq">FAQ</a>
+          <a href="../index.html#contact-us">Contact Us</a>
+        </div>
+        <button onclick="darkMode()" class="toggleButton">
+          <i class="fas fa-sun"></i>
+        </button>
+      </nav>
+      <!--jQuery Event Methods for toggle bar to open and close-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script>
+        $(function () {
+          $(".toggle").on("click", function () {
+            if ($(".options").hasClass("active")) {
+              $(".options").removeClass("active");
+              $(this)
+                .find("a")
+                .html(
+                  `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>`
+                );
+            } else {
+              $(".options").addClass("active");
+              $(this)
+                .find("a")
+                .html(
+                  `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>`
+                );
+            }
+          });
+        });
+      </script>
+
+      <!--Code scpecific for resources page begins here-->
+      <div class="resources-header">
+        <h1 id="heading">RESOURCES AND ROADMAPS</h1>
+        <hr />
+        <p id="subheading">
+          Follow these unique roadmaps and resources to excel in your chosen
+          field
+        </p>
+      </div>
+      <section class="cards-section">
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="../components/articles/Android Development/Assets/AndroidDevRoadMap.png"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <h4>What's new in 2022 Tech</h4>
+            <p>
+              Roadmap to Application to Android Development**\r\n\r\n### Since
+              this is a roadmap, we will study the fundamentals through the
+              following different topics to master this topic:\r\n\r\n> *What
+              programming Language Should You Learn*\r\n\r\n> *Where Can you
+              learn about your selected Language*\r\n\r\n## **what is
+              app/application?**\r\n\r\n> An App/Application is a software which
+              can be installed and run on a computer, tablet, smartphone,
+              etc.\r\n\r\n## 
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="./blogcard.html">
+              <div class="button-center">
+                <div class="readmore">
+                  Read more <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="../components/articles/artificial-intelligence/assets/image1.png"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <h4>Artificial Intelligence and Machine Learning</h4>
+            <p>
+              Artificial Intelligence and Machine Learning**\n\n## **Artificial
+              Intelligence**\n\nJohn McCarthy offers the following definition in
+              this 2004 paper:\n\n\\\"It is the science and engineering of
+              making intelligent machines,\nespecially intelligent computer
+              programs. It is related to the similar\ntask of using computers to
+              understand human intelligence, but AI does\nnot have to confine
+              itself to methods that are biologically\nobservable.\\\"\n\nIt has
+              been existent for a long time, and originated from Alan
+              Turing\\'s\n1950 work \"Computer Machinery and
+              Intelligence\".\n\nArtificial Intelligence makes use of computers,
+              its extended\ntechnologies and tools, to mimic human
+              intelligence/logic as well as our\ndecision making.
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="./blogcard.html">
+              <div class="button-center">
+                <div class="readmore">
+                  Read more <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="../components/articles/Blockchain-Development/assets/3.png"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <h4>Blockchain Development</h4>
+            <p>
+              Blockchain Guide\r\n\r\n#### A guide covering Blockchain including
+              the applications and tools that will make you a better and more
+              efficient Blockchain developer.\r\nThe blockchain is an
+              incorruptible digital ledger of economic transactions that can be
+              programmed to record not just financial transactions but virtually
+              everything of value (by [Debjit Purohit])
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="./blogcard.html">
+              <div class="button-center">
+                <div class="readmore">
+                  Read more <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="../components/articles/Blockchain-Development/assets/3.png"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <h4>Blockchain Development</h4>
+            <p>
+              Blockchain Guide\r\n\r\n#### A guide covering Blockchain including
+              the applications and tools that will make you a better and more
+              efficient Blockchain developer.\r\nThe blockchain is an
+              incorruptible digital ledger of economic transactions that can be
+              programmed to record not just financial transactions but virtually
+              everything of value (by [Debjit Purohit])
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="./blogcard.html">
+              <div class="button-center">
+                <div class="readmore">
+                  Read more <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="../components/articles/Android Development/Assets/AndroidDevRoadMap.png"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <h4>What's new in 2022 Tech</h4>
+            <p>
+              Roadmap to Application to Android Development**\r\n\r\n### Since
+              this is a roadmap, we will study the fundamentals through the
+              following different topics to master this topic:\r\n\r\n> *What
+              programming Language Should You Learn*\r\n\r\n> *Where Can you
+              learn about your selected Language*\r\n\r\n## **what is
+              app/application?**\r\n\r\n> An App/Application is a software which
+              can be installed and run on a computer, tablet, smartphone,
+              etc.\r\n\r\n## 
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="./blogcard.html">
+              <div class="button-center">
+                <div class="readmore">
+                  Read more <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="../components/articles/artificial-intelligence/assets/image1.png"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <h4>Artificial Intelligence and Machine Learning</h4>
+            <p>
+              Artificial Intelligence and Machine Learning**\n\n## **Artificial
+              Intelligence**\n\nJohn McCarthy offers the following definition in
+              this 2004 paper:\n\n\\\"It is the science and engineering of
+              making intelligent machines,\nespecially intelligent computer
+              programs. It is related to the similar\ntask of using computers to
+              understand human intelligence, but AI does\nnot have to confine
+              itself to methods that are biologically\nobservable.\\\"\n\nIt has
+              been existent for a long time, and originated from Alan
+              Turing\\'s\n1950 work \"Computer Machinery and
+              Intelligence\".\n\nArtificial Intelligence makes use of computers,
+              its extended\ntechnologies and tools, to mimic human
+              intelligence/logic as well as our\ndecision making.
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="./blogcard.html">
+              <div class="button-center">
+                <div class="readmore">
+                  Read more <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>  
+      </section>
+      <hr style="background-color:#fff">
+
+      <!---Footer section goes here-->
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-col first">
+                <img src="https://cdn.discordapp.com/attachments/840314672179576917/1027519648947769424/asn-logo.png"
+                    alt="logo" class="footer-logo">
+
+                <div class="social-links">
+                    <a href="https://github.com/gsasansol"> <i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/GSAsansol"> <i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/gsasansol/"> <i class="fab  fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/gsasansol/"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/invite/aVRPbMYfFH"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>GirlScript Asansol</h4>
+                <p>
+                    GirlScript Asansol is a non-profit student run community registered under girlscript foundation
+                    on 23rd April, 2022. We aim to empower people and especially underrepresented groups in the
+                    field of technology. GirlScript Asansol's mission is to create opportunity, learning, growth,
+                    and diversity in technology academia and industry.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick links</h4>
+
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../index.html">about us</a></li>
+                    <li><a href="#">resources</a></li>
+                    <li><a href="../index.html">Past events</a></li>
+                    <li><a href="../index.html">achievements</a></li>
+                    <li><a href="../index.html">Team</a></li>
+                    <li><a href="../index.html">FAQ</a></li>
+                    <li><a href="../index.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="footer-credit">Copyright © 2022 GirlScript Foundation: Asansol Chapter, All Rights Reserved </p>
+      </footer>
+    </div>
+
+    <script src="resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      document.getElementById("web-contents").style.display = "none";
+      setTimeout(function () {
+        $(".loader").fadeToggle();
+        document.getElementById("web-contents").style.display = "block";
+      }, 2500);
+    </script>
+  </body>
+</html>
