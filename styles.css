@@ -647,7 +647,7 @@ body.dark {
 }
 
 .ourservices-container {
-  /* padding-top: 100px; */
+  padding-top: 80px;
   /* position: absolute; */
   display: flex;
   justify-content: center;
