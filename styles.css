@@ -1166,7 +1166,6 @@ span.text {
   margin: 80px auto 100px;
 }
 
-.faq-card,
 .faq-card-header {
   /* background-color: transparent !important; */
   background: linear-gradient(
@@ -1181,6 +1180,9 @@ span.text {
 
 .faq-card {
   box-shadow: 0 2px 25px 0 rgba(110, 130, 208.18);
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 20px;
 }
 
 .btn-link {
@@ -1193,7 +1195,7 @@ span.text {
 }
 
 .faq-card-body {
-  background: beige;
+  background: transparent;
 }
 
 .btn-link:after {
