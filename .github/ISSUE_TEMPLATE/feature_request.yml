@@ -1,6 +1,6 @@
 name: 🥗 Feature Request
 description: Request for a new feature
-title: "[Feature]: "
+title: "[Feature] "
 labels: ["enhancement"]
 body:
   - type: markdown

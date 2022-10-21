@@ -15,6 +15,13 @@ function darkMode() {
     document.getElementById("h1-aboutus-section-2").style.color = "black";
     document.getElementById("p-aboutus-section-2").style.color = "black";
     document.querySelector(".big-circle").style.setProperty("---primary-contactus-circle-after-bg", "white");
+    const cardList = document.querySelectorAll(".card");
+    for(const element of cardList){
+      element.style.backgroundColor = "white";
+      element.style.color = "black";
+      element.style.borderTop = "2px solid black";
+      element.style.borderRight = "2px solid black";
+    }
   } else {
     document.getElementById("p-heading").style.color = "white";
     document.getElementById("f-heading").style.color = "white";
@@ -25,6 +32,13 @@ function darkMode() {
     document.getElementById("h1-aboutus-section-2").style.color = "white";
     document.getElementById("p-aboutus-section-2").style.color = "white";
     document.querySelector(".big-circle").style.setProperty("---primary-contactus-circle-after-bg", "#212529");
+    const cardList = document.querySelectorAll(".card");
+    for(const element of cardList){
+      element.style.backgroundColor = "black";
+      element.style.color = "white";
+      element.style.borderTop = "2px solid white";
+      element.style.borderRight = "2px solid white";
+    }
   }
 }
 const toggles = document.querySelectorAll(".faq-toggle");
@@ -112,3 +126,23 @@ async function handleFormSubmit() {
     console.log(err);
   }
 }
+
+// for Swiper used in past events 
+var swiper = new Swiper(".past-events-slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  centerSlide: true,
+  fade: true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

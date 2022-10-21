@@ -197,7 +197,7 @@ body.dark {
 .options {
   margin-left: 20%;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-  display: flex;
+  display:flow-root;
   justify-content: center;
   align-items: center;
 }
@@ -647,12 +647,49 @@ body.dark {
 }
 
 .ourservices-container {
-  padding-top: 100px;
+  padding-top: 80px;
   /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-container .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  border-left: 2px solid orange;
+  border-bottom: 2px solid orange;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  margin: 0 2rem;
+}
+.card-container .card .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-container .card .content .heading{
+  /* text-align: center;
+  font-weight: bold; */
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+.card-container .card .content .img-card{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid orange;
+}
+
 
 .ourservices-img-container {
   flex: 0.7;
@@ -769,101 +806,123 @@ body.dark {
 }
 
 .events-title {
-  margin-top: 100px;
   text-align: center;
 }
 
-.overlay-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url(./Assets/pastEventbg.png);
-  background-position: center;
-  background-size: cover;
-  padding: 50px 20px 10px;
-  margin: 40px 0;
+.past-events-card {
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.129);
+  height: 720px;
 }
 
-.past-events h5 {
-  font-family: "Gemunu Libre", sans-serif;
+.dark .past-events-card {
+  background-color: #24262b;
 }
 
-.past-events p {
-  font-family: "Ubuntu", sans-serif;
+.past-events-card-image {
+  position: relative;
 }
 
-.carousel-indicators {
-  left: 0;
-  top: auto;
-  bottom: -70px;
+.past-events-image-content, .past-events-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.carousel-indicators li {
-  border-radius: 50%;
+.past-events-slide-container {
+  max-width: 80%;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  overflow: visible;
 }
 
-.carousel-inner {
-  padding: 0 15% 3% 15%;
+.past-events-slide-content {
+  padding: 40px 20px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.past-events-card-image .past-events-card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 25px 25px 0 0;
+}
+
+.past-events-title {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+.dark .past-events-title {
+  color: #ddd;
+}
+
+.dark .past-events-description {
+  color: #bbb;
+}
+
+.past-events-description {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+.past-events-footer-text {
+  font-size: 14px;
+  color: #888;
   text-align: center;
 }
 
-.carousel-indicators li {
-  border-radius: 50%;
+.swiper-navBtn {
+  color: #ffa048;
+  transition: color 0.3s ease;
 }
 
-#past-event-card {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  height: 90vh;
+.swiper-navBtn:hover {
+  color: #ff7b00;
 }
 
-#past-event-card:hover {
-  background-image: linear-gradient(
-    115deg,
-    rgb(245, 201, 173) 0%,
-    rgb(241, 163, 111) 80%
-  );
-  transition: all 0.3s ease;
+.swiper-button-next {
+  right: -12px;
 }
 
-.card-links {
-  text-decoration: none;
-  color: #000;
+.swiper-button-prev {
+  left: -12px;
 }
 
-.card-links:hover {
-  text-decoration: none;
-  color: #000;
+.swiper-pagination-bullet {
+  background-color: #ff7b00;
+  opacity: 0.269;
 }
 
-.card img {
-  height: 250px;
-  margin: 0 auto;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-title {
-  font-size: 1.5rem;
+.swiper-pagination-bullet-active {
+  background-color: #ff7b00;
+  opacity: 1;
 }
 
 .mobile-events {
   display: none;
 }
 
-@media (max-width: 768px) {
-  #past-event-card {
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
+/* @media (max-width: 768px) {
+  .past-events-card {
+    display: none;
   }
 
-  .card img {
-    width: 100%;
-    border-radius: 15px;
+  .swiper-navBtn {
+    display: none;
   }
+} */
 
-  .card-title {
-    font-size: 1.5rem;
-  }
-}
+/*  Past Events section Styles Ends here */
 
 /* Follow Us section */
 
@@ -888,6 +947,16 @@ body.dark {
 
   .dropdown:hover .dropbtn {
     background: none;
+  }
+  .card-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-container .card{
+    margin: 2rem 0;
   }
 
   .m-social a {
@@ -1097,7 +1166,6 @@ span.text {
   margin: 80px auto 100px;
 }
 
-.faq-card,
 .faq-card-header {
   /* background-color: transparent !important; */
   background: linear-gradient(
@@ -1112,6 +1180,9 @@ span.text {
 
 .faq-card {
   box-shadow: 0 2px 25px 0 rgba(110, 130, 208.18);
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 20px;
 }
 
 .btn-link {
@@ -1124,7 +1195,7 @@ span.text {
 }
 
 .faq-card-body {
-  background: beige;
+  background: transparent;
 }
 
 .btn-link:after {
