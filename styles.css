@@ -448,6 +448,12 @@ body.dark {
 .header-content h2 {
   font-size: 7vmin;
   font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.header-content h3 {
+  font-size: 5vmin;
+  font-family: "Lato", sans-serif;
 }
 
 /* Typing Cursor css in the header title */
