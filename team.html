@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="teamstyle.css">
+    <script src="https://kit.fontawesome.com/a43ef1b1c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GirlScript Asansol</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/asn-logo-modified.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!--Navbar section goes here-->
+ <nav class="gs-navbar">
+    <!--logo-->
+    <img src="https://avatars.githubusercontent.com/u/104223990?v=4" alt="logo">
+    <!--name of the community added beside the logo-->
+    <div class="name">
+        <p>GirlScript Asansol</p>
+        <!--GirlScript Asansol in one line instead of 2 seperate lines-->
+    </div>
+    <!--toggle bar for small screens-->
+    <div class="toggle">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg></i></a>
+    </div>
+    <!--the other items of navbar is added below-->
+    <div class="options">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="./Resources/resource.html">Resources</a>
+        <a href="#pastevents">Past Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact-us">Contact Us</a>
+
+         <!-- Follow us section -->
+        <div class="dropdown">
+            <button class="dropbtn">Follow Us
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="social">
+<a href="https://github.com/gsasansol" target="_blank"  class="github"><i class="fa fa-github"> <span>GirlScript Asansol</span></i></a>
+<a href="https://twitter.com/GSAsansol" target="_blank" class="twitter"><i class="fa fa-twitter"><span>GSAsansol</span></i></a>
+<a href="https://www.instagram.com/gsasansol/" target="_blank" class="Instagram"><i class="fa fa-instagram"> <span> gsasansol</span></i></a>
+<a href="https://www.linkedin.com/company/gsasansol/" target="_blank" class="linkedin"><i class="fa fa-linkedin"> <span>gsasansol</span></i></a>
+
+ </div>
+ </div>
+      
+       
+      
+        
+    </div>
+    <!--dark mode button is now outside the option class-->
+    <button onclick="darkMode()" class="toggleButton">
+        <i class='fas fa-sun'></i>
+    </button>
+</nav>
+
+<!--added jQuery Event Methods for toggle bar to open and close-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".toggle").on("click", function () {
+            if ($(".options").hasClass("active")) {
+                $(".options").removeClass("active");
+                $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>`);
+            }
+            else {
+                $(".options").addClass("active");
+                $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>`);
+            }
+        });
+    });
+</script>
+
+<!---Navbar ends here-->
+
+<section class="section-team">
+    <div class="container">
+        <!-- Start Header Section -->
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="header-section">
+                    <h2 class="title">Core Team</h3>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- / End Header Section -->
+        <div class="row">
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/soumali.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Soumali Gorai</h3>
+                        <span class="speciality">Chapter Lead</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/debdeep.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Debdeep Banerjee</h3>
+                        <span class="speciality">Chapter Lead</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/pranay.png" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Pranay Gupta</h3>
+                        <span class="speciality">Technical Lead</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/saikat.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Saikat Mukharjee</h3>
+                        <span class="speciality">Technical Lead</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/souvik.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Souvik Mandal</h3>
+                        <span class="speciality">Web Dev Lead</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/abir.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Abir Pal</h3>
+                        <span class="speciality">Web Dev Lead</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/aaheli2.png" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Aaheli Sadhukhan</h3>
+                        <span class="speciality">Content Writer</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/nidhi.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Nidhi Kumari</h3>
+                        <span class="speciality">Social Media Handler</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/rohit.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Rohit Das</h3>
+                        <span class="speciality">Video Editor</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/jayanta.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Jayanta Pandit</h3>
+                        <span class="speciality">Graphic Designer</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/soumya.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Soumya Banerjee</h3>
+                        <span class="speciality">Moderator</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="Assets/team/subham.jpeg" alt="">
+                        <span class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Subham Sharma</h3>
+                        <span class="speciality">Outreach</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Single Person -->
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
