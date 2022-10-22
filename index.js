@@ -146,3 +146,19 @@ var swiper = new Swiper(".past-events-slide-content", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// for Typed JS functionality
+var typed = new Typed('.typed-animation', {
+  strings: [
+    'Education',
+    'Learning',
+    'Awareness',
+    'Opportunity',
+    'Awesomeness'
+  ],
+  typeSpeed: 100,
+  backSpeed: 75,
+  loop: true,
+  loopCount: Infinity,
+  // smartBackspace: true,
+});
