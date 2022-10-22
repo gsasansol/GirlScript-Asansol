@@ -197,7 +197,7 @@ body.dark {
 .options {
   margin-left: 20%;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
-  display:flow-root;
+  display: flow-root;
   justify-content: center;
   align-items: center;
 }
@@ -416,7 +416,7 @@ body.dark {
     border-radius: 50%;
     margin-left: -5px;
   }
-  .toggleButton{
+  .toggleButton {
     left: 60%;
   }
   .fa-sun {
@@ -653,12 +653,12 @@ body.dark {
   justify-content: center;
   align-items: center;
 }
-.card-container{
+.card-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card-container .card{
+.card-container .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -671,25 +671,24 @@ body.dark {
   border-top: 2px solid black;
   margin: 0 2rem;
 }
-.card-container .card .content{
+.card-container .card .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.card-container .card .content .heading{
+.card-container .card .content .heading {
   /* text-align: center;
   font-weight: bold; */
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
 }
-.card-container .card .content .img-card{
+.card-container .card .content .img-card {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 5px solid orange;
 }
-
 
 .ourservices-img-container {
   flex: 0.7;
@@ -824,7 +823,8 @@ body.dark {
   position: relative;
 }
 
-.past-events-image-content, .past-events-card-content {
+.past-events-image-content,
+.past-events-card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -948,14 +948,14 @@ body.dark {
   .dropdown:hover .dropbtn {
     background: none;
   }
-  .card-container{
+  .card-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 
-  .card-container .card{
+  .card-container .card {
     margin: 2rem 0;
   }
 
@@ -1017,7 +1017,7 @@ body.dark {
   }
 
   .past-events {
-    margin: 42px 0;
+    margin: 42px 1.6rem;
   }
 
   .events-title {
@@ -1031,10 +1031,12 @@ body.dark {
 
   .card-title {
     font-size: 1.1rem;
+    color: #212529;
   }
 
   .card-text {
     font-size: 12px;
+    color: #212529;
   }
 }
 
