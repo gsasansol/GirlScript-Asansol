@@ -30,6 +30,7 @@ p,a,h1,h2,h3,h4 {
 	padding: 30px;
 	background-color: #f6f9ff;
 	border-radius: 5px;
+	height: 400px;
 }
 
 .section-team .single-person:hover {
