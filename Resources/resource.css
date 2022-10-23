@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Silkscreen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel&family=Cookie&family=Dancing+Script:wght@700&family=Josefin+Sans&family=Kanit:wght@500&family=Playfair+Display+SC:wght@700&family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@900&family=Josefin+Sans&family=Kanit:wght@500&family=Playfair+Display+SC:wght@700&family=Roboto+Slab:wght@500;800&family=Shalimar&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +23,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(145, 48, 3);
 }
-
+/* navbar copied */
 .gs-navbar {
   top: 0;
   position: sticky;
@@ -29,50 +32,168 @@
   padding: 10px;
   background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
   display: flex;
+  /*to put the elements one beside the other*/
   align-items: center;
   font-family: Lato;
+
+  /* overflow: hidden; */
+  /*added a gap between the logo and the brandname*/
 }
 
+/*for the styling the name of community beside the logo*/
 .gs-navbar .name {
-  font-size: 1.2rem;
+  font-size: 2.6vmin;
   line-height: 1;
   font-weight: 900;
+  font-family: 'Cinzel', serif;
   color: rgb(107, 27, 27);
   margin-left: 10px;
   margin-top: 5px;
 }
 
 .gs-navbar .name p {
+  font-family: 'Cinzel', serif;
   margin-bottom: 5px;
 }
 
+/*to set the size of the logo and make it circular*/
 .gs-navbar img {
   height: 50px;
   border-radius: 50%;
+  margin-left: 60px;
 }
 
 .options {
-  margin-left: auto;
+  margin-left: 12%;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
+  display: flow-root;
   justify-content: center;
   align-items: center;
 }
 
+/*styling the items in the navbar(except logo and community name) here*/
 .options a {
   text-decoration: none;
   color: rgb(107, 27, 27);
-  margin: 0 5px;
+  opacity: 0.8;
+  margin: 0 8px;
   font-size: 1.2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
   text-align: center;
+  transition: 0.3s ease-in-out;
 }
 
 .options a:hover {
-  border-bottom: 3.5px solid rgb(255, 0, 0);
+  border-bottom: 1px solid #fff;
   border-radius: 4.5px;
   text-decoration: none;
   color: white;
+  opacity: 1;
   font-size: 1.2rem;
-  transition: color 0.2s linear;
+  font-weight: bold;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 15px #fff, 0 0 25px;
+  }
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 25px;
+  }
+}
+/* Dropdown button */
+.dropdown {
+  display: inline-block;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  outline: none;
+  padding: 5px 0;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffff;
+  margin-left: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+/* Dropdown content (hidden by default) */
+.social {
+  display: none;
+  position: absolute;
+  /* min-width: 113px; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 14px;
+}
+
+/* Links inside the dropdown */
+.social a {
+  float: none;
+  font-size: 1.2rem;
+  color: #eee;
+  text-decoration: none;
+  padding: 10px 2px 10px 5px;
+  display: block;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  background: linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76));
+}
+.social a:hover {
+  border: none;
+  font-family: 'Playfair Display SC', serif;
+  border-radius: 0;
+}
+.social span {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  padding-left: 3px;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .social {
+  display: block;
+}
+
+.drop {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.drop:hover {
+  filter: invert(0);
+}
+.m-social {
+  display: none;
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-instagram:hover {
+  color: #fb3958;
+}
+.fa-linkedin:hover {
+  color: #007bb5;
+}
+
+.fa {
+  margin-right: 25px;
 }
 
 .toggle {
@@ -84,6 +205,7 @@
 @media screen and (max-width: 750px) {
   .gs-navbar {
     display: block;
+    z-index: 1;
     position: relative;
     padding: 15px 20px;
   }
@@ -91,6 +213,7 @@
   .options {
     margin-top: 15px;
     display: none;
+    margin-left: 0;
   }
 
   .options.active,
@@ -105,8 +228,10 @@
   }
 
   .options a {
-    display: block;
+    display: inline-block;
+    width: 100%;
     padding: 5px;
+    color: #fff;
   }
 
   .name p {
@@ -116,9 +241,8 @@
     top: 30px;
   }
 
-  .options a {
-    display: inline-block;
-    width: 100%;
+  .fa-sun {
+    margin-left: 3em;
   }
 }
 
@@ -132,8 +256,10 @@
 }
 
 .toggleButton .fa-sun {
+  position: relative;
+  top: 0px;
+  left: 0px;
   color: rgb(241, 191, 124);
-  margin-left: 10px;
 }
 
 /* dark mode button positioning for mobile */
@@ -141,10 +267,37 @@
   .toggleButton {
     position: absolute;
     top: 25px;
-    left: 40%;
-    min-width: 50%;
+    left: 70%;
   }
 }
+@media screen and (max-width: 500px) {
+  .gs-navbar .name {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 900;
+    color: rgb(107, 27, 27);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .gs-navbar .name p {
+    margin-bottom: 5px;
+    margin-left: -5px;
+  }
+  /*to set the size of the logo and make it circular*/
+  .gs-navbar img {
+    height: 50px;
+    border-radius: 50%;
+    margin-left: -5px;
+  }
+  .toggleButton {
+    left: 60%;
+  }
+  .toggleButton .fa-sun {
+    margin-left: 50px;
+  }
+}
+
 
 /*  Footer section Styles goes here */
 .footer {
@@ -264,6 +417,7 @@ ul {
 .footer-credit {
   color: #bbbbbb;
   text-align: center;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {

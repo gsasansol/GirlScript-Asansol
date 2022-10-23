@@ -203,7 +203,7 @@ body.dark {
 }
 
 .options {
-  margin-left: 20%;
+  margin-left: 12%;
   /*to put all the items of navbar(except logo and community name) to the right side of the page*/
   display: flow-root;
   justify-content: center;
@@ -215,8 +215,8 @@ body.dark {
   text-decoration: none;
   color: rgb(107, 27, 27);
   opacity: 0.8;
-  margin: 0 16px;
-  font-size: 2.3vmin;
+  margin: 0 8px;
+  font-size: 1.2rem;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   text-align: center;
@@ -229,7 +229,7 @@ body.dark {
   text-decoration: none;
   color: white;
   opacity: 1;
-  font-size: 2.3vmin;
+  font-size: 1.2rem;
   font-weight: bold;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -304,8 +304,8 @@ body.dark {
 }
 
 .drop {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   filter: brightness(0) invert(1);
 }
 
@@ -432,10 +432,13 @@ body.dark {
   .toggleButton {
     left: 60%;
   }
-  .fa-sun {
-    margin-left: 30px;
+  .toggleButton .fa-sun {
+    margin-left: 50px;
   }
 }
+
+
+
 /*  Header Section Styles goes here */
 
 .header {

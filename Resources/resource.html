@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resources - GirlScript Asansol</title>
-    <link rel="stylesheet" href="resource.css" />
+    <link rel="stylesheet" href="resource.css" /> 
     <script src="https://kit.fontawesome.com/cad7156e83.js"></script>
     <link rel="icon" type="image/x-icon" href="/Assets/asn-logo-modified.png">
   </head>
@@ -14,47 +14,77 @@
 
     <div id="web-contents">
       <!-- <<<<<Template code (copied from index.html)>>>> -->
-      <!--Navbar section-->
-      <nav class="gs-navbar">
-        <!--logo-->
-        <img
-          src="https://avatars.githubusercontent.com/u/104223990?v=4"
-          alt="logo"
-        />
 
-        <div class="name">
-          <p>GirlScript Asansol</p>
-        </div>
-        <!--toggle bar for small screens-->
-        <div class="toggle">
-          <a href="#"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="black"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              /></svg
-          ></a>
-        </div>
-        <div class="options">
-          <a href="../index.html#home">Home</a>
-          <a href="../index.html#about">About Us</a>
-          <a href="#">Resources</a>
-          <a href="../index.html#pastevents">Past Events</a>
-          <a href="#">Our Team</a>
-          <a href="../index.html#faq">FAQ</a>
-          <a href="../index.html#contact-us">Contact Us</a>
-        </div>
-        <button onclick="darkMode()" class="toggleButton">
-          <i class="fas fa-sun"></i>
-        </button>
-      </nav>
+
+      <!--Navbar section goes here-->
+ <nav class="gs-navbar">
+  <!--logo-->
+  <img src="https://avatars.githubusercontent.com/u/104223990?v=4" alt="logo">
+  <!--name of the community added beside the logo-->
+  <div class="name">
+      <p>GirlScript Asansol</p>
+      <!--GirlScript Asansol in one line instead of 2 seperate lines-->
+  </div>
+  <!--toggle bar for small screens-->
+  <div class="toggle">
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black"
+              class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg></i></a>
+  </div>
+  <!--the other items of navbar is added below-->
+  <div class="options">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">About Us</a>
+      <a href="./Resources/resource.html">Resources</a>
+      <a href="../index.html#pastevents">Past Events</a>
+      <a href="../team.html">Our Team</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../index.html#contact-us">Contact Us</a>
+
+       <!-- Follow us section -->
+      <div class="dropdown">
+          <button class="dropbtn">Follow Us
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="social">
+<a href="https://github.com/gsasansol" target="_blank"  class="github"><i class="fa fa-github"> <span>GirlScript Asansol</span></i></a>
+<a href="https://twitter.com/GSAsansol" target="_blank" class="twitter"><i class="fa fa-twitter"><span>GSAsansol</span></i></a>
+<a href="https://www.instagram.com/gsasansol/" target="_blank" class="Instagram"><i class="fa fa-instagram"> <span> gsasansol</span></i></a>
+<a href="https://www.linkedin.com/company/gsasansol/" target="_blank" class="linkedin"><i class="fa fa-linkedin"> <span>gsasansol</span></i></a>
+
+</div>
+</div>
+    
+     
+    
+      
+  </div>
+  <!--dark mode button is now outside the option class-->
+  <button onclick="darkMode()" class="toggleButton">
+      <i class='fas fa-sun'></i>
+  </button>
+</nav>
+
+<!--added jQuery Event Methods for toggle bar to open and close-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+  $(function () {
+      $(".toggle").on("click", function () {
+          if ($(".options").hasClass("active")) {
+              $(".options").removeClass("active");
+              $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>`);
+          }
+          else {
+              $(".options").addClass("active");
+              $(this).find("a").html(`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>`);
+          }
+      });
+  });
+</script>
+
+<!---Navbar ends here-->
       <!--jQuery Event Methods for toggle bar to open and close-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script>
