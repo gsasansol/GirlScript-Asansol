@@ -481,7 +481,7 @@ body.dark {
 
 /* Typing Cursor css in the header title */
 .typed-cursor {
-  color: #ffa048
+  color: #ffa048;
 }
 
 .line {
@@ -1275,12 +1275,15 @@ span.text {
 .btn-link:after {
   content: "\2212";
   width: 35px;
-  font-size: 25px;
-  text-align: center;
+  height: 35px;
+  font-size: 20px;
   border-radius: 5px;
+  top: 12px;
   right: 15px;
-  top: 11px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: beige;
 }
 
@@ -2138,4 +2141,11 @@ ul {
   background-color: rgb(18, 18, 18);
 }
 
+<<<<<<< HEAD
 /*Our Team PAge CSS*/
+=======
+.dark #myBtn:hover {
+  background-color: #ddd;
+  color: #21242b;
+}
+>>>>>>> 7813e94 (the + button changed and back to top button change)
