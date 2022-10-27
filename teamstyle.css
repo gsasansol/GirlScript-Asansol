@@ -7,7 +7,9 @@ h4 {
   margin: 0;
   padding: 0;
 }
-
+.row.mobile-view {
+  display: none;
+}
 .section-team {
   font-family: "Poppins", sans-serif;
   padding: 80px 0;
@@ -106,3 +108,84 @@ h4 {
 .section-team .single-person:hover .speciality {
   color: #fff;
 }
+
+/* Start Mobile View */
+
+@media (max-width: 500px) {
+  .row.desktop-view {
+    display: none;
+  }
+
+  .row.mobile-view {
+    display: block;
+  }
+
+  .card-top {
+    background-color: red;
+    height: 200px;
+  }
+
+  .section-team {
+    margin-bottom: 6rem;
+  }
+
+  .section-team .single-person {
+    padding: 0px;
+    position: relative;
+  }
+
+  .card-top {
+    background-image: url(https://www.freewebheaders.com/wp-content/gallery/sunsets/beautiful-sunset-lake-header-7332.jpg);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .section-team .single-person .person-image {
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    right: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding 0.3s;
+  }
+
+  .section-team .single-person .person-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+  }
+
+  .section-team .single-person .person-image .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .person-info {
+    position: relative;
+    top: 280px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .section-team .single-person .person-info .speciality {
+    color: #f5420c;
+  }
+  .section-team .single-person:hover .full-name,
+  .section-team .single-person:hover .speciality {
+    color: #fff;
+  }
+}
+
+/* End Mobile View */
