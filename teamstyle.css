@@ -121,6 +121,8 @@ h4 {
   }
 
   .card-top {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     background-color: red;
     height: 200px;
   }
