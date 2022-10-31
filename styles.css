@@ -494,12 +494,12 @@ body.dark {
 }
 
 .cta-button {
-  background: rgb(243, 242, 199);
+  /* background: rgb(243, 242, 199); */
   border: none;
   z-index: 1;
   width: 140px;
   height: 50px;
-  color: #000;
+  /* color: #000; */
   border-radius: 5px;
   padding: 10px 25px;
   /* font-family: "Lato", sans-serif; */
@@ -849,7 +849,8 @@ body.dark {
 
 /*  Past Events section Styles goes here */
 .past-events {
-  margin: 100px 0;
+  /* background-color: #cee1e8; */
+  padding: 100px 0;
 }
 
 .events-title {
@@ -1103,7 +1104,8 @@ body.dark {
 
 /* Achievements section styles goes here */
 .achievement-section {
-  margin: 100px 0;
+  /* background-color: #cee1e8; */
+  padding: 0 0 100px 0;
 }
 
 .achievement-section {
