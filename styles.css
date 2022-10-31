@@ -603,7 +603,6 @@ body.dark {
 /*  About Us section Styles goes here */
 
 .aboutus-section-wrapper {
-  background-image: linear-gradient(white, #cee1e8);
   width: 100%;
   /* height: 100vh; */
   margin-top: 4rem;
@@ -850,8 +849,7 @@ body.dark {
 
 /*  Past Events section Styles goes here */
 .past-events {
-  background-color: #cee1e8;
-  padding: 100px 0;
+  margin: 100px 0;
 }
 
 .events-title {
@@ -973,12 +971,6 @@ body.dark {
 
 .events-title {
   font-family: "Playfair Display SC", serif;
-}
-
-.swiper-slide:hover {
-  transform: scale(1.02);
-  box-shadow: #537185 0px 0px 20px 1px;
-  transition: transform 0.3s ease;
 }
 
 /* @media (max-width: 768px) {
@@ -1111,8 +1103,7 @@ body.dark {
 
 /* Achievements section styles goes here */
 .achievement-section {
-  background-color: #cee1e8;
-  padding: 0 0 100px 0;
+  margin: 100px 0;
 }
 
 .achievement-section {
@@ -1230,12 +1221,7 @@ span.text {
 /*  Our Team section Styles goes here */
 
 /*  FAQ section Styles goes here */
-
-.faq-section{
-  background-image: linear-gradient(#cee1e8, #fff);
-}
-
-.faq-section h1 {  
+.faq-section h1 {
   text-align: center;
   /* font-family: "Lato", sans-serif; */
   font-family: "Playfair Display SC", serif;
@@ -1321,7 +1307,6 @@ span.text {
 /* Contact Us section Styles goes here */
 
 .contact-container {
-  background-image: linear-gradient(#fff, #e7f4f9);
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -1330,7 +1315,7 @@ span.text {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 160px 0 100px;
+  margin: 160px 0 100px;
 }
 
 @media (max-width: 768px) {
@@ -1346,7 +1331,7 @@ span.text {
 .form {
   width: 100%;
   max-width: 820px;
-  background-color: #c5e0ed;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -1386,7 +1371,7 @@ span.text {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #c5e0ed;
+  background-color: #fff;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
