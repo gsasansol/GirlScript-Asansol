@@ -19,12 +19,17 @@ function darkMode() {
       .style.setProperty("---primary-contactus-circle-after-bg", "white");
     const cardList = document.querySelectorAll(".card");
     for (const element of cardList) {
-      element.style.backgroundColor = "white";
+      element.style.backgroundColor = "#cee1e8";
       element.style.color = "black";
       element.style.borderTop = "2px solid black";
       element.style.borderRight = "2px solid black";
     }
+    document.getElementById("cta-button").style.color = "black";
+    document.getElementById("cta-button").style.backgroundColor = "white";
   } else {
+    document.getElementById("cta-button").style.color = "white";
+    document.getElementById("cta-button").style.backgroundColor = "black";
+
     document.getElementById("p-heading").style.color = "white";
     document.getElementById("f-heading").style.color = "white";
     document.getElementById("achievement-heading").style.color = "white";

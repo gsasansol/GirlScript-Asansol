@@ -518,12 +518,12 @@ body.dark {
 }
 
 .cta-button {
-  background: rgb(243, 242, 199);
+  /* background: rgb(243, 242, 199); */
   border: none;
   z-index: 1;
   width: 140px;
   height: 50px;
-  color: #000;
+  /* color: #000; */
   border-radius: 5px;
   padding: 10px 25px;
   /* font-family: "Lato", sans-serif; */
@@ -627,7 +627,7 @@ body.dark {
 /*  About Us section Styles goes here */
 
 .aboutus-section-wrapper {
-  background-image: linear-gradient(white, #cee1e8);
+  /* background-image: linear-gradient(white, #cee1e8); */
   width: 100%;
   /* height: 100vh; */
   margin-top: 4rem;
@@ -874,7 +874,7 @@ body.dark {
 
 /*  Past Events section Styles goes here */
 .past-events {
-  background-color: #cee1e8;
+  /* background-color: #cee1e8; */
   padding: 100px 0;
 }
 
@@ -1135,7 +1135,7 @@ body.dark {
 
 /* Achievements section styles goes here */
 .achievement-section {
-  background-color: #cee1e8;
+  /* background-color: #cee1e8; */
   padding: 0 0 100px 0;
 }
 
@@ -1256,7 +1256,7 @@ span.text {
 /*  FAQ section Styles goes here */
 
 .faq-section{
-  background-image: linear-gradient(#cee1e8, #fff);
+  /* background-image: linear-gradient(#cee1e8, #fff); */
 }
 
 .faq-section h1 {  
@@ -1345,7 +1345,7 @@ span.text {
 /* Contact Us section Styles goes here */
 
 .contact-container {
-  background-image: linear-gradient(#fff, #e7f4f9);
+  /* background-image: linear-gradient(#fff, #e7f4f9); */
   position: relative;
   width: 100%;
   min-height: 100vh;
