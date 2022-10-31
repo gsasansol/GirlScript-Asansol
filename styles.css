@@ -77,30 +77,6 @@ body.dark {
   background-color: rgb(145, 48, 3);
 }
 
-/* vertical scrollbar is here */
-
-.scroll-indicator {
-  position: fixed;
-  top: 0;
-  z-index: 100000;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-.progress-container {
-  width: 100%;
-  height: 5px;
-  background: #e9e9e9;
-}
-
-.progress-bar {
-  height: 5px;
-  background: #ea823e;
-  width: 0%;
-  border-radius: 0 40ch 40ch 0;
-  transition-duration: 0s;
-}
-
 /*  NavBar Styles goes here */
 
 /* general styling for dismissable alert  */
