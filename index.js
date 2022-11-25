@@ -40,6 +40,7 @@ function darkMode() {
       element.style.borderRight = "2px solid white";
     }
   }
+
   const toggleButton = document.getElementById("dark-mode-enable");
   
   if(toggleButton.classList.contains("fa-moon")){
