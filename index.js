@@ -40,6 +40,17 @@ function darkMode() {
       element.style.borderRight = "2px solid white";
     }
   }
+
+  const toggleButton = document.getElementById("dark-mode-enable");
+  
+  if(toggleButton.classList.contains("fa-moon")){
+    toggleButton.classList.remove("fa-moon");
+    toggleButton.classList.add("fa-lightbulb");
+  }
+  else{
+    toggleButton.classList.remove("fa-lightbulb");
+    toggleButton.classList.add("fa-moon");
+  }
 }
 const toggles = document.querySelectorAll(".faq-toggle");
 
